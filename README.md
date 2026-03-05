@@ -47,6 +47,7 @@ Dann `http://localhost:8080` aufrufen.
 - Fuer wissenschaftliche Arbeiten immer im Originaltext gegenpruefen und exakt zitieren.
 - Das Repo verwendet nur statische Webtechnologien und funktioniert auf Desktop und mobil.
 - Vor einem oeffentlichen GitHub-Upload die Rechte an den beigefuegten PDFs klaeren.
+- Sehr grosse Dateien (z. B. `JakobWiedmer_Flut.pdf`) werden typischerweise nicht mit hochgeladen und nur lokal genutzt.
 
 ## Lizenz
 
