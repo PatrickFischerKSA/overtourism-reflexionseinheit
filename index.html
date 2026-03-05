@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Overtourism: Traumwelt, Flut, Gegenwehr</title>
+    <meta
+      name="description"
+      content="Kontroverse, choreografierte und interaktive Reflexionseinheit zu Overtourism mit Fokus auf Wiedmers Flut sowie Positionen von Enzensberger und Groebner."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <video
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="./assets/SwissTourismus.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow">Reflexionseinheit Overtourism</p>
+      <h1>Traumwelt verkaufen. Schattenseiten mitbuchen.</h1>
+      <p class="lead">
+        Ausgangspunkt: <em>Flut</em> von Jakob Wiedmer. Streitlinie: Enzensbergers
+        Freiheitsversprechen gegen Groebners Reise-Transformation. Zentrum:
+        dein eigenes Reiseverhalten.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="#hook">Mit Aufhänger starten</a>
+        <a class="button button-light" href="#reiseprofil">Zu meinem Reiseprofil</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hook" class="panel">
+        <div>
+          <p class="section-kicker">Akt 1: Aufhänger</p>
+          <h2>Wenn die Traumreise plötzlich kippt</h2>
+          <p>
+            Einstieg über den aktuellen Fall von Stefan Büsser in Abu Dhabi:
+            touristisches Erlebnis und Kontrollverlust treffen unmittelbar aufeinander.
+          </p>
+          <p class="focus-question">
+            Leitfrage: Wann wird aus der verkauften Traumwelt eine reale Überforderung?
+          </p>
+        </div>
+        <article class="hook-card">
+          <h3>Video-Impuls (Blick)</h3>
+          <p>
+            <a
+              href="https://www.blick.ch/people-tv/schweiz/stefan-buesser-sitzt-in-abu-dhabi-fest-die-druckwellen-fahren-einem-schon-ziemlich-ein-id21742969.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Stefan Büsser sitzt in Abu Dhabi fest
+            </a>
+          </p>
+          <p>Arbeitsauftrag in 90 Sekunden:</p>
+          <ol>
+            <li>Wer trägt das Risiko in diesem Moment?</li>
+            <li>Was davon ist individuelles Pech, was ist Systemlogik?</li>
+            <li>Wo stehst du emotional: Mitleid, Distanz, Schadenfreude, Wut?</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="panel">
+        <p class="section-kicker">Akt 2: Choreografie</p>
+        <h2>Moderationspult für die Einheit</h2>
+        <div class="choreo-grid">
+          <div class="timer-card">
+            <p class="label">Aktuell</p>
+            <h3 id="actTitle">1. Schockmoment: Aufhänger</h3>
+            <p id="actGoal"></p>
+            <p id="actPrompt" class="prompt"></p>
+            <p class="time" id="timerDisplay">06:00</p>
+            <div class="timer-controls">
+              <button id="startTimer" type="button">Start</button>
+              <button id="pauseTimer" type="button">Pause</button>
+              <button id="resetTimer" type="button">Reset</button>
+            </div>
+          </div>
+          <div>
+            <p class="label">Ablauf (anklickbar)</p>
+            <div id="actButtons" class="act-buttons"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="kontroverse">
+        <p class="section-kicker">Akt 3: Kontroverse Arena</p>
+        <h2>Enzensberger vs. Groebner mit Paquot als Störfeuer</h2>
+        <div class="positions">
+          <article>
+            <h3>Enzensberger</h3>
+            <p>
+              Tourismus verspricht Freiheit von der normierten Alltagswelt,
+              produziert aber oft neue Konformität: standardisierte Routen,
+              Pflicht-Erlebnisse und moralisch beruhigte Flucht.
+            </p>
+          </article>
+          <article>
+            <h3>Groebner</h3>
+            <p>
+              Reise als Transformationsmaschine: Man sucht das Anderswo, sendet
+              sich selbst in Echtzeit zurück und erzeugt damit genau die
+              Verdichtung, vor der man fliehen wollte.
+            </p>
+          </article>
+          <article>
+            <h3>Paquot (Kontrast)</h3>
+            <p>
+              Massentourismus neutralisiert Fremdheit: Orte sollen fremd wirken,
+              aber sich wie Zuhause anfühlen. Die Differenz bleibt Kulisse.
+            </p>
+          </article>
+        </div>
+        <div class="duel-console">
+          <button id="provocationBtn" type="button">Provokation ziehen</button>
+          <button id="roleSwitchBtn" type="button">Rollenwechsel</button>
+          <p id="provocationText" class="provocation"></p>
+          <p id="roleText" class="role"></p>
+        </div>
+      </section>
+
+      <section class="panel" id="reiseprofil">
+        <p class="section-kicker">Akt 4: Selbsttest</p>
+        <h2>Was gewinnst du durchs Reisen, was kostet es andere?</h2>
+        <form id="travelForm" class="travel-form">
+          <label>
+            Reisen/Jahr
+            <input type="number" min="0" max="30" step="1" id="tripCount" value="4" />
+          </label>
+          <label>
+            Kurzstreckenflüge/Jahr
+            <input type="number" min="0" max="30" step="1" id="shortFlights" value="1" />
+          </label>
+          <label>
+            Langstreckenflüge/Jahr
+            <input type="number" min="0" max="12" step="1" id="longFlights" value="0" />
+          </label>
+          <label>
+            Motiv: Erholung
+            <input type="range" min="0" max="10" value="7" id="motRest" />
+          </label>
+          <label>
+            Motiv: Flucht vor Alltag
+            <input type="range" min="0" max="10" value="5" id="motEscape" />
+          </label>
+          <label>
+            Motiv: Status/Inszenierung
+            <input type="range" min="0" max="10" value="3" id="motStatus" />
+          </label>
+          <label>
+            Motiv: echte Begegnung
+            <input type="range" min="0" max="10" value="6" id="motEncounter" />
+          </label>
+        </form>
+        <div class="scoreboard">
+          <article>
+            <p class="label">Gewinn für Reisende</p>
+            <p class="score" id="gainScore">0</p>
+          </article>
+          <article>
+            <p class="label">Kosten für Reisende</p>
+            <p class="score" id="selfCostScore">0</p>
+          </article>
+          <article>
+            <p class="label">Kosten für Einheimische</p>
+            <p class="score" id="localCostScore">0</p>
+          </article>
+          <article>
+            <p class="label">Ökologische Last</p>
+            <p class="score" id="ecoScore">0</p>
+          </article>
+        </div>
+        <p id="scoreInterpretation" class="focus-question"></p>
+      </section>
+
+      <section class="panel" id="spannung">
+        <p class="section-kicker">Akt 5: Traumwelt vs. Schattenseiten</p>
+        <h2>Spannungsfeld sichtbar machen</h2>
+        <p>
+          Schiebe jede Achse nach links (Schattenseite) oder rechts
+          (Traumweltversprechen). Der Gruppenmittelwert zeigt eure Lage.
+        </p>
+        <div class="tension-grid">
+          <label>Freiheit - Taktung <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+          <label>Authentizität - Inszenierung <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+          <label>Wohlstand - Verdrängung <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+          <label>Austausch - Folklorisierung <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+          <label>Offenheit - Abhängigkeit <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+          <label>Erlebnis - Erschöpfung <input type="range" min="-10" max="10" value="0" class="tension" /></label>
+        </div>
+        <div class="meter-shell" aria-hidden="true">
+          <div id="tensionMeter" class="meter"></div>
+        </div>
+        <p id="tensionText" class="prompt"></p>
+      </section>
+
+      <section class="panel resources">
+        <p class="section-kicker">Akt 6: Materialpool und Transfer</p>
+        <h2>Impulse, Quellen, letzter persönlicher Beschluss</h2>
+        <div class="resource-grid">
+          <article>
+            <h3>Video-Impulse</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=VB3kYibA6BA" target="_blank" rel="noreferrer">YouTube-Impuls 1</a></li>
+              <li><a href="https://www.youtube.com/watch?v=vNbVhLwL6Dk" target="_blank" rel="noreferrer">YouTube-Impuls 2</a></li>
+              <li><a href="https://www.youtube.com/watch?v=UKuo_6SUkTg" target="_blank" rel="noreferrer">YouTube-Impuls 3</a></li>
+              <li><a href="https://www.youtube.com/watch?v=esE_-a2DUpc" target="_blank" rel="noreferrer">YouTube-Impuls 4</a></li>
+            </ul>
+          </article>
+          <article>
+            <h3>Textgrundlagen</h3>
+            <ul>
+              <li><a href="./docs/quellen-und-positionen.md">Positionen und Quellenüberblick</a></li>
+              <li><a href="./material/JakobWiedmer_Flut.pdf">Wiedmer: Flut (PDF)</a></li>
+              <li><a href="./material/Enzensberger_Tourismus.pdf">Enzensberger (PDF)</a></li>
+              <li><a href="./material/Groebner_Abgefahren_9783835397835.pdf">Groebner (PDF)</a></li>
+              <li><a href="./material/Der sanfte Terror des Tourismus.pdf">Paquot (PDF)</a></li>
+            </ul>
+          </article>
+        </div>
+
+        <label for="commitment">
+          Mein nächster Reisekompromiss (konkret, messbar, datiert):
+        </label>
+        <textarea id="commitment" rows="4" placeholder="Beispiel: Im Sommer 2026 eine Nachtzugreise statt Flug, plus max. zwei Hotspots."></textarea>
+        <div class="hero-actions">
+          <button id="saveCommitment" type="button">Beschluss speichern</button>
+          <button id="exportCommitment" type="button">Als TXT exportieren</button>
+        </div>
+        <p id="saveState" class="prompt"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Didaktikdateien: <a href="./docs/choreografie.md">Choreografie</a> |
+        <a href="./docs/quellen-und-positionen.md">Quellen & Positionen</a>
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
