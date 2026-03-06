@@ -245,6 +245,75 @@ main {
   background: var(--glass-strong);
 }
 
+.route-flow {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.route-block {
+  border: 1px solid rgba(15, 26, 40, 0.12);
+  border-radius: 14px;
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.route-block h4 {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.25rem;
+}
+
+.link-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 123, 143, 0.12);
+  border: 1px solid rgba(15, 123, 143, 0.18);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.inline-blog-form {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.inline-blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.inline-blog-list {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.inline-blog-entry {
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(15, 26, 40, 0.14);
+}
+
+.inline-blog-entry h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
 .stop-meta {
   display: flex;
   flex-wrap: wrap;

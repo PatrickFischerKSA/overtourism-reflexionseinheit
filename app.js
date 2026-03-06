@@ -573,6 +573,33 @@ const closeReadingStations = [
   }
 ];
 
+const primaryTextLibrary = {
+  blick: {
+    label: "Blick-Aufhänger",
+    href: "https://www.blick.ch/people-tv/schweiz/stefan-buesser-sitzt-in-abu-dhabi-fest-die-druckwellen-fahren-einem-schon-ziemlich-ein-id21742969.html"
+  },
+  wiedmer: {
+    label: "Wiedmer: Flut",
+    href: "https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0"
+  },
+  enzensberger: {
+    label: "Enzensberger",
+    href: "./material/Enzensberger_Tourismus.pdf"
+  },
+  abgefahren: {
+    label: "Groebner: Abgefahren",
+    href: "./material/Groebner_Abgefahren_9783835397835.pdf"
+  },
+  ferienmuede: {
+    label: "Groebner: Ferienmüde",
+    href: "./material/Groebner_Ferienmuede_9783835397323.pdf"
+  },
+  paquot: {
+    label: "Paquot",
+    href: "./material/Der sanfte Terror des Tourismus.pdf"
+  }
+};
+
 const els = {
   routeTracks: document.querySelector("#routeTracks"),
   routeMeta: document.querySelector("#routeMeta"),
@@ -1091,29 +1118,123 @@ function renderRouteNav() {
   els.routeNav.append(fragment);
 }
 
+function getPrimaryTextLinks(stop) {
+  const haystack = `${stop.title} ${stop.subtitle} ${stop.focus} ${stop.textLoop} ${stop.source}`.toLowerCase();
+  const links = [];
+
+  if (haystack.includes("blick") || haystack.includes("abu dhabi")) {
+    links.push(primaryTextLibrary.blick);
+  }
+  if (haystack.includes("wiedmer") || haystack.includes("flut") || haystack.includes("stagen")) {
+    links.push(primaryTextLibrary.wiedmer);
+  }
+  if (haystack.includes("enzensberger")) {
+    links.push(primaryTextLibrary.enzensberger);
+  }
+  if (
+    haystack.includes("abgefahren") ||
+    haystack.includes("kap. 4") ||
+    haystack.includes("kap. 5") ||
+    haystack.includes("kap. 6") ||
+    haystack.includes("kap. 7") ||
+    haystack.includes("hyperdorf")
+  ) {
+    links.push(primaryTextLibrary.abgefahren);
+  }
+  if (haystack.includes("ferienmüde") || haystack.includes("urlaub") || haystack.includes("stressschleife")) {
+    links.push(primaryTextLibrary.ferienmuede);
+  }
+
+  const seen = new Set();
+  return links.filter((link) => {
+    if (seen.has(link.href)) {
+      return false;
+    }
+    seen.add(link.href);
+    return true;
+  });
+}
+
 function renderRouteDetail() {
   const route = currentRoute();
   const stop = route.stops[activeStopIndex];
   const tasksHtml = stop.tasks.map((task) => `<li>${escapeHtml(task)}</li>`).join("");
   const done = isStopDone(route.id, activeStopIndex);
+  const sourceLinks = getPrimaryTextLinks(stop);
+  const sourceLinksHtml = sourceLinks
+    .map((link) => {
+      const external = link.href.startsWith("http");
+      return `<a class="source-link" href="${escapeHtml(link.href)}" target="${external ? "_blank" : "_self"}"${external ? ' rel="noreferrer"' : ""}>${escapeHtml(link.label)}</a>`;
+    })
+    .join("");
+  const inlineEntries = blogEntries
+    .filter((entry) => entry.route === route.name && entry.stop === stop.title)
+    .slice(0, 3);
+  const inlineEntriesHtml = inlineEntries.length
+    ? inlineEntries
+        .map((entry) => {
+          return `
+          <article class="inline-blog-entry">
+            <h5>${escapeHtml(entry.title)}</h5>
+            <p class="meta">${escapeHtml(entry.reference)} | ${new Date(entry.createdAt).toLocaleString("de-CH")}</p>
+            <p>${escapeHtml(entry.observation)}</p>
+          </article>
+        `;
+        })
+        .join("")
+    : "<p class='meta'>Noch kein Etappenbeitrag zu dieser Station.</p>";
 
   els.routeDetail.innerHTML = `
-    <p class="label">Aktive Etappe</p>
-    <h3>${escapeHtml(stop.title)}</h3>
-    <p>${escapeHtml(stop.focus)}</p>
-    <div class="stop-meta">
-      <span class="tag">Route: ${escapeHtml(route.name)}</span>
-      <span class="tag">Text-Loop: ${escapeHtml(stop.textLoop)}</span>
-      <span class="tag">Quelle: ${escapeHtml(stop.source)}</span>
-    </div>
-    <p class="label">Arbeitsaufträge</p>
-    <ol class="todo">${tasksHtml}</ol>
-    <p class="label">Begegnungsformat</p>
-    <p>${escapeHtml(stop.encounter)}</p>
-    <p class="label">Blog-Ausgabe</p>
-    <p>${escapeHtml(stop.output)}</p>
-    <div class="stop-meta">
-      <button id="toggleDone" type="button">${done ? "Etappe wieder öffnen" : "Etappe als erledigt markieren"}</button>
+    <div class="route-flow">
+      <section class="route-block">
+        <p class="label">Aktive Etappe</p>
+        <h3>${escapeHtml(stop.title)}</h3>
+        <p>${escapeHtml(stop.focus)}</p>
+        <div class="stop-meta">
+          <span class="tag">Route: ${escapeHtml(route.name)}</span>
+          <span class="tag">Text-Loop: ${escapeHtml(stop.textLoop)}</span>
+        </div>
+      </section>
+
+      <section class="route-block">
+        <h4>Primärtexte im Arbeitsfluss</h4>
+        <p>Öffne die relevanten Texte direkt hier und arbeite aus der Lektüre in die Etappe hinein.</p>
+        <div class="link-cluster">${sourceLinksHtml}</div>
+      </section>
+
+      <section class="route-block">
+        <h4>Arbeitsaufträge</h4>
+        <ol class="todo">${tasksHtml}</ol>
+      </section>
+
+      <section class="route-block">
+        <h4>Begegnung</h4>
+        <p>${escapeHtml(stop.encounter)}</p>
+      </section>
+
+      <section class="route-block">
+        <h4>Blogfenster dieser Etappe</h4>
+        <p>${escapeHtml(stop.output)}</p>
+        <form id="inlineBlogForm" class="inline-blog-form">
+          <label>
+            Titel
+            <input type="text" id="inlineBlogTitle" placeholder="z. B. Die Idylle arbeitet gegen sich selbst" required />
+          </label>
+          <label>
+            Textbezug
+            <input type="text" id="inlineBlogReference" placeholder="Werk + Seite" required />
+          </label>
+          <label>
+            Etappenbeitrag
+            <textarea id="inlineBlogObservation" rows="4" placeholder="Schreibe die Beobachtung dort aus, wo der Text sie gerade ausgelöst hat." required></textarea>
+          </label>
+          <div class="inline-blog-actions">
+            <button type="submit">Etappenbeitrag speichern</button>
+            <button id="toggleDone" type="button">${done ? "Etappe wieder öffnen" : "Etappe als erledigt markieren"}</button>
+          </div>
+        </form>
+        <div class="inline-blog-list">${inlineEntriesHtml}</div>
+      </section>
     </div>
   `;
 
@@ -1123,6 +1244,31 @@ function renderRouteDetail() {
       setStopDone(route.id, activeStopIndex, !done);
       renderRouteMeta();
       renderRouteNav();
+      renderRouteDetail();
+    });
+  }
+
+  const inlineBlogForm = document.querySelector("#inlineBlogForm");
+  if (inlineBlogForm) {
+    inlineBlogForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const title = document.querySelector("#inlineBlogTitle")?.value.trim() || "";
+      const reference = document.querySelector("#inlineBlogReference")?.value.trim() || "";
+      const observation = document.querySelector("#inlineBlogObservation")?.value.trim() || "";
+
+      if (!title || !reference || !observation) {
+        return;
+      }
+
+      createBlogEntry({
+        route: route.name,
+        stop: stop.title,
+        title,
+        reference,
+        observation
+      });
+
       renderRouteDetail();
     });
   }
@@ -1224,6 +1370,24 @@ function initTravelProfile() {
 
 function saveBlogEntries() {
   localStorage.setItem(blogStorageKey, JSON.stringify(blogEntries));
+}
+
+function createBlogEntry(entryData) {
+  const entry = {
+    id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    route: entryData.route,
+    stop: entryData.stop,
+    title: entryData.title,
+    observation: entryData.observation,
+    reference: entryData.reference,
+    createdAt: toIsoNow(),
+    teacherComments: []
+  };
+
+  entry.feedback = buildAutoFeedback(entry);
+  blogEntries.unshift(entry);
+  saveBlogEntries();
+  renderBlogEntries();
 }
 
 function loadBlogEntries() {
@@ -1331,27 +1495,26 @@ function initBlog() {
 
     const route = currentRoute();
 
-    const entry = {
-      id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-      route: route.name,
-      stop: els.blogStop.value.trim(),
-      title: els.blogTitle.value.trim(),
-      observation: els.blogObservation.value.trim(),
-      reference: els.blogReference.value.trim(),
-      createdAt: toIsoNow(),
-      teacherComments: []
-    };
+    const stop = els.blogStop.value.trim();
+    const title = els.blogTitle.value.trim();
+    const observation = els.blogObservation.value.trim();
+    const reference = els.blogReference.value.trim();
 
-    if (!entry.stop || !entry.title || !entry.observation || !entry.reference) {
+    if (!stop || !title || !observation || !reference) {
       return;
     }
 
-    entry.feedback = buildAutoFeedback(entry);
-    blogEntries.unshift(entry);
-    saveBlogEntries();
-    renderBlogEntries();
+    createBlogEntry({
+      route: route.name,
+      stop,
+      title,
+      observation,
+      reference
+    });
+
     els.blogForm.reset();
     populateBlogStops();
+    renderRouteDetail();
   });
 }
 
