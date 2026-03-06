@@ -10,7 +10,7 @@ Enzensberger zugespitzt: Der Tourist zerstört, indem er findet, was er sucht.
 
 1. **Panorama-Route**
    - Kompakter Einstieg mit klarer Kontroverse.
-   - Fokus: Enzensberger-Paradoxon + Gröbner 4-7 + Ferienmüde + Transfer.
+   - Fokus: Enzensberger-Paradoxon + Groebner 4-7 + Ferienmüde + Transfer.
 
 2. **Tiefenbohrung**
    - Primärtext-intensiv mit wiederholten Rückkehrschleifen.
@@ -34,7 +34,7 @@ Enzensberger zugespitzt: Der Tourist zerstört, indem er findet, was er sucht.
 ## Pflicht: Primärtext-Loop
 
 - Runde 1: markieren und paraphrasieren
-- Runde 2: Enzensberger, Wiedmer, Gröbner gegeneinander lesen
+- Runde 2: Enzensberger, Wiedmer, Groebner gegeneinander lesen
 - Runde 3: Übertragung auf eigenes Reiseverhalten
 
 Ohne drei Runden gilt die Route als nicht abgeschlossen.
@@ -48,7 +48,7 @@ Jede Etappe verlangt eine sichtbare Spur im Reiseblog (These, Textbezug, Einwand
 - Im Blogbereich kann die Lehrerversion aktiviert werden.
 - Zu jedem Blogeintrag wird automatisch ein substanzielles Feedback generiert:
   - Stärke des Eintrags
-  - Textbrücke zwischen Wiedmer, Enzensberger und Gröbner
+  - Textbrücke zwischen Wiedmer, Enzensberger und Groebner
   - kritische Vertiefungsaufgabe
   - kritisch-motivierender Gedankenimpuls
 - Lehrpersonen können pro Eintrag Kommentare hinterlassen und Feedback bei Bedarf neu generieren.

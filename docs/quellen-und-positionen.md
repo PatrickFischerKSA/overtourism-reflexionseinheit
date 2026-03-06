@@ -3,8 +3,8 @@
 ## Primärtexte
 
 - Hans Magnus Enzensberger: **Vergebliche Brandung der Ferne** (1958)
-- Valentin Gröbner: **Abgefahren. Reisen zum Vergnügen**
-- Valentin Gröbner: **Ferienmüde. Als das Reisen nicht mehr geholfen hat**
+- Valentin Groebner: **Abgefahren. Reisen zum Vergnügen**
+- Valentin Groebner: **Ferienmüde. Als das Reisen nicht mehr geholfen hat**
 - Jakob Wiedmer: **Flut** (1905)
 - Thierry Paquot: **Der sanfte Terror des Tourismus**
 
@@ -19,14 +19,14 @@
    - Der touristische Zugriff konsumiert genau das, was er als unverfügbar sucht.
    - Fokusstellen: ca. S. 5-8 und S. 11.
 
-2. **Gröbner: Abgefahren Kap. 4-7**
+2. **Groebner: Abgefahren Kap. 4-7**
    - **Kap. 4 (Alpen autokinetisch):** Beschleunigung, Selbststeigerung, Bewegungsdruck.
    - **Kap. 5 (Hyperdorf):** inszenierte Heimeligkeit, globale Vermarktung, lokale Entmischung.
    - **Kap. 6 (Erfüllung in der Leere):** Leere als organisiertes Produkt.
    - **Kap. 7 (Zeitreisen):** Nostalgie und Beschleunigung wirken zusammen.
    - Diese vier Kapitel korrespondieren mit der Entwicklung Stagens in *Flut*: Ausbau, Verdichtung, soziale Verschiebung, Verlust von lokaler Steuerung.
 
-3. **Gröbner: Ferienmüde**
+3. **Groebner: Ferienmüde**
    - Freiheitsversprechen der Ferien kippt in Stress, Verbissenheit und Wiederholung.
    - "Wenn ich frei habe, bin ich nicht automatisch frei" als Kernfigur.
    - Reisen dient häufig dazu, Veränderung zu vermeiden statt sie zu ermöglichen.
