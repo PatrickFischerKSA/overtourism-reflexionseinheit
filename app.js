@@ -75,7 +75,7 @@ const routeCatalog = [
           "Ferien als Wiederholungsschleife: Erholungsideal erzeugt Stress und neue Sehnsucht.",
         textLoop: "Ferienmüde mehrfach gegen Enzensberger lesen.",
         tasks: [
-          "Untersuche den Satz: frei haben heisst nicht frei sein.",
+          "Untersuche den Satz: frei haben heißt nicht frei sein.",
           "Erstelle eine Stressspirale mit persönlichem Bezug.",
           "Verbinde sie mit Overtourism- und Umweltlast."
         ],
@@ -87,7 +87,7 @@ const routeCatalog = [
         title: "Rückfahrt",
         subtitle: "Intellektueller Reiseblog",
         focus:
-          "Synthetisieren statt abschliessen: widersprüchliche Einsichten zusammenhalten.",
+          "Synthetisieren statt abschließen: widersprüchliche Einsichten zusammenhalten.",
         textLoop: "Vor Abschluss mindestens zwei Primärtexte erneut besuchen.",
         tasks: [
           "Publiziere zwei Etappen und einen Einwand zu einem Fremdbeitrag.",
@@ -310,7 +310,7 @@ const routeCatalog = [
         tasks: [
           "Stressschleife grafisch modellieren.",
           "Prüfen, wo Erholung in Leistung kippt.",
-          "Ein Massnahmenexperiment entwerfen."
+          "Ein Maßnahmenexperiment entwerfen."
         ],
         encounter: "Peer-Feedback in Kleingruppen-Thread.",
         output: "Grafikpost + Kommentar.",
@@ -389,7 +389,7 @@ const routeCatalog = [
         focus: "Hyperdorf als Begegnungs- und Ausschlussraum.",
         textLoop: "Kap. 5 + Flut-Korrespondenz.",
         tasks: [
-          "Einladende und ausschliessende Strukturen kartieren.",
+          "Einladende und ausschließende Strukturen kartieren.",
           "Stagen dazu spiegeln.",
           "Streitfrage für andere Gruppen stellen."
         ],
@@ -525,6 +525,54 @@ const feedbackThemes = [
   }
 ];
 
+const closeReadingStations = [
+  {
+    id: "abg4",
+    title: "Abgefahren, Kap. 4 - Alpen autokinetisch",
+    focus:
+      "Beschleunigung, Selbststeigerung und Körperregime: Wie wird Bewegung als Wert verkauft?",
+    bridge:
+      "Brücke zu Wiedmer: Inwiefern erzeugt Infrastruktur in Stagen neue soziale Rhythmen und Druckzonen?",
+    keywords: ["tempo", "körper", "leistung", "beschleunigung", "aufstieg"]
+  },
+  {
+    id: "abg5",
+    title: "Abgefahren, Kap. 5 - Hyperdorf",
+    focus:
+      "Kulisse und Ordnung: Wie wird ein Dorf zugleich heimelig und hochgradig steuerbar gemacht?",
+    bridge:
+      "Brücke zu Wiedmer: Wann kippt Lebensraum in Arrangement, und wer verliert Steuerung über den Ort?",
+    keywords: ["hyperdorf", "kulisse", "ordnung", "dorf", "verdrängung"]
+  },
+  {
+    id: "abg6",
+    title: "Abgefahren, Kap. 6 - Erfüllung in der Leere",
+    focus:
+      "Leere als Produkt: Welche Infrastruktur muss arbeiten, damit Ruhe konsumierbar wird?",
+    bridge:
+      "Brücke zu Enzensberger: Wird das Gesuchte durch den Zugriff bereits beschädigt?",
+    keywords: ["leere", "ruhe", "zugriff", "idylle", "druck"]
+  },
+  {
+    id: "abg7",
+    title: "Abgefahren, Kap. 7 - Zeitreisen",
+    focus:
+      "Nostalgie als Betriebsform: Wie wird Vergangenheit als konsumierbare Gegenwart organisiert?",
+    bridge:
+      "Brücke zu Wiedmer: Welche Formen scheinbarer Bewahrung führen faktisch zu Überformung?",
+    keywords: ["zeitreise", "nostalgie", "geschichte", "bewahrung", "überformung"]
+  },
+  {
+    id: "fm",
+    title: "Ferienmüde - Stressschleife",
+    focus:
+      "Sehnsucht, Erholungserwartung und Erschöpfung: Wo zeigt der Text die Unfreiheit im Urlaub?",
+    bridge:
+      "Brücke zu Enzensberger und eigenem Verhalten: Wie wird die Suche nach Entlastung zur Reproduktion von Stress?",
+    keywords: ["stress", "sehnsucht", "unfreiheit", "urlaub", "erschöpfung"]
+  }
+];
+
 const els = {
   routeTracks: document.querySelector("#routeTracks"),
   routeMeta: document.querySelector("#routeMeta"),
@@ -557,18 +605,36 @@ const els = {
   blogEntries: document.querySelector("#blogEntries"),
   teacherModeBtn: document.querySelector("#teacherModeBtn"),
   teacherModeState: document.querySelector("#teacherModeState"),
-  teacherPanel: document.querySelector("#teacherPanel")
+  teacherPanel: document.querySelector("#teacherPanel"),
+  closeReadingNav: document.querySelector("#closeReadingNav"),
+  closeReadingTitle: document.querySelector("#closeReadingTitle"),
+  closeReadingFocus: document.querySelector("#closeReadingFocus"),
+  closeReadingBridge: document.querySelector("#closeReadingBridge"),
+  closeReadingForm: document.querySelector("#closeReadingForm"),
+  closeReadingReference: document.querySelector("#closeReadingReference"),
+  closeReadingQuote: document.querySelector("#closeReadingQuote"),
+  closeReadingContext: document.querySelector("#closeReadingContext"),
+  closeReadingAnalysis: document.querySelector("#closeReadingAnalysis"),
+  closeReadingWiedmer: document.querySelector("#closeReadingWiedmer"),
+  closeReadingEnzensberger: document.querySelector("#closeReadingEnzensberger"),
+  closeReadingSelf: document.querySelector("#closeReadingSelf"),
+  closeReadingPromptBtn: document.querySelector("#closeReadingPromptBtn"),
+  closeReadingPrompt: document.querySelector("#closeReadingPrompt"),
+  closeReadingEntries: document.querySelector("#closeReadingEntries")
 };
 
 const progressStorageKey = "overtourismRouteProgress";
 const blogStorageKey = "overtourismBlogEntries";
 const teacherModeStorageKey = "overtourismTeacherMode";
+const closeReadingStorageKey = "overtourismCloseReadings";
 
 let activeRouteId = routeCatalog[0].id;
 let activeStopIndex = 0;
 let progressState = {};
 let blogEntries = [];
 let isTeacherMode = false;
+let activeCloseReadingStationId = closeReadingStations[0].id;
+let closeReadingEntries = [];
 
 function randomFrom(list) {
   return list[Math.floor(Math.random() * list.length)];
@@ -609,7 +675,7 @@ function inferGroebnerAnchor(text) {
     return "Groebner (Abgefahren Kap. 7) zeigt, dass touristische Zeitreisen Nostalgie und Moderne verschalten, statt sie zu trennen.";
   }
   if (text.includes("ferienmüde") || text.includes("frei haben") || text.includes("urlaub")) {
-    return "Groebner (Ferienmüde) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heisst nicht automatisch frei sein.";
+    return "Groebner (Ferienmüde) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heißt nicht automatisch frei sein.";
   }
 
   return "Groebner (Abgefahren/Ferienmüde) hilft, Reise als Mischung aus Begehren, Beschleunigung und sozialer Sortierung zu lesen.";
@@ -730,6 +796,212 @@ function normalizeBlogEntry(rawEntry) {
 
 function normalizeBlogEntries() {
   blogEntries = blogEntries.map((entry) => normalizeBlogEntry(entry));
+}
+
+function currentCloseReadingStation() {
+  return (
+    closeReadingStations.find((station) => station.id === activeCloseReadingStationId) ||
+    closeReadingStations[0]
+  );
+}
+
+function buildCloseReadingImpulse(draft, station) {
+  const joined = `${draft.quote} ${draft.context} ${draft.analysis} ${draft.wiedmer} ${draft.enzensberger} ${draft.self}`
+    .toLowerCase();
+  const keywordHits = station.keywords.filter((keyword) => joined.includes(keyword)).length;
+
+  let levelHint = "";
+  if (keywordHits <= 1) {
+    levelHint =
+      "Dein Entwurf wirkt noch allgemein. Verdichte ihn mit einer präzisen Textbewegung (Wortwahl, Perspektive, Bild, Kontrast).";
+  } else if (keywordHits <= 3) {
+    levelHint =
+      "Die Deutung ist nachvollziehbar. Nächster Schritt: zeige explizit, wo der Text deine Behauptung stützt und wo er sie irritiert.";
+  } else {
+    levelHint =
+      "Starke analytische Dichte. Schärfe jetzt die Gegenlesart, damit dein Argument nicht nur bestätigend bleibt.";
+  }
+
+  return [
+    `Vertiefungsimpuls zu ${station.title}:`,
+    `1) Präzisiere den Mechanismus: ${station.focus}`,
+    `2) Baue eine belastbare Brücke: ${station.bridge}`,
+    `3) Prüffrage: Wo wird in deiner Stelle das gesuchte Reiseversprechen zugleich unterlaufen?`,
+    levelHint
+  ].join(" ");
+}
+
+function saveCloseReadings() {
+  localStorage.setItem(closeReadingStorageKey, JSON.stringify(closeReadingEntries));
+}
+
+function loadCloseReadings() {
+  try {
+    const raw = localStorage.getItem(closeReadingStorageKey);
+    if (!raw) return;
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) {
+      closeReadingEntries = parsed.filter((entry) => entry && entry.id && entry.stationId);
+    }
+  } catch {
+    closeReadingEntries = [];
+  }
+}
+
+function renderCloseReadingNav() {
+  if (!els.closeReadingNav) return;
+
+  els.closeReadingNav.innerHTML = closeReadingStations
+    .map((station) => {
+      const activeClass = station.id === activeCloseReadingStationId ? "active" : "";
+      return `<button type="button" class="${activeClass}" data-close-station-id="${escapeHtml(station.id)}">${escapeHtml(station.title)}</button>`;
+    })
+    .join("");
+
+  const buttons = els.closeReadingNav.querySelectorAll("button[data-close-station-id]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const stationId = button.getAttribute("data-close-station-id");
+      activeCloseReadingStationId = stationId;
+      renderCloseReadingStation();
+      renderCloseReadingNav();
+    });
+  });
+}
+
+function renderCloseReadingStation() {
+  const station = currentCloseReadingStation();
+  if (!els.closeReadingTitle) return;
+
+  els.closeReadingTitle.textContent = station.title;
+  els.closeReadingFocus.textContent = station.focus;
+  els.closeReadingBridge.textContent = station.bridge;
+}
+
+function deleteCloseReadingEntry(entryId) {
+  closeReadingEntries = closeReadingEntries.filter((entry) => entry.id !== entryId);
+  saveCloseReadings();
+  renderCloseReadingEntries();
+}
+
+function renderCloseReadingEntries() {
+  if (!els.closeReadingEntries) return;
+
+  if (!closeReadingEntries.length) {
+    els.closeReadingEntries.innerHTML =
+      "<p class='card'>Noch keine textbasierte Reflexion gespeichert.</p>";
+    return;
+  }
+
+  els.closeReadingEntries.innerHTML = closeReadingEntries
+    .map((entry) => {
+      const station = closeReadingStations.find((item) => item.id === entry.stationId);
+      const stationTitle = station ? station.title : "Textstation";
+
+      return `
+      <article class="close-reading-entry">
+        <h4>${escapeHtml(entry.reference)}</h4>
+        <p class="meta">${escapeHtml(stationTitle)} | ${new Date(entry.createdAt).toLocaleString("de-CH")}</p>
+        <div class="section">
+          <p><strong>Textfragment/Paraphrase:</strong> ${formatMultiline(entry.quote)}</p>
+          <p><strong>Kontext/Beobachtung:</strong> ${formatMultiline(entry.context)}</p>
+          <p><strong>Deutung:</strong> ${formatMultiline(entry.analysis)}</p>
+          <p><strong>Wiedmer-Brücke:</strong> ${formatMultiline(entry.wiedmer)}</p>
+          <p><strong>Enzensberger-Gegenlesart:</strong> ${formatMultiline(entry.enzensberger)}</p>
+          <p><strong>Selbstreflexion:</strong> ${formatMultiline(entry.self)}</p>
+        </div>
+        <div class="auto-feedback">
+          <p class="label">Reflexionsimpuls</p>
+          <p>${escapeHtml(entry.impulse)}</p>
+        </div>
+        <div class="teacher-actions">
+          <button type="button" data-close-delete-id="${escapeHtml(entry.id)}">Eintrag löschen</button>
+        </div>
+      </article>
+      `;
+    })
+    .join("");
+
+  const deleteButtons = els.closeReadingEntries.querySelectorAll("button[data-close-delete-id]");
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      deleteCloseReadingEntry(button.getAttribute("data-close-delete-id"));
+    });
+  });
+}
+
+function readCloseReadingDraft() {
+  return {
+    reference: els.closeReadingReference.value.trim(),
+    quote: els.closeReadingQuote.value.trim(),
+    context: els.closeReadingContext.value.trim(),
+    analysis: els.closeReadingAnalysis.value.trim(),
+    wiedmer: els.closeReadingWiedmer.value.trim(),
+    enzensberger: els.closeReadingEnzensberger.value.trim(),
+    self: els.closeReadingSelf.value.trim()
+  };
+}
+
+function isCloseReadingDraftComplete(draft) {
+  return (
+    draft.reference &&
+    draft.quote &&
+    draft.context &&
+    draft.analysis &&
+    draft.wiedmer &&
+    draft.enzensberger &&
+    draft.self
+  );
+}
+
+function initCloseReadingLab() {
+  if (!els.closeReadingForm) return;
+
+  loadCloseReadings();
+  renderCloseReadingNav();
+  renderCloseReadingStation();
+  renderCloseReadingEntries();
+
+  els.closeReadingPromptBtn.addEventListener("click", () => {
+    const station = currentCloseReadingStation();
+    const draft = readCloseReadingDraft();
+    els.closeReadingPrompt.textContent = buildCloseReadingImpulse(draft, station);
+  });
+
+  els.closeReadingForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const station = currentCloseReadingStation();
+    const draft = readCloseReadingDraft();
+
+    if (!isCloseReadingDraftComplete(draft)) {
+      els.closeReadingPrompt.textContent =
+        "Bitte alle Felder ausfüllen, damit eine belastbare textbasierte Reflexion gespeichert werden kann.";
+      return;
+    }
+
+    const impulse = buildCloseReadingImpulse(draft, station);
+    const entry = {
+      id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+      stationId: station.id,
+      reference: draft.reference,
+      quote: draft.quote,
+      context: draft.context,
+      analysis: draft.analysis,
+      wiedmer: draft.wiedmer,
+      enzensberger: draft.enzensberger,
+      self: draft.self,
+      impulse,
+      createdAt: toIsoNow()
+    };
+
+    closeReadingEntries.unshift(entry);
+    saveCloseReadings();
+    renderCloseReadingEntries();
+    els.closeReadingPrompt.textContent =
+      "Reflexion gespeichert. Nächster Schritt: ergänze im Reiseblog eine kondensierte Version mit klarer Streitfrage.";
+    els.closeReadingForm.reset();
+  });
 }
 
 function loadProgress() {
@@ -1205,6 +1477,7 @@ function initRoutes() {
 function init() {
   initRoutes();
   initParadoxConsole();
+  initCloseReadingLab();
   initEncounters();
   initTravelProfile();
   initBlog();

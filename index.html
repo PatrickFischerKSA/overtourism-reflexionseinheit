@@ -125,59 +125,69 @@
       <section class="panel" id="groebner">
         <p class="section-kicker">Textarbeit vertieft</p>
         <h2>Groebner im Fokus: Abgefahren (Kap. 4-7) + Ferienmüde</h2>
-        <div class="deep-grid">
-          <article class="card">
-            <h3>Kapitel 4 - Alpen autokinetisch</h3>
-            <p>
-              Mobilität als Selbststeigerung: Geschwindigkeit, Sportlichkeit,
-              Bildproduktion und Beschleunigung formen die Alpen als Maschine.
+        <p>
+          Statt Stichwortkarten arbeitest du hier in einem textbasierten Reflexionsatelier:
+          Jede Eintragung muss mit Primärtextbezug, Deutung, Gegenlesart und Selbstbezug
+          ausgearbeitet werden.
+        </p>
+        <div class="textlab-shell">
+          <aside class="card textlab-guide">
+            <h3>Textstationen</h3>
+            <p class="mini">Wähle eine Station, lies erneut im Primärtext und arbeite dann die Felder aus.</p>
+            <div id="closeReadingNav" class="textlab-nav" role="tablist" aria-label="Groebner-Textstationen"></div>
+            <p class="mini">
+              Primärtext-Loop: 1. Markieren, 2. Gegeneinander lesen (Enzensberger/Groebner/Wiedmer),
+              3. Übertragen auf eigenes Reiseverhalten.
             </p>
-            <p class="mini">Korrespondenz zu Stagen in <em>Flut</em>: Infrastruktur erzeugt neue Rhythmen und soziale Verschiebungen.</p>
+          </aside>
+
+          <article class="card textlab-workbench">
+            <p class="label">Aktive Station</p>
+            <h3 id="closeReadingTitle">Kapitel 4 - Alpen autokinetisch</h3>
+            <p id="closeReadingFocus"></p>
+            <p id="closeReadingBridge" class="mini"></p>
+
+            <form id="closeReadingForm" class="close-reading-form">
+              <label>
+                Textstelle (Werk + Seite)
+                <input type="text" id="closeReadingReference" placeholder="z. B. Abgefahren, Kap. 6, S. 94" required />
+              </label>
+              <label>
+                Kurzes Textfragment oder präzise Paraphrase der Stelle
+                <textarea id="closeReadingQuote" rows="2" placeholder="Max. kurze Passage oder dichte Paraphrase" required></textarea>
+              </label>
+              <label>
+                Kontext und Beobachtung (Was passiert genau im Text?)
+                <textarea id="closeReadingContext" rows="3" placeholder="Kontext der Szene, Begriffe, Metaphern, rhetorische Bewegung" required></textarea>
+              </label>
+              <label>
+                Deutung (Welcher Mechanismus von Tourismus/Overtourism wird sichtbar?)
+                <textarea id="closeReadingAnalysis" rows="3" placeholder="z. B. Beschleunigung, Kulissenbau, Verdrängung, Stressschleife" required></textarea>
+              </label>
+              <label>
+                Vergleich mit Wiedmer <em>Flut</em>
+                <textarea id="closeReadingWiedmer" rows="3" placeholder="Welche Korrespondenz zeigt sich zwischen Textstelle und Stagen/Flut-Metapher?" required></textarea>
+              </label>
+              <label>
+                Gegenlesart mit Enzensberger
+                <textarea id="closeReadingEnzensberger" rows="3" placeholder="Wo bestätigt oder irritiert Enzensbergers Paradoxon deine Lesart?" required></textarea>
+              </label>
+              <label>
+                Reflexion des eigenen Reiseverhaltens
+                <textarea id="closeReadingSelf" rows="3" placeholder="Welche konkrete Konsequenz folgt für deine nächste Reiseentscheidung?" required></textarea>
+              </label>
+              <div class="textlab-actions">
+                <button type="submit">Reflexion speichern</button>
+                <button type="button" id="closeReadingPromptBtn">Gedankenimpuls erzeugen</button>
+              </div>
+              <p id="closeReadingPrompt" class="prompt"></p>
+            </form>
           </article>
-          <article class="card">
-            <h3>Kapitel 5 - Hyperdorf</h3>
-            <p>
-              Das Dorf wird als kontrollierte Wunschkulisse neu gebaut: alt wirkend,
-              hoch technisiert, global beworben, lokal entmischt.
-            </p>
-            <p class="mini">Korrespondenz: Stagen wird vom Lebensraum zum touristischen Arrangement.</p>
-          </article>
-          <article class="card">
-            <h3>Kapitel 6 - Erfüllung in der Leere</h3>
-            <p>
-              Die Suche nach Leere braucht Geräte, Navigation und Infrastruktur.
-              Das Verlangen nach Ruhe produziert Bewegung und Druck.
-            </p>
-            <p class="mini">Korrespondenz: "Flut" als Metapher für genau diese Übersteuerung.</p>
-          </article>
-          <article class="card">
-            <h3>Kapitel 7 - Zeitreisen</h3>
-            <p>
-              Tourismus verkauft Vergangenheit als konsumierbare Gegenwart.
-              Beschleunigung und Nostalgie sind keine Gegensätze, sondern Partner.
-            </p>
-            <p class="mini">Korrespondenz: vermeintliche Bewahrung führt zu neuer Überformung.</p>
-          </article>
-          <article class="card highlight">
-            <h3>Ferienmüde: Wenn Reisen nicht mehr hilft</h3>
-            <p>
-              Groebner beschreibt Ferien als Wiederholungsschleife: Sehnsucht,
-              Entlastungserwartung, Stress, Enttäuschung, neuer Aufbruch.
-            </p>
-            <ul>
-              <li>"Ich bin offenbar nicht sehr frei, wenn ich frei habe."</li>
-              <li>Ruhewunsch und Bewegungszwang laufen gleichzeitig.</li>
-              <li>Reisen konserviert oft den Alltag statt ihn zu verändern.</li>
-            </ul>
-          </article>
-          <article class="card highlight">
-            <h3>Primärtext-Loop (3 Runden)</h3>
-            <ol>
-              <li>Runde 1: Markieren (Begriffe, Metaphern, Taktwörter).</li>
-              <li>Runde 2: Gegeneinander lesen (Enzensberger/Groebner/Wiedmer).</li>
-              <li>Runde 3: Übertragen auf eigenes Reiseverhalten.</li>
-            </ol>
-          </article>
+        </div>
+        <div class="card textlab-log">
+          <h3>Reflexionslogbuch (textbasiert)</h3>
+          <p class="mini">Jeder Eintrag bleibt über neue Versionen entwickelbar und kann in den Reiseblog überführt werden.</p>
+          <div id="closeReadingEntries" class="close-reading-entries"></div>
         </div>
       </section>
 

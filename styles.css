@@ -293,6 +293,76 @@ main {
   gap: 0.8rem;
 }
 
+.textlab-shell {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) 1fr;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.textlab-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+}
+
+.textlab-nav button {
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--ink);
+}
+
+.textlab-nav button.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.close-reading-form {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.textlab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.textlab-log {
+  margin-top: 0.8rem;
+}
+
+.close-reading-entries {
+  margin-top: 0.65rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.close-reading-entry {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.66);
+  padding: 0.8rem;
+}
+
+.close-reading-entry p {
+  margin: 0.42rem 0 0;
+}
+
+.close-reading-entry .meta {
+  margin-top: 0.2rem;
+}
+
+.close-reading-entry .section {
+  margin-top: 0.6rem;
+  padding-top: 0.55rem;
+  border-top: 1px dashed rgba(15, 26, 40, 0.2);
+}
+
 .mini {
   margin: 0.7rem 0 0;
   font-size: 0.93rem;
@@ -478,6 +548,10 @@ input[type="range"] {
     grid-template-columns: 1fr;
   }
 
+  .textlab-shell {
+    grid-template-columns: 1fr;
+  }
+
   .route-nav {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -492,6 +566,7 @@ input[type="range"] {
   .split,
   .triple,
   .deep-grid,
+  .textlab-nav,
   .travel-form,
   .scoreboard,
   .resource-grid,

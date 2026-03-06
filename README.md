@@ -14,6 +14,7 @@ Dramaturgisch choreografierte, interaktive Reflexionseinheit als **Reise durch e
 - Begegnungsformate als "Reisebekanntschaften".
 - Intellektueller Reiseblog inkl. lokaler Speicherung im Browser.
 - Lehrerversion: Kommentare pro Blogeintrag plus automatisch generiertes, textgestütztes Feedback (Wiedmer/Enzensberger/Groebner) mit kritisch-motivierendem Impuls.
+- Textatelier im Groebner-Block: strukturierte Nahlektüre mit Pflichtfeldern (Textstelle, Deutung, Gegenlesart, Selbstreflexion) und Reflexionslogbuch.
 
 ## Struktur
 
