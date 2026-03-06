@@ -30,6 +30,7 @@ Enzensberger zugespitzt: Der Tourist zerstört, indem er findet, was er sucht.
 - Mehrere Raststätten mit Textarbeit
 - Begegnungsformate (Duo, Trio, Tandem, Thread)
 - Rückfahrt mit Blog-Synthese
+- Vertiefung über das Groebner-Textatelier mit gespeichertem Reflexionslogbuch
 
 ## Pflicht: Primärtext-Loop
 
