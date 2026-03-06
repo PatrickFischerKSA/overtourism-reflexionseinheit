@@ -263,6 +263,14 @@ main {
   font-size: 1.25rem;
 }
 
+.textlab-sources {
+  margin: 1rem 0 1.15rem;
+}
+
+.textlab-sources .mini {
+  margin: 0.4rem 0 0;
+}
+
 .link-cluster {
   display: flex;
   flex-wrap: wrap;
@@ -281,6 +289,11 @@ main {
   text-decoration: none;
   color: var(--ink);
   font-weight: 600;
+}
+
+.source-link.is-fallback {
+  background: rgba(214, 87, 28, 0.14);
+  border-color: rgba(214, 87, 28, 0.24);
 }
 
 .inline-blog-form {

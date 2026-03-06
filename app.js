@@ -533,7 +533,32 @@ const closeReadingStations = [
       "Beschleunigung, Selbststeigerung und Körperregime: Wie wird Bewegung als Wert verkauft?",
     bridge:
       "Brücke zu Wiedmer: Inwiefern erzeugt Infrastruktur in Stagen neue soziale Rhythmen und Druckzonen?",
-    keywords: ["tempo", "körper", "leistung", "beschleunigung", "aufstieg"]
+    keywords: ["tempo", "körper", "leistung", "beschleunigung", "aufstieg"],
+    referenceExample: "z. B. Abgefahren, Kap. 4, S. 53",
+    sourceNote:
+      "Starte im Kapitelanfang und sichere dir dann eine präzise Stelle: zuerst Bewegung als Wert, dann deren soziale Kosten.",
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 4 öffnen (S. 52)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=52"
+      },
+      {
+        label: "Einstieg: Strampeln (S. 53)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=53"
+      },
+      {
+        label: "Vertiefung: Helden der Bewegung (S. 68)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=68"
+      },
+      {
+        label: "Wiedmer: Stagen-Spur (S. 52)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=52"
+      },
+      {
+        label: "Enzensberger: Ferne/Romantik (S. 6)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=6"
+      }
+    ]
   },
   {
     id: "abg5",
@@ -542,7 +567,32 @@ const closeReadingStations = [
       "Kulisse und Ordnung: Wie wird ein Dorf zugleich heimelig und hochgradig steuerbar gemacht?",
     bridge:
       "Brücke zu Wiedmer: Wann kippt Lebensraum in Arrangement, und wer verliert Steuerung über den Ort?",
-    keywords: ["hyperdorf", "kulisse", "ordnung", "dorf", "verdrängung"]
+    keywords: ["hyperdorf", "kulisse", "ordnung", "dorf", "verdrängung"],
+    referenceExample: "z. B. Abgefahren, Kap. 5, S. 76",
+    sourceNote:
+      "Öffne zuerst das Kapitel selbst und wechsle dann zwischen Kulisse, Heimeligkeit und Verdrängung.",
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 5 öffnen (S. 76)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=76"
+      },
+      {
+        label: "Einstieg: Welcome home (S. 76)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=76"
+      },
+      {
+        label: "Vertiefung: Angstkühlschränke (S. 85)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=85"
+      },
+      {
+        label: "Wiedmer: Dorfumbau/Stagen (S. 53)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=53"
+      },
+      {
+        label: "Enzensberger: Pyrrhussieg des Tourismus (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      }
+    ]
   },
   {
     id: "abg6",
@@ -551,7 +601,32 @@ const closeReadingStations = [
       "Leere als Produkt: Welche Infrastruktur muss arbeiten, damit Ruhe konsumierbar wird?",
     bridge:
       "Brücke zu Enzensberger: Wird das Gesuchte durch den Zugriff bereits beschädigt?",
-    keywords: ["leere", "ruhe", "zugriff", "idylle", "druck"]
+    keywords: ["leere", "ruhe", "zugriff", "idylle", "druck"],
+    referenceExample: "z. B. Abgefahren, Kap. 6, S. 91",
+    sourceNote:
+      "Arbeite mit mindestens zwei Stufen: eine Stelle, die Leere verspricht, und eine, die ihren infrastrukturellen Preis zeigt.",
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 6 öffnen (S. 90)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=90"
+      },
+      {
+        label: "Einstieg: Idyllen (S. 91)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=91"
+      },
+      {
+        label: "Vertiefung: Hinterland (S. 95)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=95"
+      },
+      {
+        label: "Wiedmer: Stagen unter Druck (S. 75)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=75"
+      },
+      {
+        label: "Enzensberger: Zugriff zerstört Freiheit (S. 7)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=7"
+      }
+    ]
   },
   {
     id: "abg7",
@@ -560,7 +635,32 @@ const closeReadingStations = [
       "Nostalgie als Betriebsform: Wie wird Vergangenheit als konsumierbare Gegenwart organisiert?",
     bridge:
       "Brücke zu Wiedmer: Welche Formen scheinbarer Bewahrung führen faktisch zu Überformung?",
-    keywords: ["zeitreise", "nostalgie", "geschichte", "bewahrung", "überformung"]
+    keywords: ["zeitreise", "nostalgie", "geschichte", "bewahrung", "überformung"],
+    referenceExample: "z. B. Abgefahren, Kap. 7, S. 104",
+    sourceNote:
+      "Lies hier bewusst gegen den Schein der Bewahrung: Welche Vergangenheit wird verkauft und wer ordnet sie?",
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 7 öffnen (S. 104)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=104"
+      },
+      {
+        label: "Einstieg: Die Freiheit von früher (S. 108)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=108"
+      },
+      {
+        label: "Vertiefung: Am Strand des Imperiums (S. 112)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=112"
+      },
+      {
+        label: "Wiedmer: spätere Stagen-Verschiebungen (S. 104)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=104"
+      },
+      {
+        label: "Enzensberger: Leitbild unberührter Geschichte (S. 6)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=6"
+      }
+    ]
   },
   {
     id: "fm",
@@ -569,7 +669,36 @@ const closeReadingStations = [
       "Sehnsucht, Erholungserwartung und Erschöpfung: Wo zeigt der Text die Unfreiheit im Urlaub?",
     bridge:
       "Brücke zu Enzensberger und eigenem Verhalten: Wie wird die Suche nach Entlastung zur Reproduktion von Stress?",
-    keywords: ["stress", "sehnsucht", "unfreiheit", "urlaub", "erschöpfung"]
+    keywords: ["stress", "sehnsucht", "unfreiheit", "urlaub", "erschöpfung"],
+    referenceExample: "z. B. Ferienmüde, S. 69",
+    sourceNote:
+      "Arbeite die Stressschleife nicht als Meinung, sondern als Textbewegung aus: Sehnsucht, Entlastungserwartung, Unfreiheit, neue Suchbewegung.",
+    sourceLinks: [
+      {
+        label: "Groebner: Die Lust an der Unfreiheit (S. 69)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=69"
+      },
+      {
+        label: "Groebner: Am Ziel der Träume (S. 76)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=76"
+      },
+      {
+        label: "Groebner: Entlassung aus der Pflicht (S. 87)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=87"
+      },
+      {
+        label: "Groebner: Konserven / Stay Put (S. 91/96)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=91"
+      },
+      {
+        label: "Wiedmer: Rückkehr der Überforderung (S. 109)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=109"
+      },
+      {
+        label: "Enzensberger: Gegendruck / Überschwemmung (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      }
+    ]
   }
 ];
 
@@ -580,7 +709,7 @@ const primaryTextLibrary = {
   },
   wiedmer: {
     label: "Wiedmer: Flut",
-    href: "https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0"
+    href: "./material/JakobWiedmer_Flut.pdf"
   },
   enzensberger: {
     label: "Enzensberger",
@@ -637,6 +766,8 @@ const els = {
   closeReadingTitle: document.querySelector("#closeReadingTitle"),
   closeReadingFocus: document.querySelector("#closeReadingFocus"),
   closeReadingBridge: document.querySelector("#closeReadingBridge"),
+  closeReadingSourceNote: document.querySelector("#closeReadingSourceNote"),
+  closeReadingSources: document.querySelector("#closeReadingSources"),
   closeReadingForm: document.querySelector("#closeReadingForm"),
   closeReadingReference: document.querySelector("#closeReadingReference"),
   closeReadingQuote: document.querySelector("#closeReadingQuote"),
@@ -654,6 +785,9 @@ const progressStorageKey = "overtourismRouteProgress";
 const blogStorageKey = "overtourismBlogEntries";
 const teacherModeStorageKey = "overtourismTeacherMode";
 const closeReadingStorageKey = "overtourismCloseReadings";
+const materialAccessHintHref = "#material-access";
+const wiedmerDropboxHref =
+  "https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0";
 
 let activeRouteId = routeCatalog[0].id;
 let activeStopIndex = 0;
@@ -662,6 +796,7 @@ let blogEntries = [];
 let isTeacherMode = false;
 let activeCloseReadingStationId = closeReadingStations[0].id;
 let closeReadingEntries = [];
+let localAssetAvailability = {};
 
 function randomFrom(list) {
   return list[Math.floor(Math.random() * list.length)];
@@ -674,6 +809,84 @@ function escapeHtml(text) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function extractLocalAssetPath(href) {
+  if (typeof href !== "string" || !href.startsWith("./material/")) {
+    return null;
+  }
+  return href.split("#")[0];
+}
+
+function isLocalAssetAvailable(href) {
+  const localPath = extractLocalAssetPath(href);
+  if (!localPath) return true;
+  if (window.location.protocol === "file:") return true;
+  return localAssetAvailability[localPath] !== false;
+}
+
+function resolveSourceLink(link) {
+  if (isLocalAssetAvailable(link.href)) {
+    return { ...link, resolvedHref: link.href, isFallback: false };
+  }
+
+  const localPath = extractLocalAssetPath(link.href) || "";
+  if (localPath.includes("JakobWiedmer_Flut.pdf")) {
+    return {
+      ...link,
+      label: `${link.label} (Dropbox)`,
+      resolvedHref: wiedmerDropboxHref,
+      isFallback: true
+    };
+  }
+
+  return {
+    ...link,
+    label: `Zugang: ${link.label}`,
+    resolvedHref: materialAccessHintHref,
+    isFallback: true
+  };
+}
+
+async function probeLocalAsset(path) {
+  try {
+    let response = await fetch(path, { method: "HEAD", cache: "no-store" });
+    if (response.ok) return true;
+    if (response.status === 403 || response.status === 405) {
+      response = await fetch(path, { method: "GET", cache: "no-store" });
+      return response.ok;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+function collectLocalAssetPaths() {
+  const links = [
+    ...Object.values(primaryTextLibrary),
+    ...closeReadingStations.flatMap((station) => station.sourceLinks || [])
+  ];
+
+  return [...new Set(links.map((link) => extractLocalAssetPath(link.href)).filter(Boolean))];
+}
+
+async function initMaterialAccessFallbacks() {
+  const localPaths = collectLocalAssetPaths();
+  if (!localPaths.length) return;
+
+  if (window.location.protocol === "file:") {
+    localAssetAvailability = Object.fromEntries(localPaths.map((path) => [path, true]));
+    return;
+  }
+
+  const checks = await Promise.all(
+    localPaths.map(async (path) => [path, await probeLocalAsset(path)])
+  );
+
+  localAssetAvailability = Object.fromEntries(checks);
+  renderRouteDetail();
+  renderCloseReadingStation();
 }
 
 function formatMultiline(text) {
@@ -903,6 +1116,15 @@ function renderCloseReadingStation() {
   els.closeReadingTitle.textContent = station.title;
   els.closeReadingFocus.textContent = station.focus;
   els.closeReadingBridge.textContent = station.bridge;
+  if (els.closeReadingSourceNote) {
+    els.closeReadingSourceNote.textContent = station.sourceNote || "";
+  }
+  if (els.closeReadingSources) {
+    els.closeReadingSources.innerHTML = buildSourceLinksHtml(station.sourceLinks || []);
+  }
+  if (els.closeReadingReference && station.referenceExample) {
+    els.closeReadingReference.placeholder = station.referenceExample;
+  }
 }
 
 function deleteCloseReadingEntry(entryId) {
@@ -1155,18 +1377,28 @@ function getPrimaryTextLinks(stop) {
   });
 }
 
+function buildSourceLinksHtml(links) {
+  return links
+    .map((link) => {
+      const resolvedLink = resolveSourceLink(link);
+      const external = resolvedLink.resolvedHref.startsWith("http");
+      const classes = resolvedLink.isFallback ? "source-link is-fallback" : "source-link";
+      const title = resolvedLink.isFallback
+        ? ' title="Lokale PDF fehlt in dieser Version. Es wird automatisch der Ersatzpfad geöffnet."'
+        : "";
+
+      return `<a class="${classes}" href="${escapeHtml(resolvedLink.resolvedHref)}" target="${external ? "_blank" : "_self"}"${external ? ' rel="noreferrer"' : ""}${title}>${escapeHtml(resolvedLink.label)}</a>`;
+    })
+    .join("");
+}
+
 function renderRouteDetail() {
   const route = currentRoute();
   const stop = route.stops[activeStopIndex];
   const tasksHtml = stop.tasks.map((task) => `<li>${escapeHtml(task)}</li>`).join("");
   const done = isStopDone(route.id, activeStopIndex);
   const sourceLinks = getPrimaryTextLinks(stop);
-  const sourceLinksHtml = sourceLinks
-    .map((link) => {
-      const external = link.href.startsWith("http");
-      return `<a class="source-link" href="${escapeHtml(link.href)}" target="${external ? "_blank" : "_self"}"${external ? ' rel="noreferrer"' : ""}>${escapeHtml(link.label)}</a>`;
-    })
-    .join("");
+  const sourceLinksHtml = buildSourceLinksHtml(sourceLinks);
   const inlineEntries = blogEntries
     .filter((entry) => entry.route === route.name && entry.stop === stop.title)
     .slice(0, 3);
@@ -1645,6 +1877,7 @@ function init() {
   initTravelProfile();
   initBlog();
   initTeacherMode();
+  initMaterialAccessFallbacks();
 }
 
 init();
