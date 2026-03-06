@@ -3,35 +3,35 @@ const routeCatalog = [
     id: "panorama",
     name: "Panorama-Route",
     profile: "Kompakt und kontrovers",
-    setting: "Praesenz oder Hybrid",
+    setting: "Präsenz oder Hybrid",
     rhythm: "Eigenes Tempo mit gemeinsamen Check-ins",
     description:
-      "Schneller Zugang zum Enzensberger-Paradoxon und zu Groebners Kerngedanken mit klaren Rueckfahrten in die Primaertexte.",
+      "Schneller Zugang zum Enzensberger-Paradoxon und zu Gröbners Kerngedanken mit klaren Rückfahrten in die Primärtexte.",
     stops: [
       {
-        title: "Terminal: Aufhaenger und Risiko",
+        title: "Terminal: Aufhänger und Risiko",
         subtitle: "Abu Dhabi als Startsignal",
         focus:
           "Vom Ereignis zur Struktur: touristische Sicherheit als verteiltes Risiko.",
-        textLoop: "Blick-Aufhaenger + Wiedmer als Leseschluessel fuer Kontrollverlust.",
+        textLoop: "Blick-Aufhänger + Wiedmer als Leseschlüssel für Kontrollverlust.",
         tasks: [
           "Notiere drei unsichtbare Risiken touristischer Traumwelten.",
-          "Formuliere eine erste These zur Kippstelle zwischen Erlebnis und Ueberforderung.",
+          "Formuliere eine erste These zur Kippstelle zwischen Erlebnis und Überforderung.",
           "Spiegele die These an einer Szene aus Flut."
         ],
-        encounter: "Kurzgespraech zu zweit: Einzelfall oder Systemlogik?",
+        encounter: "Kurzgespräch zu zweit: Einzelfall oder Systemlogik?",
         output: "1 Blognotiz: 'Der Start war schon eine Warnung'.",
         source: "Blick + Wiedmer"
       },
       {
-        title: "Raststaette: Enzensberger",
-        subtitle: "Suchen, finden, zerstoeren",
+        title: "Raststätte: Enzensberger",
+        subtitle: "Suchen, finden, zerstören",
         focus:
-          "Freiheitssuche und Konformitaet gleichzeitig lesen: Pflichtblicke statt Entgrenzung.",
-        textLoop: "Enzensberger in mindestens zwei Durchlaeufen lesen.",
+          "Freiheitssuche und Konformität gleichzeitig lesen: Pflichtblicke statt Entgrenzung.",
+        textLoop: "Enzensberger in mindestens zwei Durchläufen lesen.",
         tasks: [
-          "Baue die Kette Sehnsucht -> Zugriff -> Zerstoerung.",
-          "Sammle Gegenbeispiele und pruefe ihre Reichweite.",
+          "Baue die Kette Sehnsucht -> Zugriff -> Zerstörung.",
+          "Sammle Gegenbeispiele und prüfe ihre Reichweite.",
           "Verbinde die Befunde mit Stagen in Flut."
         ],
         encounter: "Kontroverse in Trios: Verteidigung vs. Dekonstruktion.",
@@ -43,56 +43,56 @@ const routeCatalog = [
         subtitle: "Alpenmaschine und Hyperdorf",
         focus:
           "Beschleunigung, Bilddruck und Kulissenbau als Produktionsweise touristischer Idylle.",
-        textLoop: "Kap. 4 und 5 gegenlaeufig lesen (Bewegung vs. Heimeligkeit).",
+        textLoop: "Kap. 4 und 5 gegenläufig lesen (Bewegung vs. Heimeligkeit).",
         tasks: [
           "Arbeite zwei Stellen heraus, in denen Tempo als Wert verkauft wird.",
           "Zeige, wie das Hyperdorf Altsein simuliert und Gegenwart ordnet.",
           "Vergleiche mit sozialen Verschiebungen in Flut."
         ],
         encounter: "Rollenchat: Investor, Einheimische, Saisonkraft.",
-        output: "Vergleichstabelle fuer den Blog.",
-        source: "Groebner Abgefahren Kap. 4-5"
+        output: "Vergleichstabelle für den Blog.",
+        source: "Gröbner Abgefahren Kap. 4-5"
       },
       {
         title: "Parkplatz der Leere: Abgefahren 6+7",
         subtitle: "Idyllen, Zeitreisen",
         focus:
-          "Leere und Vergangenheit sind keine Gegensaetze zur Moderne, sondern ihre Produkte.",
+          "Leere und Vergangenheit sind keine Gegensätze zur Moderne, sondern ihre Produkte.",
         textLoop: "Kap. 6 und 7 in drei Leseschritten wiederholen.",
         tasks: [
           "Markiere, wie Ruhewunsch und Reisehast gekoppelt werden.",
           "Analysiere, wer von der verkauften Vergangenheit profitiert.",
-          "Schreibe eine Paradox-Formel fuer deine Gruppe."
+          "Schreibe eine Paradox-Formel für deine Gruppe."
         ],
-        encounter: "Co-Travel fuer zwei Etappen mit Partnerwechsel.",
+        encounter: "Co-Travel für zwei Etappen mit Partnerwechsel.",
         output: "Blogeintrag 'Leere unter Volllast'.",
-        source: "Groebner Abgefahren Kap. 6-7"
+        source: "Gröbner Abgefahren Kap. 6-7"
       },
       {
-        title: "Muedigkeitszone",
-        subtitle: "Ferienmuede als Gegenwartsdiagnose",
+        title: "Müdigkeitszone",
+        subtitle: "Ferienmüde als Gegenwartsdiagnose",
         focus:
           "Ferien als Wiederholungsschleife: Erholungsideal erzeugt Stress und neue Sehnsucht.",
-        textLoop: "Ferienmuede mehrfach gegen Enzensberger lesen.",
+        textLoop: "Ferienmüde mehrfach gegen Enzensberger lesen.",
         tasks: [
           "Untersuche den Satz: frei haben heisst nicht frei sein.",
-          "Erstelle eine Stressspirale mit persoenlichem Bezug.",
+          "Erstelle eine Stressspirale mit persönlichem Bezug.",
           "Verbinde sie mit Overtourism- und Umweltlast."
         ],
-        encounter: "Abendgespraech: Was hat Reisen zuletzt besser gemacht und was nicht?",
+        encounter: "Abendgespräch: Was hat Reisen zuletzt besser gemacht und was nicht?",
         output: "Selbstkritischer Blogpost + Revisionskommentar.",
-        source: "Groebner Ferienmuede"
+        source: "Gröbner Ferienmüde"
       },
       {
-        title: "Rueckfahrt",
+        title: "Rückfahrt",
         subtitle: "Intellektueller Reiseblog",
         focus:
-          "Synthetisieren statt abschliessen: widerspruechliche Einsichten zusammenhalten.",
-        textLoop: "Vor Abschluss mindestens zwei Primaertexte erneut besuchen.",
+          "Synthetisieren statt abschliessen: widersprüchliche Einsichten zusammenhalten.",
+        textLoop: "Vor Abschluss mindestens zwei Primärtexte erneut besuchen.",
         tasks: [
           "Publiziere zwei Etappen und einen Einwand zu einem Fremdbeitrag.",
-          "Formuliere eine messbare Reiseentscheidung fuer 12 Monate.",
-          "Dokumentiere offene Fragen statt glatter Loesungen."
+          "Formuliere eine messbare Reiseentscheidung für 12 Monate.",
+          "Dokumentiere offene Fragen statt glatter Lösungen."
         ],
         encounter: "Peer-Review wie eine letzte gemeinsame Reiseetappe.",
         output: "Finale Blogseite mit Beschluss.",
@@ -103,20 +103,20 @@ const routeCatalog = [
   {
     id: "tiefenbohrung",
     name: "Tiefenbohrung",
-    profile: "Primaertext-intensiv",
-    setting: "Praesenz, Hybrid oder lange Projektphase",
+    profile: "Primärtext-intensiv",
+    setting: "Präsenz, Hybrid oder lange Projektphase",
     rhythm: "Wiederholte Leseschleifen",
     description:
-      "Fokussiert auf genaue Textarbeit und mehrfache Rueckkehr zu Enzensberger, Wiedmer und Groebner (Abgefahren 4-7 + Ferienmuede).",
+      "Fokussiert auf genaue Textarbeit und mehrfache Rückkehr zu Enzensberger, Wiedmer und Gröbner (Abgefahren 4-7 + Ferienmüde).",
     stops: [
       {
         title: "Terminal",
-        subtitle: "Aufhaenger und Leitkonflikt",
+        subtitle: "Aufhänger und Leitkonflikt",
         focus: "Aus der Gegenwart in den historischen Tiefenschnitt.",
         textLoop: "Blick + Flut als Ausgangsfolie.",
         tasks: [
-          "Leitfrage praezisieren: Wer zahlt fuer touristische Erholung?",
-          "Hypothesenkarte fuer das ganze Projekt anlegen.",
+          "Leitfrage präzisieren: Wer zahlt für touristische Erholung?",
+          "Hypothesenkarte für das ganze Projekt anlegen.",
           "Blog-Logbuch starten."
         ],
         encounter: "Speed-Debatte in wechselnden Paaren.",
@@ -124,12 +124,12 @@ const routeCatalog = [
         source: "Blick + Wiedmer"
       },
       {
-        title: "Raststaette 1",
+        title: "Raststätte 1",
         subtitle: "Enzensberger Runde A",
         focus: "Paradoxon analytisch zerlegen.",
-        textLoop: "Nahlektuere mit Begriffsnetz.",
+        textLoop: "Nahlektüre mit Begriffsnetz.",
         tasks: [
-          "Begriffe Ferne, Freiheit, Konformitaet und Pflichtblick kartieren.",
+          "Begriffe Ferne, Freiheit, Konformität und Pflichtblick kartieren.",
           "Zwei starke Gegenthesen formulieren.",
           "Zwischenfazit bloggen."
         ],
@@ -149,21 +149,21 @@ const routeCatalog = [
         ],
         encounter: "Rolleninterview unterwegs.",
         output: "Etappenpost mit Textstelle.",
-        source: "Groebner Abgefahren Kap. 4"
+        source: "Gröbner Abgefahren Kap. 4"
       },
       {
-        title: "Raststaette 2",
+        title: "Raststätte 2",
         subtitle: "Abgefahren Kap. 5",
         focus: "Hyperdorf als soziale Sortiermaschine.",
-        textLoop: "Kap. 5 plus Rueckgriff auf Enzensberger.",
+        textLoop: "Kap. 5 plus Rückgriff auf Enzensberger.",
         tasks: [
           "Kulisse vs. Lebensraum gegeneinanderstellen.",
-          "Profiteure und Verdraengte benennen.",
+          "Profiteure und Verdrängte benennen.",
           "Beobachtung in Blogform bringen."
         ],
         encounter: "Dialog mit Rollentausch.",
         output: "Mapping-Post.",
-        source: "Groebner Abgefahren Kap. 5"
+        source: "Gröbner Abgefahren Kap. 5"
       },
       {
         title: "Parkplatz der Leere",
@@ -175,9 +175,9 @@ const routeCatalog = [
           "Stresssignale im Text isolieren.",
           "Eigene Reisepraxis spiegeln."
         ],
-        encounter: "Zweiergespraech wie spontane Reisebekanntschaft.",
+        encounter: "Zweiergespräch wie spontane Reisebekanntschaft.",
         output: "Paradox-Protokoll.",
-        source: "Groebner Abgefahren Kap. 6"
+        source: "Gröbner Abgefahren Kap. 6"
       },
       {
         title: "Retro-Motel",
@@ -186,35 +186,35 @@ const routeCatalog = [
         textLoop: "Kap. 7 mit Flut-Kapiteln synchronisieren.",
         tasks: [
           "Zeitreiseangebote und Machtfragen analysieren.",
-          "Bewahrung vs. Ueberformung debattieren.",
+          "Bewahrung vs. Überformung debattieren.",
           "Dissens explizit im Blog lassen."
         ],
         encounter: "Mini-Kolloquium in wechselnden Gruppen.",
         output: "Kontroverse Doppelnotiz.",
-        source: "Groebner Abgefahren Kap. 7"
+        source: "Gröbner Abgefahren Kap. 7"
       },
       {
-        title: "Muedigkeitszone",
-        subtitle: "Ferienmuede Runde A",
+        title: "Müdigkeitszone",
+        subtitle: "Ferienmüde Runde A",
         focus: "Stressschleife und Unfreiheit im Urlaub.",
-        textLoop: "Ferienmuede + Enzensberger gegeneinander lesen.",
+        textLoop: "Ferienmüde + Enzensberger gegeneinander lesen.",
         tasks: [
           "Ferien als Wiederholungsschleife modellieren.",
-          "Satz pruefen: Reisen stabilisiert den Alltag.",
+          "Satz prüfen: Reisen stabilisiert den Alltag.",
           "Umweltlast in die Analyse integrieren."
         ],
-        encounter: "Abendgespraech mit Perspektivkarten.",
+        encounter: "Abendgespräch mit Perspektivkarten.",
         output: "Selbstdiagnose-Post.",
-        source: "Groebner Ferienmuede"
+        source: "Gröbner Ferienmüde"
       },
       {
-        title: "Raststaette 3",
+        title: "Raststätte 3",
         subtitle: "Enzensberger Runde B",
-        focus: "Rueckkehr zum Ausgangstext mit neuem Instrumentarium.",
-        textLoop: "Zweite Enzensberger-Runde nach Groebner.",
+        focus: "Rückkehr zum Ausgangstext mit neuem Instrumentarium.",
+        textLoop: "Zweite Enzensberger-Runde nach Gröbner.",
         tasks: [
-          "Fruehe und spaete Lesespuren vergleichen.",
-          "Paradoxon revidieren statt bestaetigen.",
+          "Frühe und späte Lesespuren vergleichen.",
+          "Paradoxon revidieren statt bestätigen.",
           "Blogeintrag mit Selbstwiderspruch erstellen."
         ],
         encounter: "Peer-Challenge mit Gegenfragen.",
@@ -222,14 +222,14 @@ const routeCatalog = [
         source: "Enzensberger"
       },
       {
-        title: "Rueckfahrt",
+        title: "Rückfahrt",
         subtitle: "Blogwerkstatt und Transfer",
         focus: "Offene Enden produktiv machen.",
-        textLoop: "Mindestens drei Primaertext-Rueckgriffe zitieren.",
+        textLoop: "Mindestens drei Primärtext-Rückgriffe zitieren.",
         tasks: [
           "Finalen Route-Artikel verfassen.",
-          "Zwei Fremdbeitraege kommentieren.",
-          "Handlungskompass fuer kuenftiges Reisen formulieren."
+          "Zwei Fremdbeiträge kommentieren.",
+          "Handlungskompass für künftiges Reisen formulieren."
         ],
         encounter: "Schlussrunde als Reiseabschluss ohne Konsenszwang.",
         output: "Finale Blogseite.",
@@ -244,17 +244,17 @@ const routeCatalog = [
     setting: "Distance Learning",
     rhythm: "Selbststeuerung mit digitalen Treffpunkten",
     description:
-      "Konzipiert fuer verteiltes Arbeiten: Solo-Lektuere, digitale Reisebekanntschaften, gemeinsame Blogkarten und zeitversetzte Debatten.",
+      "Konzipiert für verteiltes Arbeiten: Solo-Lektüre, digitale Reisebekanntschaften, gemeinsame Blogkarten und zeitversetzte Debatten.",
     stops: [
       {
         title: "Check-in",
-        subtitle: "Persoenliche Reiseposition",
+        subtitle: "Persönliche Reiseposition",
         focus: "Eigenes Reiseprofil als Ausgangspunkt festhalten.",
         textLoop: "Kurzbezug auf Enzensberger-Einstieg.",
         tasks: [
-          "Profil ausfuellen und Ausgangsannahme posten.",
-          "Eine Befuerchtung fuer die Route notieren.",
-          "Eine Hoffnung fuer die Route notieren."
+          "Profil ausfüllen und Ausgangsannahme posten.",
+          "Eine Befürchtung für die Route notieren.",
+          "Eine Hoffnung für die Route notieren."
         ],
         encounter: "Asynchroner Kommentar-Tausch.",
         output: "Check-in-Post.",
@@ -266,9 +266,9 @@ const routeCatalog = [
         focus: "Paradoxon im eigenen Reisealltag verorten.",
         textLoop: "Enzensberger zweimal lesen, dann markieren.",
         tasks: [
-          "Drei Schluesselstellen paraphrasieren.",
+          "Drei Schlüsselstellen paraphrasieren.",
           "Ein Gegenargument aus eigener Erfahrung formulieren.",
-          "Frage fuer Peers posten."
+          "Frage für Peers posten."
         ],
         encounter: "Kommentarspiegel durch zwei Peers.",
         output: "Analysepost.",
@@ -282,11 +282,11 @@ const routeCatalog = [
         tasks: [
           "Eine Stelle aus Kap. 4 und eine aus Kap. 5 koppeln.",
           "Korrespondenz zu Stagen in Flut notieren.",
-          "Mini-Audiobeitrag fuer den Blog aufnehmen."
+          "Mini-Audiobeitrag für den Blog aufnehmen."
         ],
         encounter: "Digitale Reisebekanntschaft per Tandem.",
         output: "Vergleichspost mit Audio.",
-        source: "Groebner Abgefahren"
+        source: "Gröbner Abgefahren"
       },
       {
         title: "Co-Travel",
@@ -304,26 +304,26 @@ const routeCatalog = [
       },
       {
         title: "Nachtzug",
-        subtitle: "Ferienmuede als Gegenprobe",
+        subtitle: "Ferienmüde als Gegenprobe",
         focus: "Sehnsucht und Stressspirale auf heutige Plattformlogik beziehen.",
-        textLoop: "Ferienmuede mit eigener Reisebiografie spiegeln.",
+        textLoop: "Ferienmüde mit eigener Reisebiografie spiegeln.",
         tasks: [
           "Stressschleife grafisch modellieren.",
-          "Pruefen, wo Erholung in Leistung kippt.",
+          "Prüfen, wo Erholung in Leistung kippt.",
           "Ein Massnahmenexperiment entwerfen."
         ],
         encounter: "Peer-Feedback in Kleingruppen-Thread.",
         output: "Grafikpost + Kommentar.",
-        source: "Groebner Ferienmuede"
+        source: "Gröbner Ferienmüde"
       },
       {
         title: "Hub",
         subtitle: "Gemeinsame Kontroverse",
         focus: "Asynchrone Debatte mit klaren Gegenpositionen.",
-        textLoop: "Enzensberger gegen Groebner erneut.",
+        textLoop: "Enzensberger gegen Gröbner erneut.",
         tasks: [
           "Ein starkes Gegenargument zu einer fremden These verfassen.",
-          "Drei Primaertext-Verweise einbauen.",
+          "Drei Primärtext-Verweise einbauen.",
           "Eigene Position aktualisieren."
         ],
         encounter: "Debattenforum wie Reisebar am Abend.",
@@ -331,14 +331,14 @@ const routeCatalog = [
         source: "Alle"
       },
       {
-        title: "Rueckfahrt",
+        title: "Rückfahrt",
         subtitle: "Blogabschluss",
-        focus: "Persoenliche Praxis und strukturelle Analyse verbinden.",
-        textLoop: "Letzte Rueckkehr zu Wiedmer + einem Groebner-Text.",
+        focus: "Persönliche Praxis und strukturelle Analyse verbinden.",
+        textLoop: "Letzte Rückkehr zu Wiedmer + einem Gröbner-Text.",
         tasks: [
           "Finalpost mit Paradoxon, Einwand, Konsequenz.",
-          "Zwei Peer-Beitraege annotieren.",
-          "Reisebeschluss fuer 12 Monate dokumentieren."
+          "Zwei Peer-Beiträge annotieren.",
+          "Reisebeschluss für 12 Monate dokumentieren."
         ],
         encounter: "Digitale Abschlussrunde.",
         output: "Finale Blogseite.",
@@ -350,10 +350,10 @@ const routeCatalog = [
     id: "begegnung",
     name: "Begegnungsroute",
     profile: "Dialog und Rollenwechsel",
-    setting: "Praesenz oder Distance",
+    setting: "Präsenz oder Distance",
     rhythm: "Viele kurze Begegnungen",
     description:
-      "Die Route setzt auf fluechtige Bekanntschaften: haeufiger Perspektivwechsel, kurze intensive Gespraeche und kollaboratives Bloggen.",
+      "Die Route setzt auf flüchtige Bekanntschaften: häufiger Perspektivwechsel, kurze intensive Gespräche und kollaboratives Bloggen.",
     stops: [
       {
         title: "Startbahnhof",
@@ -362,8 +362,8 @@ const routeCatalog = [
         textLoop: "Enzensberger-Einstieg als gemeinsamer Nenner.",
         tasks: [
           "Jede Person formuliert eine Suchbewegung.",
-          "Gruppenweit die gefaehrlichste Erwartung bestimmen.",
-          "Startsatz fuer den Blog formulieren."
+          "Gruppenweit die gefährlichste Erwartung bestimmen.",
+          "Startsatz für den Blog formulieren."
         ],
         encounter: "Kennenlernen im Rotationsformat.",
         output: "Gruppenauftakt.",
@@ -372,10 +372,10 @@ const routeCatalog = [
       {
         title: "Reisebar",
         subtitle: "Abgefahren Kap. 4",
-        focus: "Koerper, Tempo, Bild und Vergleichsdruck.",
+        focus: "Körper, Tempo, Bild und Vergleichsdruck.",
         textLoop: "Kap. 4 mit Rollenkarte lesen.",
         tasks: [
-          "Rolle waehlen und Text daraus kommentieren.",
+          "Rolle wählen und Text daraus kommentieren.",
           "Erholungsversprechen gegen Leistungsregime spiegeln.",
           "Kurzbeitrag posten."
         ],
@@ -391,9 +391,9 @@ const routeCatalog = [
         tasks: [
           "Einladende und ausschliessende Strukturen kartieren.",
           "Stagen dazu spiegeln.",
-          "Streitfrage fuer andere Gruppen stellen."
+          "Streitfrage für andere Gruppen stellen."
         ],
-        encounter: "Gruppenmischung fuer Gegenfragen.",
+        encounter: "Gruppenmischung für Gegenfragen.",
         output: "Kartierungsbeitrag.",
         source: "Abgefahren Kap. 5 + Flut"
       },
@@ -403,7 +403,7 @@ const routeCatalog = [
         focus: "Leere und Nostalgie als Betriebsmodelle.",
         textLoop: "Kap. 6 und 7 im Tandem lesen.",
         tasks: [
-          "Je eine Kernstelle pro Kapitel verknuepfen.",
+          "Je eine Kernstelle pro Kapitel verknüpfen.",
           "Paradoxon in einem Satz zuspitzen.",
           "Blog als Bildunterschrift schreiben."
         ],
@@ -412,26 +412,26 @@ const routeCatalog = [
         source: "Abgefahren Kap. 6-7"
       },
       {
-        title: "Nachtgespraech",
-        subtitle: "Ferienmuede",
+        title: "Nachtgespräch",
+        subtitle: "Ferienmüde",
         focus: "Stress trotz Auszeit gemeinschaftlich reflektieren.",
-        textLoop: "Ferienmuede + eigenes Reiseprofil.",
+        textLoop: "Ferienmüde + eigenes Reiseprofil.",
         tasks: [
           "Stressmuster biografisch verorten.",
-          "Loesungsversuch fuer eine konkrete Reise entwerfen.",
+          "Lösungsversuch für eine konkrete Reise entwerfen.",
           "Peer-Einwand aufnehmen."
         ],
-        encounter: "Abendgespraech in Trios.",
+        encounter: "Abendgespräch in Trios.",
         output: "Selbstkritikpost.",
-        source: "Ferienmuede"
+        source: "Ferienmüde"
       },
       {
-        title: "Rueckspiegel",
+        title: "Rückspiegel",
         subtitle: "Enzensberger erneut",
-        focus: "Mit neuem Material zur Ausgangsthese zurueck.",
-        textLoop: "Zweite Enzensberger-Lektuere.",
+        focus: "Mit neuem Material zur Ausgangsthese zurück.",
+        textLoop: "Zweite Enzensberger-Lektüre.",
         tasks: [
-          "These revidieren und begruenden.",
+          "These revidieren und begründen.",
           "Eine bleibende Unsicherheit benennen.",
           "Finalen Reisebeschluss festhalten."
         ],
@@ -445,9 +445,9 @@ const routeCatalog = [
 
 const paradoxTheses = [
   "Du suchst Ruhe und findest Warteschlangen, Buchungsfenster und Taktung.",
-  "Du suchst Unberuehrtheit und verwandelst sie durch Ankunft in Verkehr.",
-  "Du suchst Authentizitaet und erhaeltst kuratierte Kulisse.",
-  "Du suchst Entlastung und erzeugst Last fuer andere.",
+  "Du suchst Unberührtheit und verwandelst sie durch Ankunft in Verkehr.",
+  "Du suchst Authentizität und erhältst kuratierte Kulisse.",
+  "Du suchst Entlastung und erzeugst Last für andere.",
   "Du suchst Freiheit und folgst denselben Routinen wie alle anderen."
 ];
 
@@ -460,68 +460,68 @@ const counterArguments = [
 ];
 
 const encounterScenarios = [
-  "Hostel-Kueche: Flugscham trifft auf knappes Budget und starke Sehnsucht.",
-  "Abend im Hyperdorf: Saisonkraft, Feriengast und Ortsbewohner streiten ueber Fairness.",
+  "Hostel-Küche: Flugscham trifft auf knappes Budget und starke Sehnsucht.",
+  "Abend im Hyperdorf: Saisonkraft, Feriengast und Ortsbewohner streiten über Fairness.",
   "Zwei Tage Mitreise: Eine Person postet alles, die andere gar nichts.",
-  "Rueckfahrt im Zug: Alle hatten tolle Ferien, alle berichten von Erschoepfung.",
-  "Nachtgespraech: Ist Nicht-Reisen Loesung oder nur Moralpose?"
+  "Rückfahrt im Zug: Alle hatten tolle Ferien, alle berichten von Erschöpfung.",
+  "Nachtgespräch: Ist Nicht-Reisen Lösung oder nur Moralpose?"
 ];
 
 const feedbackThemes = [
   {
     id: "stressspirale",
     label: "Stressspirale",
-    keywords: ["stress", "erschoepf", "hetz", "druck", "zu spaet", "warten", "stau", "takt"],
+    keywords: ["stress", "erschöpf", "hetz", "druck", "zu spät", "warten", "stau", "takt"],
     strength:
       "dass Erholung nicht als Ruheereignis erscheint, sondern als getaktete Leistung mit Folgekosten",
     critical:
       "an welcher konkreten Schwelle Erholung in Leistungszwang kippt und welche Akteure davon profitieren",
     impulse:
-      "Wenn du die naechste Reise als Experiment planst: Welche eine Taktung reduzierst du zuerst, um echte Entlastung messbar zu machen?"
+      "Wenn du die nächste Reise als Experiment planst: Welche eine Taktung reduzierst du zuerst, um echte Entlastung messbar zu machen?"
   },
   {
     id: "idylle_zerfall",
     label: "Idylle und Zerfall",
-    keywords: ["idylle", "ruhe", "leere", "authent", "unberuehrt", "schoen", "kulisse"],
+    keywords: ["idylle", "ruhe", "leere", "authent", "unberührt", "schön", "kulisse"],
     strength:
-      "dass du die Sehnsucht nach dem Unberuehrten bereits mit den Effekten der eigenen Ankunft zusammendenkst",
+      "dass du die Sehnsucht nach dem Unberührten bereits mit den Effekten der eigenen Ankunft zusammendenkst",
     critical:
-      "wie genau aus dem Wunsch nach Leere eine Nachfragekette entsteht, die dieselbe Leere wirtschaftlich auflaedt",
+      "wie genau aus dem Wunsch nach Leere eine Nachfragekette entsteht, die dieselbe Leere wirtschaftlich auflädt",
     impulse:
-      "Formuliere fuer deinen Blog einen Satz, der Idylle nicht romantisiert, sondern als verteilte Arbeit und Belastung sichtbar macht."
+      "Formuliere für deinen Blog einen Satz, der Idylle nicht romantisiert, sondern als verteilte Arbeit und Belastung sichtbar macht."
   },
   {
     id: "hyperdorf",
-    label: "Hyperdorf und Verdrangung",
+    label: "Hyperdorf und Verdrängung",
     keywords: ["hyperdorf", "dorf", "miete", "verdr", "kulisse", "heimelig", "standort", "invest"],
     strength:
-      "dass du touristische Atmosphaere nicht nur aisthetisch, sondern als soziale Sortierung beschreibst",
+      "dass du touristische Atmosphäre nicht nur ästhetisch, sondern als soziale Sortierung beschreibst",
     critical:
-      "welche Gruppen in deinem Beispiel infrastrukturell aufgewertet und welche systematisch an den Rand gedrueckt werden",
+      "welche Gruppen in deinem Beispiel infrastrukturell aufgewertet und welche systematisch an den Rand gedrückt werden",
     impulse:
-      "Ergaenze einen Blickwechsel aus Sicht einer Person, die von der touristischen Aufwertung nicht profitiert."
+      "Ergänze einen Blickwechsel aus Sicht einer Person, die von der touristischen Aufwertung nicht profitiert."
   },
   {
     id: "umweltlast",
     label: "Umweltlast und Beschleunigung",
     keywords: ["flug", "co2", "umwelt", "klima", "emission", "last", "ressource", "verbrauch"],
     strength:
-      "dass du den Komfortgewinn der Reisenden mit den materiellen und oekologischen Folgekosten koppelst",
+      "dass du den Komfortgewinn der Reisenden mit den materiellen und ökologischen Folgekosten koppelst",
     critical:
       "wie stark dein Beispiel nur individuelles Verhalten betrifft und wo strukturelle Verkehrslogiken die Haupttreiber sind",
     impulse:
-      "Lege fuer deinen naechsten Beitrag ein konkretes Reduktionskriterium fest, das ueber gute Absichten hinaus pruefbar ist."
+      "Lege für deinen nächsten Beitrag ein konkretes Reduktionskriterium fest, das über gute Absichten hinaus prüfbar ist."
   },
   {
     id: "begegnung",
     label: "Begegnung und Fremdheit",
-    keywords: ["begegn", "fremd", "austausch", "selfie", "sichtbar", "inszen", "rolle", "gespraech"],
+    keywords: ["begegn", "fremd", "austausch", "selfie", "sichtbar", "inszen", "rolle", "gespräch"],
     strength:
       "dass du Begegnung nicht als Harmoniegeschichte, sondern als spannungsreiche Aushandlung von Blicken und Rollen liest",
     critical:
-      "ob dein Beitrag Fremdheit wirklich offenhaelt oder sie unbemerkt in konsumierbare Vertrautheit zurueckfuehrt",
+      "ob dein Beitrag Fremdheit wirklich offenhält oder sie unbemerkt in konsumierbare Vertrautheit zurückführt",
     impulse:
-      "Fuege einen Dissens ein, der nicht aufgeloest wird, und zeige daran, was Lernen auf Reisen produktiv unbequem macht."
+      "Füge einen Dissens ein, der nicht aufgelöst wird, und zeige daran, was Lernen auf Reisen produktiv unbequem macht."
   }
 ];
 
@@ -597,22 +597,22 @@ function toIsoNow() {
 
 function inferGroebnerAnchor(text) {
   if (text.includes("kap. 4") || text.includes("alpen") || text.includes("autokinetisch")) {
-    return "Groebner (Abgefahren Kap. 4) macht sichtbar, wie Beschleunigung als Selbstbild verkauft wird und Erholung bereits im Modus der Leistung startet.";
+    return "Gröbner (Abgefahren Kap. 4) macht sichtbar, wie Beschleunigung als Selbstbild verkauft wird und Erholung bereits im Modus der Leistung startet.";
   }
   if (text.includes("kap. 5") || text.includes("hyperdorf")) {
-    return "Groebner (Abgefahren Kap. 5) zeigt am Hyperdorf, wie Heimatoptik und globale Verwertung zusammenlaufen und lokale Alltage umsortieren.";
+    return "Gröbner (Abgefahren Kap. 5) zeigt am Hyperdorf, wie Heimatoptik und globale Verwertung zusammenlaufen und lokale Alltage umsortieren.";
   }
   if (text.includes("kap. 6") || text.includes("leere") || text.includes("idyll")) {
-    return "Groebner (Abgefahren Kap. 6) beschreibt die Leere als Infrastrukturprodukt: gesucht wird Ruhe, produziert werden Wege, Zugriff und neue Verdichtung.";
+    return "Gröbner (Abgefahren Kap. 6) beschreibt die Leere als Infrastrukturprodukt: gesucht wird Ruhe, produziert werden Wege, Zugriff und neue Verdichtung.";
   }
   if (text.includes("kap. 7") || text.includes("zeitreise") || text.includes("vergangen")) {
-    return "Groebner (Abgefahren Kap. 7) zeigt, dass touristische Zeitreisen Nostalgie und Moderne verschalten, statt sie zu trennen.";
+    return "Gröbner (Abgefahren Kap. 7) zeigt, dass touristische Zeitreisen Nostalgie und Moderne verschalten, statt sie zu trennen.";
   }
-  if (text.includes("ferienmuede") || text.includes("frei haben") || text.includes("urlaub")) {
-    return "Groebner (Ferienmuede) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heisst nicht automatisch frei sein.";
+  if (text.includes("ferienmüde") || text.includes("frei haben") || text.includes("urlaub")) {
+    return "Gröbner (Ferienmüde) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heisst nicht automatisch frei sein.";
   }
 
-  return "Groebner (Abgefahren/Ferienmuede) hilft, Reise als Mischung aus Begehren, Beschleunigung und sozialer Sortierung zu lesen.";
+  return "Gröbner (Abgefahren/Ferienmüde) hilft, Reise als Mischung aus Begehren, Beschleunigung und sozialer Sortierung zu lesen.";
 }
 
 function inferWiedmerAnchor(text) {
@@ -620,7 +620,7 @@ function inferWiedmerAnchor(text) {
     return "Wiedmers Flut zeigt am Dorfumbau, wie wirtschaftlicher Auftrieb und Kontrollverlust gleichzeitig wachsen.";
   }
 
-  return "Wiedmers Flut liefert die Doppelbewegung aus Verheissung und Ueberforderung: Bewegung erzeugt Chancen und zieht neue Lasten nach sich.";
+  return "Wiedmers Flut liefert die Doppelbewegung aus Verheißung und Überforderung: Bewegung erzeugt Chancen und zieht neue Lasten nach sich.";
 }
 
 function pickFeedbackThemes(entryText) {
@@ -660,7 +660,7 @@ function buildAutoFeedback(entry) {
 
   const critical =
     `Vertiefe nun ${primaryTheme.critical}. ` +
-    `Nimm dafuer mindestens eine zweite Primaertextstelle und kontrastiere sie mit ${secondaryTheme.label.toLowerCase()}, damit dein Argument weniger linear und belastbarer wird.`;
+    `Nimm dafür mindestens eine zweite Primärtextstelle und kontrastiere sie mit ${secondaryTheme.label.toLowerCase()}, damit dein Argument weniger linear und belastbarer wird.`;
 
   const impulse =
     `${primaryTheme.impulse} ` +
@@ -834,14 +834,14 @@ function renderRouteDetail() {
       <span class="tag">Text-Loop: ${escapeHtml(stop.textLoop)}</span>
       <span class="tag">Quelle: ${escapeHtml(stop.source)}</span>
     </div>
-    <p class="label">Arbeitsauftraege</p>
+    <p class="label">Arbeitsaufträge</p>
     <ol class="todo">${tasksHtml}</ol>
     <p class="label">Begegnungsformat</p>
     <p>${escapeHtml(stop.encounter)}</p>
     <p class="label">Blog-Ausgabe</p>
     <p>${escapeHtml(stop.output)}</p>
     <div class="stop-meta">
-      <button id="toggleDone" type="button">${done ? "Etappe wieder oeffnen" : "Etappe als erledigt markieren"}</button>
+      <button id="toggleDone" type="button">${done ? "Etappe wieder öffnen" : "Etappe als erledigt markieren"}</button>
     </div>
   `;
 
@@ -924,10 +924,10 @@ function calcTravelProfile() {
 
   if (paradoxIndex > 5) {
     els.scoreInterpretation.textContent =
-      "Dein Gewinn ist hoch. Pruefe mit Enzensberger und Groebner, welche Lasten dafuer ausgelagert werden.";
+      "Dein Gewinn ist hoch. Prüfe mit Enzensberger und Gröbner, welche Lasten dafür ausgelagert werden.";
   } else if (paradoxIndex > -14) {
     els.scoreInterpretation.textContent =
-      "Ambivalente Zone: Sehnsucht und Erschoepfung liegen dicht beieinander. Arbeite mit Kap. 6 und Ferienmuede nach.";
+      "Ambivalente Zone: Sehnsucht und Erschöpfung liegen dicht beieinander. Arbeite mit Kap. 6 und Ferienmüde nach.";
   } else {
     els.scoreInterpretation.textContent =
       "Starke Paradox-Spannung: Die Erholung ist teuer erkauft. Formuliere konkrete Entzerrungs- und Reduktionsschritte.";
@@ -978,8 +978,8 @@ function renderFeedbackBlock(entry) {
   return `
     <section class="auto-feedback">
       <p class="label">Generiertes Textfeedback</p>
-      <p><strong>Staerke:</strong> ${escapeHtml(entry.feedback.strength)}</p>
-      <p><strong>Textbruecke:</strong> ${escapeHtml(entry.feedback.textBridge)}</p>
+      <p><strong>Stärke:</strong> ${escapeHtml(entry.feedback.strength)}</p>
+      <p><strong>Textbrücke:</strong> ${escapeHtml(entry.feedback.textBridge)}</p>
       <p><strong>Kritische Vertiefung:</strong> ${escapeHtml(entry.feedback.critical)}</p>
       <p><strong>Gedankenimpuls:</strong> ${escapeHtml(entry.feedback.impulse)}</p>
       <p class="meta">Generiert: ${new Date(entry.feedback.generatedAt).toLocaleString("de-CH")} | Fokus: ${escapeHtml(entry.feedback.primaryTheme || "Paradoxon")} / ${escapeHtml(entry.feedback.secondaryTheme || "Vertiefung")}</p>
@@ -1026,7 +1026,7 @@ function renderBlogEntries() {
           <p class="label">Lehrerkommentare</p>
           ${renderTeacherComments(entry.teacherComments)}
         </section>
-        <button type="button" data-delete-id="${escapeHtml(entry.id)}">Loeschen</button>
+        <button type="button" data-delete-id="${escapeHtml(entry.id)}">Löschen</button>
       </article>
     `
     )
@@ -1121,7 +1121,7 @@ function renderTeacherPanel() {
   els.teacherPanel.hidden = false;
 
   if (!blogEntries.length) {
-    els.teacherPanel.innerHTML = "<p class='card'>Noch keine Blogeintraege fuer die Lehrerversion vorhanden.</p>";
+    els.teacherPanel.innerHTML = "<p class='card'>Noch keine Blogeinträge für die Lehrerversion vorhanden.</p>";
     return;
   }
 
@@ -1134,7 +1134,7 @@ function renderTeacherPanel() {
         <p class="meta">${escapeHtml(entry.route)} | ${escapeHtml(entry.stop)} | ${escapeHtml(entry.reference)}</p>
         ${renderFeedbackBlock(entry)}
         <label for="comment-${escapeHtml(entry.id)}">Lehrerkommentar</label>
-        <textarea id="comment-${escapeHtml(entry.id)}" rows="3" data-comment-input-id="${escapeHtml(entry.id)}" placeholder="Praezises, textnahes Feedback mit naechstem Schritt"></textarea>
+        <textarea id="comment-${escapeHtml(entry.id)}" rows="3" data-comment-input-id="${escapeHtml(entry.id)}" placeholder="Präzises, textnahes Feedback mit nächstem Schritt"></textarea>
         <div class="teacher-actions">
           <button type="button" data-add-comment-id="${escapeHtml(entry.id)}">Kommentar speichern</button>
           <button type="button" data-regenerate-feedback-id="${escapeHtml(entry.id)}">Feedback neu generieren</button>
@@ -1170,7 +1170,7 @@ function syncTeacherModeUi() {
   els.teacherModeBtn.textContent = isTeacherMode ? "Lehrerversion deaktivieren" : "Lehrerversion aktivieren";
   els.teacherModeState.textContent = isTeacherMode
     ? "Lehrerversion aktiv: Kommentare und Feedbackstudio sichtbar."
-    : "Schuelermodus aktiv.";
+    : "Schülermodus aktiv.";
 }
 
 function initTeacherMode() {
