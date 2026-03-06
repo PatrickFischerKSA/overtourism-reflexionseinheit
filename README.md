@@ -1,4 +1,4 @@
-# Overtourism Lernreise (Flut x Enzensberger x Gröbner)
+# Overtourism Lernreise (Flut x Enzensberger x Groebner)
 
 Dramaturgisch choreografierte, interaktive Reflexionseinheit als **Reise durch eine Lernlandschaft**.
 
@@ -8,12 +8,12 @@ Dramaturgisch choreografierte, interaktive Reflexionseinheit als **Reise durch e
 - Mehrere wählbare Reiserouten (inkl. Distance-Learning-Route).
 - Stark vertiefte Textarbeit mit
   - Enzensberger-Paradoxon
-  - Gröbner **Abgefahren** (insb. Kap. 4-7)
-  - Gröbner **Ferienmüde**
+  - Groebner **Abgefahren** (insb. Kap. 4-7)
+  - Groebner **Ferienmüde**
   - Wiedmers *Flut* (Dropbox-Link)
 - Begegnungsformate als "Reisebekanntschaften".
 - Intellektueller Reiseblog inkl. lokaler Speicherung im Browser.
-- Lehrerversion: Kommentare pro Blogeintrag plus automatisch generiertes, textgestütztes Feedback (Wiedmer/Enzensberger/Gröbner) mit kritisch-motivierendem Impuls.
+- Lehrerversion: Kommentare pro Blogeintrag plus automatisch generiertes, textgestütztes Feedback (Wiedmer/Enzensberger/Groebner) mit kritisch-motivierendem Impuls.
 
 ## Struktur
 

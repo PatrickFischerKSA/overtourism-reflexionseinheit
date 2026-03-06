@@ -6,7 +6,7 @@ const routeCatalog = [
     setting: "Präsenz oder Hybrid",
     rhythm: "Eigenes Tempo mit gemeinsamen Check-ins",
     description:
-      "Schneller Zugang zum Enzensberger-Paradoxon und zu Gröbners Kerngedanken mit klaren Rückfahrten in die Primärtexte.",
+      "Schneller Zugang zum Enzensberger-Paradoxon und zu Groebners Kerngedanken mit klaren Rückfahrten in die Primärtexte.",
     stops: [
       {
         title: "Terminal: Aufhänger und Risiko",
@@ -51,7 +51,7 @@ const routeCatalog = [
         ],
         encounter: "Rollenchat: Investor, Einheimische, Saisonkraft.",
         output: "Vergleichstabelle für den Blog.",
-        source: "Gröbner Abgefahren Kap. 4-5"
+        source: "Groebner Abgefahren Kap. 4-5"
       },
       {
         title: "Parkplatz der Leere: Abgefahren 6+7",
@@ -66,7 +66,7 @@ const routeCatalog = [
         ],
         encounter: "Co-Travel für zwei Etappen mit Partnerwechsel.",
         output: "Blogeintrag 'Leere unter Volllast'.",
-        source: "Gröbner Abgefahren Kap. 6-7"
+        source: "Groebner Abgefahren Kap. 6-7"
       },
       {
         title: "Müdigkeitszone",
@@ -81,7 +81,7 @@ const routeCatalog = [
         ],
         encounter: "Abendgespräch: Was hat Reisen zuletzt besser gemacht und was nicht?",
         output: "Selbstkritischer Blogpost + Revisionskommentar.",
-        source: "Gröbner Ferienmüde"
+        source: "Groebner Ferienmüde"
       },
       {
         title: "Rückfahrt",
@@ -107,7 +107,7 @@ const routeCatalog = [
     setting: "Präsenz, Hybrid oder lange Projektphase",
     rhythm: "Wiederholte Leseschleifen",
     description:
-      "Fokussiert auf genaue Textarbeit und mehrfache Rückkehr zu Enzensberger, Wiedmer und Gröbner (Abgefahren 4-7 + Ferienmüde).",
+      "Fokussiert auf genaue Textarbeit und mehrfache Rückkehr zu Enzensberger, Wiedmer und Groebner (Abgefahren 4-7 + Ferienmüde).",
     stops: [
       {
         title: "Terminal",
@@ -149,7 +149,7 @@ const routeCatalog = [
         ],
         encounter: "Rolleninterview unterwegs.",
         output: "Etappenpost mit Textstelle.",
-        source: "Gröbner Abgefahren Kap. 4"
+        source: "Groebner Abgefahren Kap. 4"
       },
       {
         title: "Raststätte 2",
@@ -163,7 +163,7 @@ const routeCatalog = [
         ],
         encounter: "Dialog mit Rollentausch.",
         output: "Mapping-Post.",
-        source: "Gröbner Abgefahren Kap. 5"
+        source: "Groebner Abgefahren Kap. 5"
       },
       {
         title: "Parkplatz der Leere",
@@ -177,7 +177,7 @@ const routeCatalog = [
         ],
         encounter: "Zweiergespräch wie spontane Reisebekanntschaft.",
         output: "Paradox-Protokoll.",
-        source: "Gröbner Abgefahren Kap. 6"
+        source: "Groebner Abgefahren Kap. 6"
       },
       {
         title: "Retro-Motel",
@@ -191,7 +191,7 @@ const routeCatalog = [
         ],
         encounter: "Mini-Kolloquium in wechselnden Gruppen.",
         output: "Kontroverse Doppelnotiz.",
-        source: "Gröbner Abgefahren Kap. 7"
+        source: "Groebner Abgefahren Kap. 7"
       },
       {
         title: "Müdigkeitszone",
@@ -205,13 +205,13 @@ const routeCatalog = [
         ],
         encounter: "Abendgespräch mit Perspektivkarten.",
         output: "Selbstdiagnose-Post.",
-        source: "Gröbner Ferienmüde"
+        source: "Groebner Ferienmüde"
       },
       {
         title: "Raststätte 3",
         subtitle: "Enzensberger Runde B",
         focus: "Rückkehr zum Ausgangstext mit neuem Instrumentarium.",
-        textLoop: "Zweite Enzensberger-Runde nach Gröbner.",
+        textLoop: "Zweite Enzensberger-Runde nach Groebner.",
         tasks: [
           "Frühe und späte Lesespuren vergleichen.",
           "Paradoxon revidieren statt bestätigen.",
@@ -286,7 +286,7 @@ const routeCatalog = [
         ],
         encounter: "Digitale Reisebekanntschaft per Tandem.",
         output: "Vergleichspost mit Audio.",
-        source: "Gröbner Abgefahren"
+        source: "Groebner Abgefahren"
       },
       {
         title: "Co-Travel",
@@ -314,13 +314,13 @@ const routeCatalog = [
         ],
         encounter: "Peer-Feedback in Kleingruppen-Thread.",
         output: "Grafikpost + Kommentar.",
-        source: "Gröbner Ferienmüde"
+        source: "Groebner Ferienmüde"
       },
       {
         title: "Hub",
         subtitle: "Gemeinsame Kontroverse",
         focus: "Asynchrone Debatte mit klaren Gegenpositionen.",
-        textLoop: "Enzensberger gegen Gröbner erneut.",
+        textLoop: "Enzensberger gegen Groebner erneut.",
         tasks: [
           "Ein starkes Gegenargument zu einer fremden These verfassen.",
           "Drei Primärtext-Verweise einbauen.",
@@ -334,7 +334,7 @@ const routeCatalog = [
         title: "Rückfahrt",
         subtitle: "Blogabschluss",
         focus: "Persönliche Praxis und strukturelle Analyse verbinden.",
-        textLoop: "Letzte Rückkehr zu Wiedmer + einem Gröbner-Text.",
+        textLoop: "Letzte Rückkehr zu Wiedmer + einem Groebner-Text.",
         tasks: [
           "Finalpost mit Paradoxon, Einwand, Konsequenz.",
           "Zwei Peer-Beiträge annotieren.",
@@ -597,22 +597,22 @@ function toIsoNow() {
 
 function inferGroebnerAnchor(text) {
   if (text.includes("kap. 4") || text.includes("alpen") || text.includes("autokinetisch")) {
-    return "Gröbner (Abgefahren Kap. 4) macht sichtbar, wie Beschleunigung als Selbstbild verkauft wird und Erholung bereits im Modus der Leistung startet.";
+    return "Groebner (Abgefahren Kap. 4) macht sichtbar, wie Beschleunigung als Selbstbild verkauft wird und Erholung bereits im Modus der Leistung startet.";
   }
   if (text.includes("kap. 5") || text.includes("hyperdorf")) {
-    return "Gröbner (Abgefahren Kap. 5) zeigt am Hyperdorf, wie Heimatoptik und globale Verwertung zusammenlaufen und lokale Alltage umsortieren.";
+    return "Groebner (Abgefahren Kap. 5) zeigt am Hyperdorf, wie Heimatoptik und globale Verwertung zusammenlaufen und lokale Alltage umsortieren.";
   }
   if (text.includes("kap. 6") || text.includes("leere") || text.includes("idyll")) {
-    return "Gröbner (Abgefahren Kap. 6) beschreibt die Leere als Infrastrukturprodukt: gesucht wird Ruhe, produziert werden Wege, Zugriff und neue Verdichtung.";
+    return "Groebner (Abgefahren Kap. 6) beschreibt die Leere als Infrastrukturprodukt: gesucht wird Ruhe, produziert werden Wege, Zugriff und neue Verdichtung.";
   }
   if (text.includes("kap. 7") || text.includes("zeitreise") || text.includes("vergangen")) {
-    return "Gröbner (Abgefahren Kap. 7) zeigt, dass touristische Zeitreisen Nostalgie und Moderne verschalten, statt sie zu trennen.";
+    return "Groebner (Abgefahren Kap. 7) zeigt, dass touristische Zeitreisen Nostalgie und Moderne verschalten, statt sie zu trennen.";
   }
   if (text.includes("ferienmüde") || text.includes("frei haben") || text.includes("urlaub")) {
-    return "Gröbner (Ferienmüde) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heisst nicht automatisch frei sein.";
+    return "Groebner (Ferienmüde) arbeitet die Schleife aus Sehnsucht, Stress und erneuter Suchbewegung heraus: frei haben heisst nicht automatisch frei sein.";
   }
 
-  return "Gröbner (Abgefahren/Ferienmüde) hilft, Reise als Mischung aus Begehren, Beschleunigung und sozialer Sortierung zu lesen.";
+  return "Groebner (Abgefahren/Ferienmüde) hilft, Reise als Mischung aus Begehren, Beschleunigung und sozialer Sortierung zu lesen.";
 }
 
 function inferWiedmerAnchor(text) {
@@ -924,7 +924,7 @@ function calcTravelProfile() {
 
   if (paradoxIndex > 5) {
     els.scoreInterpretation.textContent =
-      "Dein Gewinn ist hoch. Prüfe mit Enzensberger und Gröbner, welche Lasten dafür ausgelagert werden.";
+      "Dein Gewinn ist hoch. Prüfe mit Enzensberger und Groebner, welche Lasten dafür ausgelagert werden.";
   } else if (paradoxIndex > -14) {
     els.scoreInterpretation.textContent =
       "Ambivalente Zone: Sehnsucht und Erschöpfung liegen dicht beieinander. Arbeite mit Kap. 6 und Ferienmüde nach.";
