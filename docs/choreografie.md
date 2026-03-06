@@ -1,36 +1,54 @@
-# Choreografie der Reflexionseinheit (45 Minuten)
+# Choreografie: Overtourism als Lernreise ohne Lektionstakt
 
-## Ziel
-Die Einheit zwingt in eine produktive Spannung: Reise als Freiheitsgewinn vs. Reise als externalisierte Kostenmaschine.
+## Leitidee
+Die Einheit ist als offene Reisearchitektur gebaut. Lernende waehlen eine Route und steuern ihr Tempo selbst. Die Struktur funktioniert in Praesenz, Hybrid und Distance Learning.
 
-## Ablauf
+## Kernparadox
+Enzensberger zugespitzt: Der Tourist zerstoert, indem er findet, was er sucht.
 
-1. **Akt 1 - Aufhaenger (6 Min.)**
-   - Blick-Video zu Stefan Buesser zeigen.
-   - Blitzpositionierung im Raum: "Einzelfall" vs. "Systemproblem".
+## Verfuegbare Reiserouten
 
-2. **Akt 2 - Romanfenster Flut (8 Min.)**
-   - Kurzer Lesefokus: Wo kippt Verheissung in Ueberforderung?
-   - Leitfrage: Wer kontrolliert den Strom, wenn die "Flut" einsetzt?
+1. **Panorama-Route**
+   - Kompakter Einstieg mit klarer Kontroverse.
+   - Fokus: Enzensberger-Paradoxon + Groebner 4-7 + Ferienmuede + Transfer.
 
-3. **Akt 3 - Kontroverse Arena (10 Min.)**
-   - Gruppe A verteidigt Enzensberger-Lesart (Freiheitssuche).
-   - Gruppe B verteidigt Groebner-Lesart (Transformation und Selbstinszenierung).
-   - Paquot-Impuls als Stoerfrage: "Ist der Ort noch fremd oder nur konsumierbar?"
+2. **Tiefenbohrung**
+   - Primaertext-intensiv mit wiederholten Rueckkehrschleifen.
+   - Fokus: getrennte Detailarbeit zu Abgefahren 4, 5, 6, 7 und zweite Enzensberger-Lektuere.
 
-4. **Akt 4 - Eigene Bilanz (10 Min.)**
-   - Individueller Eintrag im Reiseprofil.
-   - Partnervergleich: "Welchen Nutzen nimmst du mit, welche Kosten gibst du weiter?"
+3. **Distance-Nomadenroute**
+   - Asynchrones Arbeiten mit digitalen Treffpunkten.
+   - Fokus: Solo-Lektuere, Tandem-Co-Travel, kommentierte Blogketten.
 
-5. **Akt 5 - Spannungsfeld (7 Min.)**
-   - Achsen im Tool gemeinsam verschieben.
-   - Fokus auf die staerksten Dissense.
+4. **Begegnungsroute**
+   - Viele kurze Perspektivwechsel wie Reisebekanntschaften.
+   - Fokus: Dialog, Rollentausch, Dissensmanagement.
 
-6. **Akt 6 - Transfer (4 Min.)**
-   - Jede Person schreibt einen konkreten Reisebeschluss (naechste 12 Monate).
+## Etappenlogik jeder Route
 
-## Moderationsregeln
+- Terminal/Check-in
+- Mehrere Raststaetten mit Textarbeit
+- Begegnungsformate (Duo, Trio, Tandem, Thread)
+- Rueckfahrt mit Blog-Synthese
 
-- Keine moralische Immunisierung: Jede Position muss eigene Widersprueche benennen.
-- Keine reine Zahlendebatte: Immer die Verteilungsfrage mitdenken (wer profitiert, wer traegt Last).
-- Keine Scheinloesung "einfach nicht reisen": Alternativen muessen praktikabel sein.
+## Pflicht: Primaertext-Loop
+
+- Runde 1: markieren und paraphrasieren
+- Runde 2: Enzensberger, Wiedmer, Groebner gegeneinander lesen
+- Runde 3: Uebertragung auf eigenes Reiseverhalten
+
+Ohne drei Runden gilt die Route als nicht abgeschlossen.
+
+## Distance-Learning-Hinweis
+
+Jede Etappe verlangt eine sichtbare Spur im Reiseblog (These, Textbezug, Einwand, Konsequenz). Dadurch bleiben Lernfortschritt und Zusammenarbeit auch asynchron nachvollziehbar.
+
+## Lehrerversion
+
+- Im Blogbereich kann die Lehrerversion aktiviert werden.
+- Zu jedem Blogeintrag wird automatisch ein substanzielles Feedback generiert:
+  - Staerke des Eintrags
+  - Textbruecke zwischen Wiedmer, Enzensberger und Groebner
+  - kritische Vertiefungsaufgabe
+  - kritisch-motivierender Gedankenimpuls
+- Lehrpersonen koennen pro Eintrag Kommentare hinterlassen und Feedback bei Bedarf neu generieren.

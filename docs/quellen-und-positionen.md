@@ -1,42 +1,42 @@
-# Quellen und Positionen
+# Quellen und Positionen (vertieft)
 
-## Kerntexte
+## Primaertexte
 
-- Hans Magnus Enzensberger: **Vergebliche Brandung der Ferne** (1958).
-- Valentin Groebner: **Abgefahren. Reisen zum Vergnuegen**.
-- Thierry Paquot: **Der sanfte Terror des Tourismus** (2001).
-- Jakob Wiedmer: **Flut** (Roman, 1905).
+- Hans Magnus Enzensberger: **Vergebliche Brandung der Ferne** (1958)
+- Valentin Groebner: **Abgefahren. Reisen zum Vergnuegen**
+- Valentin Groebner: **Ferienmuede. Als das Reisen nicht mehr geholfen hat**
+- Jakob Wiedmer: **Flut** (1905)
+- Thierry Paquot: **Der sanfte Terror des Tourismus**
 
-## Arbeitsparaphrasen fuer die Einheit
+## Wiedmer (Roman) als Grundspur
 
-1. **Enzensberger**
-   - Reise erscheint als Flucht aus der normierten Arbeits- und Sozialordnung.
-   - Diese Flucht wird selbst standardisiert (Pflichtblick, Routinen, Konformitaet).
-   - Relevante PDF-Stellen: ca. S. 5-8, S. 11.
+- [Jakob Wiedmer, Flut (Dropbox)](https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0)
 
-2. **Groebner**
-   - Reisen verspricht Transformation, steht aber unter Mitteilungszwang und Sichtbarkeitsdruck.
-   - Das gesuchte "Anderswo" wird durch kollektive Mobilitaet gleichzeitig verdichtet.
-   - Relevante PDF-Stellen: Kap. "Aufbrechen" (ca. S. 9ff), "Im Koffer" (ca. S. 21ff), "Unsichtbare Maechte" (ca. S. 33ff).
+## Zentrale Arbeitsachsen
 
-3. **Paquot**
-   - Massentourismus neutralisiert Fremdheit, indem er Vertrautheit in der Fremde produziert.
-   - "Sanfte" Alternativen bleiben oft im gleichen Systemrahmen.
-   - Relevante PDF-Stellen: S. 2-3.
+1. **Enzensberger-Paradoxon**
+   - Reise verkauft Freiheit, erzeugt aber oft Konformitaet und Pflichtblicke.
+   - Der touristische Zugriff konsumiert genau das, was er als unverfuegbar sucht.
+   - Fokusstellen: ca. S. 5-8 und S. 11.
 
-4. **Wiedmer (Flut)**
-   - Die Flut fungiert als Doppelmetapher: Aufstieg, Bewegung und Vernetzung einerseits; Kontrollverlust, Ueberlastung und soziale Verschiebung andererseits.
-   - Damit eignet sich der Roman als historische Linse fuer heutige Overtourism-Debatten.
+2. **Groebner: Abgefahren Kap. 4-7**
+   - **Kap. 4 (Alpen autokinetisch):** Beschleunigung, Selbststeigerung, Bewegungsdruck.
+   - **Kap. 5 (Hyperdorf):** inszenierte Heimeligkeit, globale Vermarktung, lokale Entmischung.
+   - **Kap. 6 (Erfuellung in der Leere):** Leere als organisiertes Produkt.
+   - **Kap. 7 (Zeitreisen):** Nostalgie und Beschleunigung wirken zusammen.
+   - Diese vier Kapitel korrespondieren mit der Entwicklung Stagens in *Flut*: Ausbau, Verdichtung, soziale Verschiebung, Verlust von lokaler Steuerung.
 
-## Video-Impulse
+3. **Groebner: Ferienmuede**
+   - Freiheitsversprechen der Ferien kippt in Stress, Verbissenheit und Wiederholung.
+   - "Wenn ich frei habe, bin ich nicht automatisch frei" als Kernfigur.
+   - Reisen dient haeufig dazu, Veraenderung zu vermeiden statt sie zu ermoeglichen.
+   - Relevante Stellen fuer die Einheit: u. a. S. 33, S. 71, S. 91, S. 102.
 
-- [YouTube-Impuls 1](https://www.youtube.com/watch?v=VB3kYibA6BA)
-- [YouTube-Impuls 2](https://www.youtube.com/watch?v=vNbVhLwL6Dk)
-- [YouTube-Impuls 3](https://www.youtube.com/watch?v=UKuo_6SUkTg)
-- [YouTube-Impuls 4](https://www.youtube.com/watch?v=esE_-a2DUpc)
-- [Blick-Aufhaenger: Stefan Buesser in Abu Dhabi](https://www.blick.ch/people-tv/schweiz/stefan-buesser-sitzt-in-abu-dhabi-fest-die-druckwellen-fahren-einem-schon-ziemlich-ein-id21742969.html)
+4. **Paquot als Kontrastfolie**
+   - Massentourismus neutralisiert Fremdheit.
+   - "Sanfte" Varianten bleiben oft systemintern.
 
-## Hinweise zur wissenschaftlichen Nutzung
+## Didaktische Konsequenz
 
-- Die Positionen im Tool sind didaktisch zugespitzte Paraphrasen, keine Vollzitate.
-- Fuer benotete Arbeiten muessen Originalstellen im PDF mit genauer Seitenangabe direkt geprueft und zitiert werden.
+- Nicht nur Besuchermengen analysieren, sondern Taktung, Sichtbarkeit, Verteilungslogik und Umweltlast.
+- Nicht nur urteilen, sondern das eigene Reiseverhalten als Teil des Problems und der Loesung verhandeln.
