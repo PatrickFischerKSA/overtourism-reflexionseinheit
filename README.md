@@ -1,55 +1,39 @@
-# Overtourism Reflexionseinheit
+# Overtourism Lernreise (Flut x Enzensberger x Groebner)
 
-Kontroverse, choreografierte und interaktive Unterrichtseinheit auf Basis von:
+Dramaturgisch choreografierte, interaktive Reflexionseinheit als **Reise durch eine Lernlandschaft**.
 
-- Jakob Wiedmer: *Flut*
-- Hans Magnus Enzensberger: *Vergebliche Brandung der Ferne*
-- Valentin Groebner: *Abgefahren*
-- Thierry Paquot: *Der sanfte Terror des Tourismus*
+## Neu in dieser Version
 
-Zentralfrage: **Warum reisen wir, was gewinnen wir, und wer traegt die Kosten?**
+- Sichtbarer, animierter Video-Hintergrund (`SwissTourismus.mp4`) mit transparenter Glasoberflaeche.
+- Mehrere waehlbare Reiserouten (inkl. Distance-Learning-Route).
+- Stark vertiefte Textarbeit mit
+  - Enzensberger-Paradoxon
+  - Groebner **Abgefahren** (insb. Kap. 4-7)
+  - Groebner **Ferienmuede**
+  - Wiedmers *Flut* (Dropbox-Link)
+- Begegnungsformate als "Reisebekanntschaften".
+- Intellektueller Reiseblog inkl. lokaler Speicherung im Browser.
+- Lehrerversion: Kommentare pro Blogeintrag plus automatisch generiertes, textgestuetztes Feedback (Wiedmer/Enzensberger/Groebner) mit kritisch-motivierendem Impuls.
 
-## Was dieses Repo enthaelt
+## Struktur
 
-- `index.html`: Interaktive Lernoberflaeche
-- `styles.css`: Gestaltung mit geblurtem Video-Hintergrund
-- `app.js`: Choreografie, Timer, Kontroversen-Generator, Reisebilanz, Spannungsfeld, Beschlussspeicher
-- `assets/SwissTourismus.mp4`: transparenter Hintergrundclip
-- `docs/choreografie.md`: Moderationsablauf (45 Minuten)
-- `docs/quellen-und-positionen.md`: Text- und Videoeinordnung
-- `material/*.pdf`: lokale Textgrundlagen (Wiedmer, Enzensberger, Groebner, Paquot)
+- `index.html`: Hauptoberflaeche mit Routenwahl
+- `styles.css`: Transparenz-/Video-Look + responsive Layout
+- `app.js`: Mehr-Routen-Logik, Etappenfortschritt, Debattenkarten, Begegnungen, Bilanztool, Blog
+- `docs/choreografie.md`: Route-basierte Durchfuehrung ohne Lektionstakt
+- `docs/quellen-und-positionen.md`: Quellenmatrix und inhaltliche Achsen
+- `material/*.pdf`: lokale Textgrundlagen
 
 ## Start
-
-Einfach `index.html` im Browser oeffnen.
-
-Optional mit lokalem Server:
 
 ```bash
 cd overtourism-reflexionseinheit
 python3 -m http.server 8080
 ```
 
-Dann `http://localhost:8080` aufrufen.
-
-## Didaktische Logik
-
-1. **Aufhaenger** mit aktuellem Konfliktfall (Blick-Video).
-2. **Romanfenster** zu Wiedmers *Flut* als Ambivalenzmetapher.
-3. **Kontroverse Arena** (Enzensberger vs. Groebner, mit Paquot als Stoerimpuls).
-4. **Selbsttest** zum eigenen Reiseverhalten (Nutzen/Kosten).
-5. **Spannungsfeld** zwischen touristischer Traumwelt und Schattenseiten.
-6. **Transfer** mit messbarem persoenlichem Reisebeschluss.
-
-## Hinweise
-
-- Die Positionstexte sind bewusst zugespitzte **Paraphrasen** fuer die Unterrichtsdebatte.
-- Fuer wissenschaftliche Arbeiten immer im Originaltext gegenpruefen und exakt zitieren.
-- Das Repo verwendet nur statische Webtechnologien und funktioniert auf Desktop und mobil.
-- Vor einem oeffentlichen GitHub-Upload die Rechte an den beigefuegten PDFs klaeren.
-- Sehr grosse Dateien (z. B. `JakobWiedmer_Flut.pdf`) werden typischerweise nicht mit hochgeladen und nur lokal genutzt.
+Dann im Browser: `http://localhost:8080`
 
 ## Lizenz
 
-Der Code dieses Repos steht unter der MIT-Lizenz (siehe `LICENSE`).
-Urheberrechtlich geschuetzte Quellmaterialien (insbesondere PDFs in `material/`) sind davon ausgenommen und per `.gitignore` fuer oeffentliche Uploads ausgeschlossen.
+Der Code steht unter MIT (`LICENSE`).
+Urheberrechtlich geschuetzte Primaertexte sind davon ausgenommen.
