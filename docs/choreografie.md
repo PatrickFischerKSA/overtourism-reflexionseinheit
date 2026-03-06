@@ -1,24 +1,24 @@
 # Choreografie: Overtourism als Lernreise ohne Lektionstakt
 
 ## Leitidee
-Die Einheit ist als offene Reisearchitektur gebaut. Lernende waehlen eine Route und steuern ihr Tempo selbst. Die Struktur funktioniert in Praesenz, Hybrid und Distance Learning.
+Die Einheit ist als offene Reisearchitektur gebaut. Lernende wählen eine Route und steuern ihr Tempo selbst. Die Struktur funktioniert in Präsenz, Hybrid und Distance Learning.
 
 ## Kernparadox
-Enzensberger zugespitzt: Der Tourist zerstoert, indem er findet, was er sucht.
+Enzensberger zugespitzt: Der Tourist zerstört, indem er findet, was er sucht.
 
-## Verfuegbare Reiserouten
+## Verfügbare Reiserouten
 
 1. **Panorama-Route**
    - Kompakter Einstieg mit klarer Kontroverse.
-   - Fokus: Enzensberger-Paradoxon + Groebner 4-7 + Ferienmuede + Transfer.
+   - Fokus: Enzensberger-Paradoxon + Gröbner 4-7 + Ferienmüde + Transfer.
 
 2. **Tiefenbohrung**
-   - Primaertext-intensiv mit wiederholten Rueckkehrschleifen.
-   - Fokus: getrennte Detailarbeit zu Abgefahren 4, 5, 6, 7 und zweite Enzensberger-Lektuere.
+   - Primärtext-intensiv mit wiederholten Rückkehrschleifen.
+   - Fokus: getrennte Detailarbeit zu Abgefahren 4, 5, 6, 7 und zweite Enzensberger-Lektüre.
 
 3. **Distance-Nomadenroute**
    - Asynchrones Arbeiten mit digitalen Treffpunkten.
-   - Fokus: Solo-Lektuere, Tandem-Co-Travel, kommentierte Blogketten.
+   - Fokus: Solo-Lektüre, Tandem-Co-Travel, kommentierte Blogketten.
 
 4. **Begegnungsroute**
    - Viele kurze Perspektivwechsel wie Reisebekanntschaften.
@@ -27,15 +27,15 @@ Enzensberger zugespitzt: Der Tourist zerstoert, indem er findet, was er sucht.
 ## Etappenlogik jeder Route
 
 - Terminal/Check-in
-- Mehrere Raststaetten mit Textarbeit
+- Mehrere Raststätten mit Textarbeit
 - Begegnungsformate (Duo, Trio, Tandem, Thread)
-- Rueckfahrt mit Blog-Synthese
+- Rückfahrt mit Blog-Synthese
 
-## Pflicht: Primaertext-Loop
+## Pflicht: Primärtext-Loop
 
 - Runde 1: markieren und paraphrasieren
-- Runde 2: Enzensberger, Wiedmer, Groebner gegeneinander lesen
-- Runde 3: Uebertragung auf eigenes Reiseverhalten
+- Runde 2: Enzensberger, Wiedmer, Gröbner gegeneinander lesen
+- Runde 3: Übertragung auf eigenes Reiseverhalten
 
 Ohne drei Runden gilt die Route als nicht abgeschlossen.
 
@@ -47,8 +47,8 @@ Jede Etappe verlangt eine sichtbare Spur im Reiseblog (These, Textbezug, Einwand
 
 - Im Blogbereich kann die Lehrerversion aktiviert werden.
 - Zu jedem Blogeintrag wird automatisch ein substanzielles Feedback generiert:
-  - Staerke des Eintrags
-  - Textbruecke zwischen Wiedmer, Enzensberger und Groebner
+  - Stärke des Eintrags
+  - Textbrücke zwischen Wiedmer, Enzensberger und Gröbner
   - kritische Vertiefungsaufgabe
   - kritisch-motivierender Gedankenimpuls
-- Lehrpersonen koennen pro Eintrag Kommentare hinterlassen und Feedback bei Bedarf neu generieren.
+- Lehrpersonen können pro Eintrag Kommentare hinterlassen und Feedback bei Bedarf neu generieren.
