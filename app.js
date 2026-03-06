@@ -459,12 +459,247 @@ const counterArguments = [
   "Individuelle Praxis ist klein, aber unverzichtbar."
 ];
 
-const encounterScenarios = [
-  "Hostel-Küche: Flugscham trifft auf knappes Budget und starke Sehnsucht.",
-  "Abend im Hyperdorf: Saisonkraft, Feriengast und Ortsbewohner streiten über Fairness.",
-  "Zwei Tage Mitreise: Eine Person postet alles, die andere gar nichts.",
-  "Rückfahrt im Zug: Alle hatten tolle Ferien, alle berichten von Erschöpfung.",
-  "Nachtgespräch: Ist Nicht-Reisen Lösung oder nur Moralpose?"
+const encounterFormats = [
+  {
+    id: "hostelkueche",
+    title: "Hostel-Küche: Flugscham, Sehnsucht, Budget",
+    lead:
+      "Eine zufällige Küchenbegegnung kippt vom Small Talk zur Verteilungsfrage: Wer kann sich moralisch korrektes Reisen überhaupt leisten?",
+    mode: "Duo oder Trio",
+    duration: "15-25 Minuten oder asynchroner Thread",
+    constellation: "Budgetreisende, klimasensible Person, optionale dritte Stimme aus dem Alltag zu Hause",
+    conflict:
+      "Die Sehnsucht nach Erholung ist real, aber ihre Verwirklichung bleibt ungleich verteilt. Zwischen moralischem Anspruch und materieller Realität entsteht Reibung.",
+    question:
+      "Wann wird Kritik am Reisen analytisch stark und wann nur sozial blind?",
+    sourceNote:
+      "Lies Enzensberger gegen Groebner: Freiheit als Versprechen trifft auf Unfreiheit und Druck im realen Reisealltag.",
+    sourceLinks: [
+      {
+        label: "Enzensberger: Gegendruck / Überschwemmung (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      },
+      {
+        label: "Groebner: Die Lust an der Unfreiheit (S. 69)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=69"
+      },
+      {
+        label: "Groebner: Entlassung aus der Pflicht (S. 87)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=87"
+      }
+    ],
+    protocol: [
+      "Runde 1: Jede Person nennt zuerst nur ihr Reisemotiv und ihre reale Begrenzung.",
+      "Runde 2: Eine Person verteidigt das Reisen als notwendige Unterbrechung des Alltags, die andere zeigt die blinden Kosten.",
+      "Runde 3: Beide müssen einen Satz formulieren, in dem Sehnsucht und Belastung gleichzeitig vorkommen.",
+      "Abschluss: Haltet fest, welcher Einwand nicht aufgelöst werden konnte."
+    ],
+    roles: [
+      "Budgetreisende Person: will ausbrechen, kann sich aber nur billige, belastende Optionen leisten.",
+      "Klimasensible Person: argumentiert strukturell, muss aber die soziale Schieflage der Kritik mitdenken.",
+      "Optionale dritte Rolle: Person aus dem Heimatalltag, für die Reisen Statussymbol, Entlastung oder Fluchtversuch ist."
+    ],
+    prompts: [
+      "Eine Person sagt: 'Wenn ich gar nicht reise, bleibt nur Arbeit und Alltag übrig.'",
+      "Jemand wirft ein: 'Du nennst es Freiheit, aber du buchst nur die schnellste Form von Erschöpfung.'",
+      "Die Frage fällt in die Küche: 'Wer darf eigentlich auf andere zeigen, wenn fast alle Teil derselben Logik sind?'"
+    ],
+    blogPrompt:
+      "Schreibe eine Blogskizze über den Punkt, an dem moralische Reisekritik in soziale Blindheit kippen könnte."
+  },
+  {
+    id: "hyperdorf",
+    title: "Abend im Hyperdorf: Kulisse, Einkommen, Verdrängung",
+    lead:
+      "Eine Ferienbegegnung vor schöner Fassade macht sichtbar, dass derselbe Ort für Gäste romantisch und für andere ökonomisch eng sein kann.",
+    mode: "Trio oder Vierergruppe",
+    duration: "20-35 Minuten",
+    constellation: "Feriengast, Saisonkraft, Einheimische Person, optionale Investor:innenstimme",
+    conflict:
+      "Was als Aufwertung verkauft wird, produziert zugleich Sichtbarkeit, Mietdruck, Dienstbarkeit und Ausschluss. Nicht alle wohnen im selben Dorf, obwohl sie am selben Ort sind.",
+    question:
+      "Wer spricht vom 'lebendigen Ort' und wer erlebt denselben Ort als Arrangement?",
+    sourceNote:
+      "Verknüpfe Groebners Hyperdorf mit Wiedmers Stagen: touristische Schönheit ist nie neutral, sondern organisiert Menschen und Räume neu.",
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 5 öffnen (S. 76)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=76"
+      },
+      {
+        label: "Groebner: Angstkühlschränke (S. 85)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=85"
+      },
+      {
+        label: "Wiedmer: Dorfumbau/Stagen (S. 53)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=53"
+      }
+    ],
+    protocol: [
+      "Runde 1: Jede Rolle beschreibt denselben Platz im Dorf mit einer anderen Wortwahl.",
+      "Runde 2: Die Gruppe sammelt, was als 'schön' erscheint und wer diese Schönheit ermöglicht.",
+      "Runde 3: Formuliert einen Streitpunkt über Gewinn, Last und Verdrängung.",
+      "Abschluss: Eine Person fasst den Ort aus Sicht derer zusammen, die ihn nicht einfach wieder verlassen können."
+    ],
+    roles: [
+      "Feriengast: erlebt Atmosphäre, Service und Authentizität als gelungene Reise.",
+      "Saisonkraft: hält die Kulisse in Gang, bleibt aber oft austauschbar und prekär.",
+      "Einheimische Person: spürt Preissteigerung, Verhaltensdruck und den Verlust von Selbstverständlichkeit.",
+      "Optionale Investor:innenrolle: argumentiert mit Standort, Arbeitsplätzen und internationaler Sichtbarkeit."
+    ],
+    prompts: [
+      "Ein Gast sagt: 'Ohne Tourismus wäre hier doch nichts los.'",
+      "Eine Ortsbewohnerin entgegnet: 'Lebendig für wen? Ich erkenne mein Dorf kaum wieder.'",
+      "Die Saisonkraft fragt: 'Wieso ist Gastlichkeit romantisch, solange andere sie leisten?'"
+    ],
+    blogPrompt:
+      "Schreibe eine Blognotiz darüber, wie ein Ort gleichzeitig Heimeligkeit ausstellt und Lebensraum verliert."
+  },
+  {
+    id: "mitreise",
+    title: "Zwei Tage Mitreise: Sichtbarkeit und Verweigerung",
+    lead:
+      "Zwei Personen reisen gemeinsam, aber nur eine stellt die Reise permanent aus. Die andere verweigert Bilder und beginnt gerade dadurch anders zu sehen.",
+    mode: "Duo",
+    duration: "15-30 Minuten oder 48h-Co-Travel",
+    constellation: "Posting-Person und schweigende Mitreisende",
+    conflict:
+      "Die Frage ist nicht nur, wer Bilder macht, sondern welche Realität durch Sichtbarkeit erzeugt und welche Erfahrung dadurch verdeckt wird.",
+    question:
+      "Ist dokumentiertes Reisen intensiver oder nur stärker auf Außenwirkung getaktet?",
+    sourceNote:
+      "Verbinde Groebners Bildkritik mit Enzensbergers Ferneversprechen: Wird das Gesuchte noch erlebt oder bereits verwertet?",
+    sourceLinks: [
+      {
+        label: "Groebner: Wunderwaffe Bildermachen (S. 42)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=42"
+      },
+      {
+        label: "Groebner: Verwandeln durch Fotografieren (S. 48)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=48"
+      },
+      {
+        label: "Enzensberger: Leitbild der Ferne (S. 6)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=6"
+      }
+    ],
+    protocol: [
+      "Runde 1: Posting-Person beschreibt, warum Teilen für sie zur Reise dazugehört.",
+      "Runde 2: Schweigende Person beschreibt, was ohne Kamera plötzlich sichtbar wird.",
+      "Runde 3: Beide benennen, welche Form von Stress aus Sichtbarkeit entsteht.",
+      "Abschluss: Haltet fest, ob Bilder Erinnerung verdichten oder Erfahrung standardisieren."
+    ],
+    roles: [
+      "Posting-Person: will festhalten, zeigen, bestätigen, vielleicht auch rechtfertigen, dass die Reise sich 'gelohnt' hat.",
+      "Schweigende Mitreisende: verweigert Sichtbarkeitszwang und beobachtet, was dadurch anders wird."
+    ],
+    prompts: [
+      "Eine Person sagt: 'Wenn ich es nicht teile, fühlt es sich fast an, als wäre es nicht passiert.'",
+      "Die andere antwortet: 'Vielleicht passiert es erst dann wirklich, wenn du es nicht sofort verwandelst.'",
+      "Beide merken: Selbst Verweigerung kann zur Pose werden."
+    ],
+    blogPrompt:
+      "Schreibe eine Blogskizze über den Zusammenhang von Sichtbarkeit, Selbststeigerung und dem Verlust unaufgeregter Erfahrung."
+  },
+  {
+    id: "nachtzug",
+    title: "Nachtzug: Erholung als getaktete Erschöpfung",
+    lead:
+      "Auf der Rück- oder Weiterfahrt sprechen Reisende darüber, warum Ferien häufig als Entlastung geplant und als Müdigkeit erinnert werden.",
+    mode: "Duo, Trio oder asynchrone Audiokette",
+    duration: "15-25 Minuten",
+    constellation: "Erschöpfte Reisende mit unterschiedlicher Deutung des Problems",
+    conflict:
+      "Nicht nur die Reise ist anstrengend; auch die Erwartung, sie müsse unbedingt regenerieren, wird selbst zum Druckregime.",
+    question:
+      "Wie wird aus dem Wunsch nach Ruhe eine Maschine neuer Geschäftigkeit?",
+    sourceNote:
+      "Hier steht Groebners Stressschleife im Zentrum. Enzensberger liefert das Paradox, dass die Flucht aus der Ordnung neue Ordnung produziert.",
+    sourceLinks: [
+      {
+        label: "Groebner: Die Lust an der Unfreiheit (S. 69)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=69"
+      },
+      {
+        label: "Groebner: Am Ziel der Träume (S. 76)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=76"
+      },
+      {
+        label: "Groebner: Konserven / Stay Put (S. 91)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=91"
+      },
+      {
+        label: "Enzensberger: Pyrrhussieg des Tourismus (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      }
+    ],
+    protocol: [
+      "Runde 1: Jede Person nennt einen Moment, in dem Ferien sich wie Arbeit anfühlten.",
+      "Runde 2: Sammelt Stressquellen vor, während und nach der Reise.",
+      "Runde 3: Prüft, welche davon individuell und welche strukturell erzeugt sind.",
+      "Abschluss: Formuliert eine Reiseentscheidung, die nicht nur guten Willen, sondern veränderte Praxis meint."
+    ],
+    roles: [
+      "Person A: hält Reisemüdigkeit für persönliches Organisationsproblem.",
+      "Person B: liest sie als Symptom einer größeren Tourismuslogik.",
+      "Optionale dritte Rolle: verteidigt Ferien als notwendige psychische Überlebensstrategie."
+    ],
+    prompts: [
+      "Jemand sagt: 'Ich habe im Urlaub nur noch effizienter funktioniert als sonst.'",
+      "Eine andere Person erwidert: 'Vielleicht ist genau das das Geschäftsmodell.'",
+      "Die Gegenfrage kommt sofort: 'Und was bleibt Menschen, die echte Unterbrechung dringend brauchen?'"
+    ],
+    blogPrompt:
+      "Schreibe eine Blogskizze darüber, wie Sehnsucht nach Erholung in Taktung, Kontrolle und Müdigkeit umschlägt."
+  },
+  {
+    id: "rueckfahrt",
+    title: "Rückfahrt: Dissens ohne Versöhnung",
+    lead:
+      "Am Ende der Lernreise wird nicht Einigkeit produziert, sondern eine belastbare Form des Widerspruchs: Was bleibt unvereinbar?",
+    mode: "Trio, Vierergruppe oder digitales Forum",
+    duration: "20-40 Minuten",
+    constellation: "drei textnahe Positionen plus eigenes Reise-Ich",
+    conflict:
+      "Enzensberger, Groebner und Wiedmer liefern keine harmonische Theorie, sondern unterschiedliche Schärfen. Die Begegnung soll diese Spannungen halten statt glätten.",
+    question:
+      "Welche Einsicht bleibt dann stark, wenn man ihr bewusst den stärksten Einwand entgegenstellt?",
+    sourceNote:
+      "Arbeite hier ausdrücklich vergleichend: mindestens zwei Primärtexte müssen gegeneinander in Stellung gebracht werden.",
+    sourceLinks: [
+      {
+        label: "Enzensberger: Vergebliche Brandung der Ferne (S. 1)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=1"
+      },
+      {
+        label: "Groebner: Kap. 6 öffnen (S. 90)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=90"
+      },
+      {
+        label: "Wiedmer: spätere Stagen-Verschiebungen (S. 104)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=104"
+      }
+    ],
+    protocol: [
+      "Runde 1: Jede Person vertritt zunächst einen Text gegen die anderen.",
+      "Runde 2: Alle wechseln die Position und formulieren den stärksten Einwand gegen ihre erste Lesart.",
+      "Runde 3: Jetzt erst wird das eigene Reiseverhalten explizit eingebracht.",
+      "Abschluss: Formuliert keinen Konsens, sondern eine präzise offene Streitfrage."
+    ],
+    roles: [
+      "Enzensberger-Stimme: insistiert auf dem Paradox des zerstörerischen Findens.",
+      "Groebner-Stimme: zeigt Infrastruktur, Bildproduktion, Kulissenbau und Stressschleife.",
+      "Wiedmer-Stimme: bindet das Theoretische an konkrete Dorf-, Umbau- und Überforderungsdynamiken.",
+      "Eigenes Reise-Ich: muss sich nicht rechtfertigen, aber darf sich auch nicht ausnehmen."
+    ],
+    prompts: [
+      "Eine Stimme sagt: 'Vielleicht ist jede Reise schon Mitwirkung an einem beschädigten System.'",
+      "Die Gegenstimme antwortet: 'Dann erklär mir, wie Unterbrechung, Begegnung und Bildung trotzdem noch möglich sein sollen.'",
+      "Am Ende bleibt die Frage: 'Welche Form des Reisens wäre weniger zerstörerisch, ohne nur eine neue Pose zu sein?'"
+    ],
+    blogPrompt:
+      "Schreibe eine Blogskizze, die nicht versöhnt, sondern einen tragfähigen Widerspruch offenhält."
+  }
 ];
 
 const feedbackThemes = [
@@ -762,13 +997,32 @@ const els = {
   teacherModeBtn: document.querySelector("#teacherModeBtn"),
   teacherModeState: document.querySelector("#teacherModeState"),
   teacherPanel: document.querySelector("#teacherPanel"),
+  encounterNav: document.querySelector("#encounterNav"),
   closeReadingNav: document.querySelector("#closeReadingNav"),
+  encounterTitle: document.querySelector("#encounterTitle"),
+  encounterLead: document.querySelector("#encounterLead"),
+  encounterMode: document.querySelector("#encounterMode"),
+  encounterDuration: document.querySelector("#encounterDuration"),
+  encounterConstellation: document.querySelector("#encounterConstellation"),
   closeReadingTitle: document.querySelector("#closeReadingTitle"),
+  encounterConflict: document.querySelector("#encounterConflict"),
+  encounterQuestion: document.querySelector("#encounterQuestion"),
+  encounterSourceNote: document.querySelector("#encounterSourceNote"),
+  encounterSources: document.querySelector("#encounterSources"),
+  encounterProtocol: document.querySelector("#encounterProtocol"),
+  encounterRoles: document.querySelector("#encounterRoles"),
   closeReadingFocus: document.querySelector("#closeReadingFocus"),
   closeReadingBridge: document.querySelector("#closeReadingBridge"),
   closeReadingSourceNote: document.querySelector("#closeReadingSourceNote"),
   closeReadingSources: document.querySelector("#closeReadingSources"),
+  encounterBlogPrompt: document.querySelector("#encounterBlogPrompt"),
   closeReadingForm: document.querySelector("#closeReadingForm"),
+  encounterForm: document.querySelector("#encounterForm"),
+  encounterEntryTitle: document.querySelector("#encounterEntryTitle"),
+  encounterEntryReference: document.querySelector("#encounterEntryReference"),
+  encounterEntryDissent: document.querySelector("#encounterEntryDissent"),
+  encounterEntryInsight: document.querySelector("#encounterEntryInsight"),
+  encounterToBlogBtn: document.querySelector("#encounterToBlogBtn"),
   closeReadingReference: document.querySelector("#closeReadingReference"),
   closeReadingQuote: document.querySelector("#closeReadingQuote"),
   closeReadingContext: document.querySelector("#closeReadingContext"),
@@ -778,13 +1032,15 @@ const els = {
   closeReadingSelf: document.querySelector("#closeReadingSelf"),
   closeReadingPromptBtn: document.querySelector("#closeReadingPromptBtn"),
   closeReadingPrompt: document.querySelector("#closeReadingPrompt"),
-  closeReadingEntries: document.querySelector("#closeReadingEntries")
+  closeReadingEntries: document.querySelector("#closeReadingEntries"),
+  encounterEntries: document.querySelector("#encounterEntries")
 };
 
 const progressStorageKey = "overtourismRouteProgress";
 const blogStorageKey = "overtourismBlogEntries";
 const teacherModeStorageKey = "overtourismTeacherMode";
 const closeReadingStorageKey = "overtourismCloseReadings";
+const encounterStorageKey = "overtourismEncounters";
 const materialAccessHintHref = "#material-access";
 const wiedmerDropboxHref =
   "https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0";
@@ -794,8 +1050,10 @@ let activeStopIndex = 0;
 let progressState = {};
 let blogEntries = [];
 let isTeacherMode = false;
+let activeEncounterId = encounterFormats[0].id;
 let activeCloseReadingStationId = closeReadingStations[0].id;
 let closeReadingEntries = [];
+let encounterEntries = [];
 let localAssetAvailability = {};
 
 function randomFrom(list) {
@@ -865,6 +1123,7 @@ async function probeLocalAsset(path) {
 function collectLocalAssetPaths() {
   const links = [
     ...Object.values(primaryTextLibrary),
+    ...encounterFormats.flatMap((format) => format.sourceLinks || []),
     ...closeReadingStations.flatMap((station) => station.sourceLinks || [])
   ];
 
@@ -887,6 +1146,7 @@ async function initMaterialAccessFallbacks() {
   localAssetAvailability = Object.fromEntries(checks);
   renderRouteDetail();
   renderCloseReadingStation();
+  renderEncounterDetail();
 }
 
 function formatMultiline(text) {
@@ -897,8 +1157,149 @@ function currentRoute() {
   return routeCatalog.find((route) => route.id === activeRouteId) || routeCatalog[0];
 }
 
+function currentEncounterFormat() {
+  return encounterFormats.find((format) => format.id === activeEncounterId) || encounterFormats[0];
+}
+
 function toIsoNow() {
   return new Date().toISOString();
+}
+
+function saveEncounterEntries() {
+  localStorage.setItem(encounterStorageKey, JSON.stringify(encounterEntries));
+}
+
+function loadEncounterEntries() {
+  try {
+    const raw = localStorage.getItem(encounterStorageKey);
+    if (!raw) return;
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed)) {
+      encounterEntries = parsed.filter((entry) => entry && entry.id && entry.formatId);
+    }
+  } catch {
+    encounterEntries = [];
+  }
+}
+
+function renderEncounterNav() {
+  if (!els.encounterNav) return;
+
+  els.encounterNav.innerHTML = encounterFormats
+    .map((format) => {
+      const activeClass = format.id === activeEncounterId ? "active" : "";
+      return `<button type="button" class="${activeClass}" data-encounter-id="${escapeHtml(format.id)}">${escapeHtml(format.title)}</button>`;
+    })
+    .join("");
+
+  const buttons = els.encounterNav.querySelectorAll("button[data-encounter-id]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeEncounterId = button.getAttribute("data-encounter-id");
+      renderEncounterNav();
+      renderEncounterDetail();
+    });
+  });
+}
+
+function renderEncounterPrompt() {
+  if (!els.encounterText) return;
+  const format = currentEncounterFormat();
+  els.encounterText.textContent = randomFrom(format.prompts);
+}
+
+function renderEncounterDetail() {
+  const format = currentEncounterFormat();
+  if (!els.encounterTitle) return;
+
+  els.encounterTitle.textContent = format.title;
+  els.encounterLead.textContent = format.lead;
+  els.encounterMode.textContent = `Format: ${format.mode}`;
+  els.encounterDuration.textContent = `Takt: ${format.duration}`;
+  els.encounterConstellation.textContent = `Konstellation: ${format.constellation}`;
+  els.encounterConflict.textContent = format.conflict;
+  els.encounterQuestion.textContent = format.question;
+  els.encounterSourceNote.textContent = format.sourceNote;
+  els.encounterSources.innerHTML = buildSourceLinksHtml(format.sourceLinks || []);
+  els.encounterProtocol.innerHTML = format.protocol
+    .map((step) => `<li>${escapeHtml(step)}</li>`)
+    .join("");
+  els.encounterRoles.innerHTML = format.roles
+    .map((role) => `<li>${escapeHtml(role)}</li>`)
+    .join("");
+  els.encounterBlogPrompt.textContent = format.blogPrompt;
+  renderEncounterPrompt();
+}
+
+function renderEncounterEntries() {
+  if (!els.encounterEntries) return;
+
+  if (!encounterEntries.length) {
+    els.encounterEntries.innerHTML =
+      "<p class='card'>Noch keine Begegnung dokumentiert. Entscheidend ist nicht die Harmonie, sondern der präzise festgehaltene Widerspruch.</p>";
+    return;
+  }
+
+  els.encounterEntries.innerHTML = encounterEntries
+    .map((entry) => {
+      const format = encounterFormats.find((item) => item.id === entry.formatId);
+      const title = format ? format.title : "Begegnung";
+
+      return `
+      <article class="close-reading-entry">
+        <h4>${escapeHtml(entry.title)}</h4>
+        <p class="meta">${escapeHtml(title)} | ${new Date(entry.createdAt).toLocaleString("de-CH")}</p>
+        <div class="section">
+          <p><strong>Textstelle(n):</strong> ${formatMultiline(entry.reference)}</p>
+          <p><strong>Festgehaltener Dissens:</strong> ${formatMultiline(entry.dissent)}</p>
+          <p><strong>Blogskizze:</strong> ${formatMultiline(entry.insight)}</p>
+        </div>
+        <div class="teacher-actions">
+          <button type="button" data-encounter-blog-id="${escapeHtml(entry.id)}">In Reiseblog übernehmen</button>
+          <button type="button" data-encounter-delete-id="${escapeHtml(entry.id)}">Eintrag löschen</button>
+        </div>
+      </article>
+      `;
+    })
+    .join("");
+
+  const deleteButtons = els.encounterEntries.querySelectorAll("button[data-encounter-delete-id]");
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const entryId = button.getAttribute("data-encounter-delete-id");
+      encounterEntries = encounterEntries.filter((entry) => entry.id !== entryId);
+      saveEncounterEntries();
+      renderEncounterEntries();
+    });
+  });
+
+  const transferButtons = els.encounterEntries.querySelectorAll("button[data-encounter-blog-id]");
+  transferButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const entryId = button.getAttribute("data-encounter-blog-id");
+      const entry = encounterEntries.find((item) => item.id === entryId);
+      if (entry) {
+        populateBlogFromEncounter(entry);
+      }
+    });
+  });
+}
+
+function populateBlogFromEncounter(entry) {
+  if (!els.blogTitle || !els.blogObservation || !els.blogReference) return;
+
+  const activeStop = currentRoute().stops[activeStopIndex];
+  if (els.blogStop && activeStop) {
+    const matchingOption = [...els.blogStop.options].find((option) => option.value === activeStop.title);
+    if (matchingOption) {
+      els.blogStop.value = activeStop.title;
+    }
+  }
+
+  els.blogTitle.value = entry.title;
+  els.blogReference.value = entry.reference;
+  els.blogObservation.value = `Begegnung: ${entry.dissent}\n\nAnalytischer Ertrag: ${entry.insight}`;
+  document.querySelector("#blog")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function inferGroebnerAnchor(text) {
@@ -1442,6 +1843,7 @@ function renderRouteDetail() {
       <section class="route-block">
         <h4>Begegnung</h4>
         <p>${escapeHtml(stop.encounter)}</p>
+        <p class="mini">Vertiefe diese Konstellation im <a href="#encounters">Begegnungslabor</a> mit Rollen, Textfenstern und Blogskizze.</p>
       </section>
 
       <section class="route-block">
@@ -1536,9 +1938,55 @@ function initParadoxConsole() {
 }
 
 function initEncounters() {
-  els.encounterText.textContent = randomFrom(encounterScenarios);
+  if (!els.encounterNav) return;
+
+  loadEncounterEntries();
+  renderEncounterNav();
+  renderEncounterDetail();
+  renderEncounterEntries();
+
   els.encounterBtn.addEventListener("click", () => {
-    els.encounterText.textContent = randomFrom(encounterScenarios);
+    renderEncounterPrompt();
+  });
+
+  els.encounterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const title = els.encounterEntryTitle.value.trim();
+    const reference = els.encounterEntryReference.value.trim();
+    const dissent = els.encounterEntryDissent.value.trim();
+    const insight = els.encounterEntryInsight.value.trim();
+
+    if (!title || !reference || !dissent || !insight) {
+      return;
+    }
+
+    encounterEntries.unshift({
+      id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+      formatId: currentEncounterFormat().id,
+      title,
+      reference,
+      dissent,
+      insight,
+      createdAt: toIsoNow()
+    });
+
+    saveEncounterEntries();
+    renderEncounterEntries();
+    els.encounterForm.reset();
+  });
+
+  els.encounterToBlogBtn.addEventListener("click", () => {
+    const title = els.encounterEntryTitle.value.trim();
+    const reference = els.encounterEntryReference.value.trim();
+    const dissent = els.encounterEntryDissent.value.trim();
+    const insight = els.encounterEntryInsight.value.trim();
+
+    if (!title || !reference || !dissent || !insight) {
+      return;
+    }
+
+    populateBlogFromEncounter({ title, reference, dissent, insight });
   });
 }
 

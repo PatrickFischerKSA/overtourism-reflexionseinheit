@@ -382,6 +382,33 @@ main {
   margin-top: 0.8rem;
 }
 
+.encounter-shell {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) 1fr;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.encounter-guide,
+.encounter-workbench,
+.encounter-log {
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.encounter-meta {
+  margin-top: 0.8rem;
+}
+
+.encounter-workbench .route-block + .route-block,
+.encounter-workbench .deep-grid,
+.encounter-log {
+  margin-top: 0.8rem;
+}
+
+.encounter-workbench h4 {
+  margin: 0;
+}
+
 .textlab-nav {
   display: flex;
   flex-direction: column;
@@ -630,7 +657,8 @@ input[type="range"] {
     grid-template-columns: 1fr;
   }
 
-  .textlab-shell {
+  .textlab-shell,
+  .encounter-shell {
     grid-template-columns: 1fr;
   }
 
@@ -648,7 +676,6 @@ input[type="range"] {
   .split,
   .triple,
   .deep-grid,
-  .textlab-nav,
   .travel-form,
   .scoreboard,
   .resource-grid,

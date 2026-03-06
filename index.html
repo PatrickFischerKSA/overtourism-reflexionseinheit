@@ -238,20 +238,100 @@
           Tauscht für einen Abend oder mehrere Etappen eure Perspektive.
           Simuliert Reisegespräche mit Fremden: kurz, intensiv, widersprüchlich.
         </p>
-        <div class="split">
-          <article class="card">
-            <h3>Begegnungsgenerator</h3>
-            <button type="button" id="encounterBtn">Neue Begegnung</button>
-            <p id="encounterText" class="prompt"></p>
+        <div class="encounter-shell">
+          <aside class="card encounter-guide">
+            <h3>Begegnungsformate</h3>
+            <p class="mini">
+              Wähle kein beliebiges Gespräch, sondern eine präzise soziale Konstellation:
+              Wer spricht? Wer profitiert? Wer trägt die Last? Wer kann den Ort wieder verlassen?
+            </p>
+            <div id="encounterNav" class="textlab-nav" role="tablist" aria-label="Begegnungsformate"></div>
+            <div class="route-block encounter-meta">
+              <h4>Grundregel</h4>
+              <ol class="todo">
+                <li>Erst aus der Rolle sprechen, dann analytisch zurücktreten.</li>
+                <li>Mindestens ein echter Dissenssatz bleibt stehen.</li>
+                <li>Jede Begegnung endet mit einer textgestützten Blogskizze.</li>
+              </ol>
+            </div>
+          </aside>
+
+          <article class="card encounter-workbench">
+            <p class="label">Aktive Begegnung</p>
+            <h3 id="encounterTitle"></h3>
+            <p id="encounterLead"></p>
+            <div class="stop-meta">
+              <span id="encounterMode" class="tag"></span>
+              <span id="encounterDuration" class="tag"></span>
+              <span id="encounterConstellation" class="tag"></span>
+            </div>
+
+            <div class="route-block">
+              <h4>Spannung der Begegnung</h4>
+              <p id="encounterConflict"></p>
+              <p id="encounterQuestion" class="prompt alt"></p>
+            </div>
+
+            <div class="route-block">
+              <h4>Primärtexte in dieser Begegnung</h4>
+              <p id="encounterSourceNote" class="mini"></p>
+              <div id="encounterSources" class="link-cluster"></div>
+            </div>
+
+            <div class="deep-grid">
+              <section class="route-block">
+                <h4>Gesprächschoreografie</h4>
+                <ol id="encounterProtocol" class="todo"></ol>
+              </section>
+              <section class="route-block">
+                <h4>Rollen und Blickachsen</h4>
+                <ul id="encounterRoles" class="todo"></ul>
+              </section>
+            </div>
+
+            <div class="route-block">
+              <div class="inline-blog-actions">
+                <h4>Impulswechsel</h4>
+                <button type="button" id="encounterBtn">Neue Gesprächsvariation</button>
+              </div>
+              <p id="encounterText" class="prompt"></p>
+            </div>
+
+            <div class="route-block">
+              <h4>Nachklang für den Reiseblog</h4>
+              <p id="encounterBlogPrompt"></p>
+              <form id="encounterForm" class="inline-blog-form">
+                <label>
+                  Titel der Reisebekanntschaft
+                  <input type="text" id="encounterEntryTitle" placeholder="z. B. Ein Abend im Hyperdorf, zwei unvereinbare Wahrheiten" required />
+                </label>
+                <label>
+                  Textstelle(n)
+                  <input type="text" id="encounterEntryReference" placeholder="Werk + Seite, z. B. Abgefahren, Kap. 5, S. 76; Flut, S. 53" required />
+                </label>
+                <label>
+                  Festgehaltener Dissens
+                  <textarea id="encounterEntryDissent" rows="3" placeholder="Welcher Konflikt blieb offen und warum war er analytisch produktiv?" required></textarea>
+                </label>
+                <label>
+                  Blogskizze
+                  <textarea id="encounterEntryInsight" rows="4" placeholder="Was wurde in der Begegnung sichtbar über Sehnsucht, Stress, Geschäftslogik, Ortslast oder Fremdheit?" required></textarea>
+                </label>
+                <div class="inline-blog-actions">
+                  <button type="submit">Begegnung sichern</button>
+                  <button type="button" id="encounterToBlogBtn">In Reiseblog übernehmen</button>
+                </div>
+              </form>
+            </div>
           </article>
-          <article class="card">
-            <h3>Duo-/Trio-Protokoll</h3>
-            <ul>
-              <li>Jede Person spricht zuerst nur aus ihrer Rolle.</li>
-              <li>Andere spiegeln, wo Sehnsucht in Stress kippt.</li>
-              <li>Gemeinsamer Satz für den Reiseblog: "Wir wollten ..., wir erzeugten ..."</li>
-            </ul>
-          </article>
+        </div>
+        <div class="card encounter-log">
+          <h3>Begegnungslogbuch</h3>
+          <p class="mini">
+            Halte fest, welche Gespräche nur nett waren und welche wirklich Analyse erzeugt haben.
+            Gute Reisebekanntschaften produzieren keine Einigkeit, sondern präzisere Fragen.
+          </p>
+          <div id="encounterEntries" class="close-reading-entries"></div>
         </div>
       </section>
 
