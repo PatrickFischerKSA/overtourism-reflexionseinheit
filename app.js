@@ -702,6 +702,113 @@ const encounterFormats = [
   }
 ];
 
+const mediaAssignments = [
+  {
+    id: "image-contrast",
+    title: "Bildauftrag: Traumwelt und Schattenseite",
+    lead:
+      "Halte mit einem Bild fest, wie touristische Schönheit und ihre Nebenfolgen gleichzeitig sichtbar werden.",
+    mode: "Bild",
+    focus: "Bildausschnitt, Kontrast, sichtbare Spuren",
+    prompt:
+      "Fotografiere oder wähle ein Bild, das zuerst attraktiv wirkt, bei genauerem Hinsehen aber Enge, Geschäftigkeit, Verdrängung, Inszenierung oder Belastung zeigt.",
+    sourceNote:
+      "Arbeite nicht nur mit Stimmung. Binde dein Bild an eine Textstelle zurück: Welche Idee aus Wiedmer, Enzensberger oder Groebner macht das Bild lesbar?",
+    requiresImage: true,
+    requiresAudio: false,
+    sourceLinks: [
+      {
+        label: "Enzensberger: Leitbilder der Ferne (S. 6)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=6"
+      },
+      {
+        label: "Groebner: Hyperdorf (S. 76)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=76"
+      },
+      {
+        label: "Wiedmer: Stagen-Spur (S. 53)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=53"
+      }
+    ]
+  },
+  {
+    id: "audio-memo",
+    title: "Tonauftrag: Sprachnotiz vom Kipppunkt",
+    lead:
+      "Sprich eine kurze Audiobotschaft ein, in der du einen Moment beschreibst, an dem Reisen von Freiheit in Stress kippt.",
+    mode: "Ton",
+    focus: "Stimme, Rhythmus, Unsicherheit, Zuspitzung",
+    prompt:
+      "Nimm 30 bis 90 Sekunden Ton auf oder lade eine Audiodatei hoch. Erzähle konkret: Was sollte schön werden und wo kippte die Situation?",
+    sourceNote:
+      "Der Tonbeitrag darf persönlich sein, muss aber mit einem Primärtext verbunden bleiben. Nutze die Stimme nicht nur für Meinung, sondern für genaue Beobachtung.",
+    requiresImage: false,
+    requiresAudio: true,
+    sourceLinks: [
+      {
+        label: "Groebner: Ferienmüde / Unfreiheit (S. 69)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=69"
+      },
+      {
+        label: "Enzensberger: Pyrrhussieg des Tourismus (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      }
+    ]
+  },
+  {
+    id: "image-audio",
+    title: "Bild + Ton: Kulisse vorne, Wirklichkeit dahinter",
+    lead:
+      "Kombiniere ein Bild mit einem kurzen Audiokommentar. Das Bild zeigt die Oberfläche, der Ton legt die verborgene Spannung frei.",
+    mode: "Bild + Ton",
+    focus: "Spannung zwischen dem Sichtbaren und dem Gesagten",
+    prompt:
+      "Lade ein Bild und einen kurzen Audiokommentar hoch. Das Bild darf schön sein, aber dein Ton muss erklären, was daran problematisch, widersprüchlich oder teuer erkauft ist.",
+    sourceNote:
+      "Ideal für Groebner und Wiedmer: Kulissen, Rhythmen, Dorfumbau, Leere, Geschäftigkeit.",
+    requiresImage: true,
+    requiresAudio: true,
+    sourceLinks: [
+      {
+        label: "Groebner: Kap. 6 öffnen (S. 90)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=90"
+      },
+      {
+        label: "Groebner: Zeitreisen (S. 104)",
+        href: "./material/Groebner_Abgefahren_9783835397835.pdf#page=104"
+      },
+      {
+        label: "Wiedmer: spätere Stagen-Verschiebungen (S. 104)",
+        href: "./material/JakobWiedmer_Flut.pdf#page=104"
+      }
+    ]
+  },
+  {
+    id: "audio-soundwalk",
+    title: "Tonspur: Was eine Postkarte nicht hört",
+    lead:
+      "Sammle Geräusche oder kommentiere Geräusche: Kofferrollen, Durchsagen, Verkehr, Stimmen, Ruheinseln, Baustellen, Warteschlangen.",
+    mode: "Ton oder Ton + Kommentar",
+    focus: "Geräuschkulisse, Tempo, Überfüllung, Arbeit im Hintergrund",
+    prompt:
+      "Erstelle eine kurze Tonspur oder kombiniere Alltagsgeräusche mit einem Kommentar. Zeige, wie touristische Orte akustisch nach Stress, Service oder Geschäftigkeit klingen.",
+    sourceNote:
+      "Dieser Auftrag funktioniert besonders gut mit Enzensberger und Ferienmüde: gesucht wird Ruhe, hörbar wird oft Verdichtung.",
+    requiresImage: false,
+    requiresAudio: true,
+    sourceLinks: [
+      {
+        label: "Groebner: Am Ziel der Träume (S. 76)",
+        href: "./material/Groebner_Ferienmuede_9783835397323.pdf#page=76"
+      },
+      {
+        label: "Enzensberger: Gegendruck / Überschwemmung (S. 8)",
+        href: "./material/Enzensberger_Tourismus.pdf#page=8"
+      }
+    ]
+  }
+];
+
 const feedbackThemes = [
   {
     id: "stressspirale",
@@ -1010,9 +1117,40 @@ const els = {
   blogObservation: document.querySelector("#blogObservation"),
   blogReference: document.querySelector("#blogReference"),
   blogEntries: document.querySelector("#blogEntries"),
+  mediaAssignmentNav: document.querySelector("#mediaAssignmentNav"),
+  mediaAssignmentTitle: document.querySelector("#mediaAssignmentTitle"),
+  mediaAssignmentLead: document.querySelector("#mediaAssignmentLead"),
+  mediaAssignmentMode: document.querySelector("#mediaAssignmentMode"),
+  mediaAssignmentFocus: document.querySelector("#mediaAssignmentFocus"),
+  mediaAssignmentPrompt: document.querySelector("#mediaAssignmentPrompt"),
+  mediaAssignmentSourceNote: document.querySelector("#mediaAssignmentSourceNote"),
+  mediaAssignmentSources: document.querySelector("#mediaAssignmentSources"),
+  mediaForm: document.querySelector("#mediaForm"),
+  mediaStop: document.querySelector("#mediaStop"),
+  mediaTitle: document.querySelector("#mediaTitle"),
+  mediaReference: document.querySelector("#mediaReference"),
+  mediaObservation: document.querySelector("#mediaObservation"),
+  mediaInsight: document.querySelector("#mediaInsight"),
+  mediaImage: document.querySelector("#mediaImage"),
+  mediaAudio: document.querySelector("#mediaAudio"),
+  audioRecordBtn: document.querySelector("#audioRecordBtn"),
+  audioStopBtn: document.querySelector("#audioStopBtn"),
+  audioRecordState: document.querySelector("#audioRecordState"),
+  mediaEntries: document.querySelector("#mediaEntries"),
+  mediaTeacherPanel: document.querySelector("#mediaTeacherPanel"),
   teacherModeBtn: document.querySelector("#teacherModeBtn"),
   teacherModeState: document.querySelector("#teacherModeState"),
   teacherPanel: document.querySelector("#teacherPanel"),
+  archiveSetForm: document.querySelector("#archiveSetForm"),
+  archivePassword: document.querySelector("#archivePassword"),
+  archivePasswordConfirm: document.querySelector("#archivePasswordConfirm"),
+  archiveUnlockForm: document.querySelector("#archiveUnlockForm"),
+  archiveUnlockPassword: document.querySelector("#archiveUnlockPassword"),
+  archiveLockBtn: document.querySelector("#archiveLockBtn"),
+  archiveState: document.querySelector("#archiveState"),
+  archiveVault: document.querySelector("#archiveVault"),
+  archiveSummary: document.querySelector("#archiveSummary"),
+  archiveList: document.querySelector("#archiveList"),
   encounterNav: document.querySelector("#encounterNav"),
   closeReadingNav: document.querySelector("#closeReadingNav"),
   encounterTitle: document.querySelector("#encounterTitle"),
@@ -1057,20 +1195,31 @@ const blogStorageKey = "overtourismBlogEntries";
 const teacherModeStorageKey = "overtourismTeacherMode";
 const closeReadingStorageKey = "overtourismCloseReadings";
 const encounterStorageKey = "overtourismEncounters";
+const archivePasswordHashKey = "overtourismArchivePasswordHash";
 const materialAccessHintHref = "#material-access";
 const wiedmerDropboxHref =
   "https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0";
+const mediaDbName = "overtourismMediaArchive";
+const mediaStoreName = "mediaEntries";
 
 let activeRouteId = routeCatalog[0].id;
 let activeStopIndex = 0;
 let progressState = {};
 let blogEntries = [];
+let mediaEntries = [];
 let isTeacherMode = false;
 let activeEncounterId = encounterFormats[0].id;
+let activeMediaAssignmentId = mediaAssignments[0].id;
 let activeCloseReadingStationId = closeReadingStations[0].id;
 let closeReadingEntries = [];
 let encounterEntries = [];
 let localAssetAvailability = {};
+let archiveUnlocked = false;
+let mediaRecorder;
+let recordedAudioChunks = [];
+let recordedAudioBlob = null;
+let recordingStream;
+let mediaDbPromise;
 
 function randomFrom(list) {
   return list[Math.floor(Math.random() * list.length)];
@@ -1139,6 +1288,7 @@ async function probeLocalAsset(path) {
 function collectLocalAssetPaths() {
   const links = [
     ...Object.values(primaryTextLibrary),
+    ...mediaAssignments.flatMap((assignment) => assignment.sourceLinks || []),
     ...encounterFormats.flatMap((format) => format.sourceLinks || []),
     ...closeReadingStations.flatMap((station) => station.sourceLinks || [])
   ];
@@ -1163,10 +1313,86 @@ async function initMaterialAccessFallbacks() {
   renderRouteDetail();
   renderCloseReadingStation();
   renderEncounterDetail();
+  renderMediaAssignmentDetail();
 }
 
 function formatMultiline(text) {
   return escapeHtml(text).replaceAll("\n", "<br>");
+}
+
+function idbRequest(request) {
+  return new Promise((resolve, reject) => {
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+}
+
+function idbTransactionDone(transaction) {
+  return new Promise((resolve, reject) => {
+    transaction.oncomplete = () => resolve();
+    transaction.onerror = () => reject(transaction.error);
+    transaction.onabort = () => reject(transaction.error);
+  });
+}
+
+function openMediaDb() {
+  if (!("indexedDB" in window)) {
+    return Promise.reject(new Error("IndexedDB nicht verfügbar."));
+  }
+
+  if (!mediaDbPromise) {
+    mediaDbPromise = new Promise((resolve, reject) => {
+      const request = indexedDB.open(mediaDbName, 1);
+
+      request.onupgradeneeded = () => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(mediaStoreName)) {
+          db.createObjectStore(mediaStoreName, { keyPath: "id" });
+        }
+      };
+
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  return mediaDbPromise;
+}
+
+async function saveMediaEntryToDb(entry) {
+  const db = await openMediaDb();
+  const transaction = db.transaction(mediaStoreName, "readwrite");
+  transaction.objectStore(mediaStoreName).put(entry);
+  await idbTransactionDone(transaction);
+}
+
+async function deleteMediaEntryFromDb(entryId) {
+  const db = await openMediaDb();
+  const transaction = db.transaction(mediaStoreName, "readwrite");
+  transaction.objectStore(mediaStoreName).delete(entryId);
+  await idbTransactionDone(transaction);
+}
+
+async function loadMediaEntriesFromDb() {
+  const db = await openMediaDb();
+  const transaction = db.transaction(mediaStoreName, "readonly");
+  const entries = await idbRequest(transaction.objectStore(mediaStoreName).getAll());
+  await idbTransactionDone(transaction);
+  return Array.isArray(entries) ? entries : [];
+}
+
+async function hashPassphrase(passphrase) {
+  const encoder = new TextEncoder();
+  if (window.crypto?.subtle) {
+    const digest = await window.crypto.subtle.digest("SHA-256", encoder.encode(passphrase));
+    return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+  }
+
+  return btoa(passphrase);
+}
+
+function currentMediaAssignment() {
+  return mediaAssignments.find((assignment) => assignment.id === activeMediaAssignmentId) || mediaAssignments[0];
 }
 
 function currentRoute() {
@@ -1400,6 +1626,47 @@ function buildAutoFeedback(entry) {
   };
 }
 
+function buildMediaFeedback(entry) {
+  const rawText =
+    `${entry.title} ${entry.observation} ${entry.insight} ${entry.reference} ${entry.assignmentTitle} ${entry.stop}`.toLowerCase();
+  const [primaryTheme, secondaryTheme] = pickFeedbackThemes(rawText);
+  const groebnerAnchor = inferGroebnerAnchor(rawText);
+  const wiedmerAnchor = inferWiedmerAnchor(rawText);
+
+  let mediumUse = "";
+  if (entry.imageBlob && entry.audioBlob) {
+    mediumUse =
+      "Die Verbindung aus Bild und Ton ist produktiv, wenn Bildoberfläche und Audiokommentar nicht dasselbe sagen, sondern Spannung erzeugen.";
+  } else if (entry.imageBlob) {
+    mediumUse =
+      "Die Bildwahl wird stark, wenn Ausschnitt, Perspektive und sichtbare Details mehr zeigen als nur Atmosphäre oder Schönheit.";
+  } else if (entry.audioBlob) {
+    mediumUse =
+      "Der Tonbeitrag gewinnt, wenn Stimme, Geräusche, Tempo oder Pausen selbst schon einen Widerspruch hörbar machen.";
+  } else {
+    mediumUse =
+      "Der Medienbeitrag braucht eine klarere Formentscheidung: Was macht gerade dieses Medium sichtbar oder hörbar?";
+  }
+
+  return {
+    strength:
+      `Dein Medienbeitrag ist stark, weil er ${primaryTheme.strength}. ` +
+      `Er bleibt nicht bei einer schönen Oberfläche stehen, sondern macht eine Spannung konkret erfahrbar.`,
+    textBridge:
+      `${wiedmerAnchor} Bei Enzensberger wird daraus erneut das Paradox des Reisens: gesucht wird Befreiung, produziert werden Zugriff und neue Last. ${groebnerAnchor}`,
+    mediumUse,
+    critical:
+      `Vertiefe jetzt ${primaryTheme.critical}. ` +
+      `Nutze dafür noch genauer das Zusammenspiel von Medium und Textbezug, damit dein Beitrag nicht nur behauptet, sondern zeigt oder hörbar macht.`,
+    impulse:
+      `${secondaryTheme.impulse} ` +
+      `Frage dich zusätzlich: Was würde in deinem Beitrag fehlen, wenn Bild oder Ton wegfiele?`,
+    generatedAt: toIsoNow(),
+    primaryTheme: primaryTheme.label,
+    secondaryTheme: secondaryTheme.label
+  };
+}
+
 function isFeedbackComplete(feedback) {
   return (
     feedback &&
@@ -1411,6 +1678,14 @@ function isFeedbackComplete(feedback) {
     feedback.textBridge.trim() &&
     feedback.critical.trim() &&
     feedback.impulse.trim()
+  );
+}
+
+function isMediaFeedbackComplete(feedback) {
+  return (
+    isFeedbackComplete(feedback) &&
+    typeof feedback.mediumUse === "string" &&
+    feedback.mediumUse.trim()
   );
 }
 
@@ -1446,6 +1721,49 @@ function normalizeBlogEntry(rawEntry) {
     };
   } else {
     base.feedback = buildAutoFeedback(base);
+  }
+
+  return base;
+}
+
+function normalizeMediaEntry(rawEntry) {
+  const base = {
+    id: rawEntry?.id || `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    assignmentId: rawEntry?.assignmentId || currentMediaAssignment().id,
+    assignmentTitle: rawEntry?.assignmentTitle || currentMediaAssignment().title,
+    route: rawEntry?.route || currentRoute().name,
+    stop: rawEntry?.stop || "",
+    title: rawEntry?.title || "",
+    reference: rawEntry?.reference || "",
+    observation: rawEntry?.observation || "",
+    insight: rawEntry?.insight || "",
+    imageBlob: rawEntry?.imageBlob || null,
+    audioBlob: rawEntry?.audioBlob || null,
+    imageName: rawEntry?.imageName || "",
+    audioName: rawEntry?.audioName || "",
+    createdAt: rawEntry?.createdAt || toIsoNow(),
+    teacherComments: []
+  };
+
+  if (Array.isArray(rawEntry?.teacherComments)) {
+    base.teacherComments = rawEntry.teacherComments
+      .filter((comment) => comment && typeof comment.text === "string")
+      .map((comment) => ({
+        id: comment.id || `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+        text: comment.text,
+        createdAt: comment.createdAt || toIsoNow()
+      }));
+  }
+
+  if (isMediaFeedbackComplete(rawEntry?.feedback)) {
+    base.feedback = {
+      ...rawEntry.feedback,
+      generatedAt: rawEntry.feedback.generatedAt || toIsoNow(),
+      primaryTheme: rawEntry.feedback.primaryTheme || "Paradoxon",
+      secondaryTheme: rawEntry.feedback.secondaryTheme || "Vertiefung"
+    };
+  } else {
+    base.feedback = buildMediaFeedback(base);
   }
 
   return base;
@@ -1932,6 +2250,7 @@ function setActiveRoute(routeId) {
   renderRouteNav();
   renderRouteDetail();
   populateBlogStops();
+  populateMediaStops();
 }
 
 function setActiveStop(index) {
@@ -2430,6 +2749,7 @@ function renderBlogEntries() {
   if (!blogEntries.length) {
     els.blogEntries.innerHTML = "<p class='card'>Noch keine Etappen gepostet.</p>";
     renderTeacherPanel();
+    renderArchiveUi();
     return;
   }
 
@@ -2459,6 +2779,218 @@ function renderBlogEntries() {
   });
 
   renderTeacherPanel();
+  renderArchiveUi();
+}
+
+function renderMediaFeedbackBlock(entry) {
+  if (!entry.feedback) return "";
+
+  return `
+    <section class="auto-feedback">
+      <p class="label">Generiertes Medienfeedback</p>
+      <p><strong>Stärke:</strong> ${escapeHtml(entry.feedback.strength)}</p>
+      <p><strong>Textbrücke:</strong> ${escapeHtml(entry.feedback.textBridge)}</p>
+      <p><strong>Medium:</strong> ${escapeHtml(entry.feedback.mediumUse)}</p>
+      <p><strong>Kritische Vertiefung:</strong> ${escapeHtml(entry.feedback.critical)}</p>
+      <p><strong>Gedankenimpuls:</strong> ${escapeHtml(entry.feedback.impulse)}</p>
+      <p class="meta">Generiert: ${new Date(entry.feedback.generatedAt).toLocaleString("de-CH")} | Fokus: ${escapeHtml(entry.feedback.primaryTheme || "Paradoxon")} / ${escapeHtml(entry.feedback.secondaryTheme || "Vertiefung")}</p>
+    </section>
+  `;
+}
+
+function renderMediaPreview(entry) {
+  const parts = [];
+
+  if (entry.imageBlob) {
+    const imageUrl = URL.createObjectURL(entry.imageBlob);
+    parts.push(`<img class="media-preview-image" src="${imageUrl}" alt="${escapeHtml(entry.title)}" />`);
+  }
+
+  if (entry.audioBlob) {
+    const audioUrl = URL.createObjectURL(entry.audioBlob);
+    parts.push(`<audio class="media-preview-audio" controls src="${audioUrl}"></audio>`);
+  }
+
+  if (!parts.length) {
+    return "<p class='meta'>Keine Mediendatei gespeichert.</p>";
+  }
+
+  return `<div class="media-preview">${parts.join("")}</div>`;
+}
+
+function populateMediaStops() {
+  if (!els.mediaStop) return;
+  const route = currentRoute();
+  els.mediaStop.innerHTML = route.stops
+    .map((stop) => `<option value="${escapeHtml(stop.title)}">${escapeHtml(stop.title)}</option>`)
+    .join("");
+}
+
+function renderMediaAssignmentNav() {
+  if (!els.mediaAssignmentNav) return;
+
+  els.mediaAssignmentNav.innerHTML = mediaAssignments
+    .map((assignment) => {
+      const activeClass = assignment.id === activeMediaAssignmentId ? "active" : "";
+      return `<button type="button" class="${activeClass}" data-media-assignment-id="${escapeHtml(assignment.id)}">${escapeHtml(assignment.title)}</button>`;
+    })
+    .join("");
+
+  const buttons = els.mediaAssignmentNav.querySelectorAll("button[data-media-assignment-id]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeMediaAssignmentId = button.getAttribute("data-media-assignment-id");
+      renderMediaAssignmentNav();
+      renderMediaAssignmentDetail();
+    });
+  });
+}
+
+function renderMediaAssignmentDetail() {
+  const assignment = currentMediaAssignment();
+  if (!els.mediaAssignmentTitle) return;
+
+  els.mediaAssignmentTitle.textContent = assignment.title;
+  els.mediaAssignmentLead.textContent = assignment.lead;
+  els.mediaAssignmentMode.textContent = `Format: ${assignment.mode}`;
+  els.mediaAssignmentFocus.textContent = `Achte auf: ${assignment.focus}`;
+  els.mediaAssignmentPrompt.textContent = assignment.prompt;
+  els.mediaAssignmentSourceNote.textContent = assignment.sourceNote;
+  els.mediaAssignmentSources.innerHTML = buildSourceLinksHtml(assignment.sourceLinks || []);
+}
+
+async function loadMediaEntries() {
+  try {
+    const loaded = await loadMediaEntriesFromDb();
+    mediaEntries = loaded.map((entry) => normalizeMediaEntry(entry)).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  } catch {
+    mediaEntries = [];
+  }
+}
+
+async function renderMediaEntries() {
+  if (!els.mediaEntries) return;
+
+  if (!mediaEntries.length) {
+    els.mediaEntries.innerHTML =
+      "<p class='card'>Noch keine Ton- oder Bildbeiträge gespeichert.</p>";
+    renderMediaTeacherPanel();
+    renderArchiveUi();
+    return;
+  }
+
+  els.mediaEntries.innerHTML = mediaEntries
+    .map(
+      (entry) => `
+      <article class="blog-entry media-entry">
+        <h3>${escapeHtml(entry.title)}</h3>
+        <p class="meta">${escapeHtml(entry.assignmentTitle)} | ${escapeHtml(entry.route)} | ${escapeHtml(entry.stop)} | ${escapeHtml(entry.reference)} | ${new Date(entry.createdAt).toLocaleString("de-CH")}</p>
+        ${renderMediaPreview(entry)}
+        <p><strong>Was sieht / hört man?</strong> ${escapeHtml(entry.observation)}</p>
+        <p><strong>Aussage:</strong> ${escapeHtml(entry.insight)}</p>
+        ${renderMediaFeedbackBlock(entry)}
+        <section class="teacher-comment-block">
+          <p class="label">Lehrerkommentare</p>
+          ${renderTeacherComments(entry.teacherComments)}
+        </section>
+        <button type="button" data-media-delete-id="${escapeHtml(entry.id)}">Löschen</button>
+      </article>
+    `
+    )
+    .join("");
+
+  const buttons = els.mediaEntries.querySelectorAll("button[data-media-delete-id]");
+  buttons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const entryId = button.getAttribute("data-media-delete-id");
+      mediaEntries = mediaEntries.filter((entry) => entry.id !== entryId);
+      await deleteMediaEntryFromDb(entryId);
+      await renderMediaEntries();
+    });
+  });
+
+  renderMediaTeacherPanel();
+  renderArchiveUi();
+}
+
+async function addMediaTeacherComment(entryId, text) {
+  const trimmed = text.trim();
+  if (!trimmed) return;
+
+  const entry = mediaEntries.find((candidate) => candidate.id === entryId);
+  if (!entry) return;
+
+  entry.teacherComments.unshift({
+    id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    text: trimmed,
+    createdAt: toIsoNow()
+  });
+
+  await saveMediaEntryToDb(entry);
+  await renderMediaEntries();
+}
+
+async function regenerateMediaFeedback(entryId) {
+  const entry = mediaEntries.find((candidate) => candidate.id === entryId);
+  if (!entry) return;
+
+  entry.feedback = buildMediaFeedback(entry);
+  await saveMediaEntryToDb(entry);
+  await renderMediaEntries();
+}
+
+function renderMediaTeacherPanel() {
+  if (!els.mediaTeacherPanel) return;
+
+  if (!isTeacherMode) {
+    els.mediaTeacherPanel.hidden = true;
+    els.mediaTeacherPanel.innerHTML = "";
+    return;
+  }
+
+  els.mediaTeacherPanel.hidden = false;
+
+  if (!mediaEntries.length) {
+    els.mediaTeacherPanel.innerHTML = "<p class='card'>Noch keine Medienbeiträge für die Lehrerversion vorhanden.</p>";
+    return;
+  }
+
+  els.mediaTeacherPanel.innerHTML = mediaEntries
+    .map((entry) => {
+      return `
+      <article class="teacher-entry">
+        <p class="label">Lehrerversion Medien</p>
+        <h3>${escapeHtml(entry.title)}</h3>
+        <p class="meta">${escapeHtml(entry.assignmentTitle)} | ${escapeHtml(entry.route)} | ${escapeHtml(entry.stop)} | ${escapeHtml(entry.reference)}</p>
+        ${renderMediaFeedbackBlock(entry)}
+        <label for="media-comment-${escapeHtml(entry.id)}">Lehrerkommentar</label>
+        <textarea id="media-comment-${escapeHtml(entry.id)}" rows="3" data-media-comment-input-id="${escapeHtml(entry.id)}" placeholder="Präzises Feedback zum Medium, zum Textbezug und zum nächsten Schritt"></textarea>
+        <div class="teacher-actions">
+          <button type="button" data-add-media-comment-id="${escapeHtml(entry.id)}">Kommentar speichern</button>
+          <button type="button" data-regenerate-media-feedback-id="${escapeHtml(entry.id)}">Feedback neu generieren</button>
+        </div>
+      </article>
+      `;
+    })
+    .join("");
+
+  const addButtons = els.mediaTeacherPanel.querySelectorAll("button[data-add-media-comment-id]");
+  addButtons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const entryId = button.getAttribute("data-add-media-comment-id");
+      const input = els.mediaTeacherPanel.querySelector(`textarea[data-media-comment-input-id="${entryId}"]`);
+      if (!input) return;
+      await addMediaTeacherComment(entryId, input.value);
+    });
+  });
+
+  const regenerateButtons = els.mediaTeacherPanel.querySelectorAll("button[data-regenerate-media-feedback-id]");
+  regenerateButtons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const entryId = button.getAttribute("data-regenerate-media-feedback-id");
+      await regenerateMediaFeedback(entryId);
+    });
+  });
 }
 
 function populateBlogStops() {
@@ -2498,6 +3030,231 @@ function initBlog() {
     els.blogForm.reset();
     populateBlogStops();
     renderRouteDetail();
+  });
+}
+
+function hasArchivePassword() {
+  return Boolean(localStorage.getItem(archivePasswordHashKey));
+}
+
+function buildArchiveItems() {
+  const textItems = blogEntries.map((entry) => ({
+    createdAt: entry.createdAt,
+    label: `${entry.title} [Text]`,
+    detail: `${entry.route} | ${entry.stop}`
+  }));
+  const mediaItems = mediaEntries.map((entry) => ({
+    createdAt: entry.createdAt,
+    label: `${entry.title} [${entry.imageBlob && entry.audioBlob ? "Bild+Ton" : entry.imageBlob ? "Bild" : "Ton"}]`,
+    detail: `${entry.assignmentTitle} | ${entry.stop}`
+  }));
+
+  return [...textItems, ...mediaItems].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+}
+
+function renderArchiveUi() {
+  if (!els.archiveState || !els.archiveVault) return;
+
+  const passwordIsSet = hasArchivePassword();
+  const items = buildArchiveItems();
+  const textCount = blogEntries.length;
+  const mediaCount = mediaEntries.length;
+
+  if (!passwordIsSet) {
+    archiveUnlocked = true;
+    els.archiveState.textContent =
+      "Archiv aktuell ungeschützt: Alle Beiträge sind nur lokal auf diesem Gerät gespeichert.";
+  } else if (archiveUnlocked) {
+    els.archiveState.textContent =
+      "Archiv entsperrt: Du siehst jetzt die lokale Übersicht aller Text-, Bild- und Tonbeiträge auf diesem Gerät.";
+  } else {
+    els.archiveState.textContent =
+      "Archiv gesperrt: Beiträge bleiben lokal gespeichert, aber die Übersicht ist auf diesem Gerät gerade verborgen.";
+  }
+
+  els.archiveVault.hidden = passwordIsSet && !archiveUnlocked;
+  if (els.archiveVault.hidden) {
+    return;
+  }
+
+  els.archiveSummary.textContent =
+    `Gespeichert in diesem Browser: ${textCount} Textbeiträge und ${mediaCount} Medienbeiträge.`;
+  els.archiveList.innerHTML = items.length
+    ? items
+        .map((item) => `<li><strong>${escapeHtml(item.label)}</strong> - ${escapeHtml(item.detail)} - ${new Date(item.createdAt).toLocaleString("de-CH")}</li>`)
+        .join("")
+    : "<li>Noch keine Beiträge im lokalen Archiv.</li>";
+}
+
+async function initArchive() {
+  if (!els.archiveSetForm || !els.archiveUnlockForm) return;
+
+  archiveUnlocked = !hasArchivePassword();
+  renderArchiveUi();
+
+  els.archiveSetForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const password = els.archivePassword.value.trim();
+    const confirm = els.archivePasswordConfirm.value.trim();
+
+    if (password.length < 6) {
+      els.archiveState.textContent = "Archivschutz braucht mindestens 6 Zeichen.";
+      return;
+    }
+    if (password !== confirm) {
+      els.archiveState.textContent = "Die beiden Passwortfelder stimmen nicht überein.";
+      return;
+    }
+
+    const hash = await hashPassphrase(password);
+    localStorage.setItem(archivePasswordHashKey, hash);
+    archiveUnlocked = true;
+    els.archiveSetForm.reset();
+    renderArchiveUi();
+  });
+
+  els.archiveUnlockForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!hasArchivePassword()) {
+      archiveUnlocked = true;
+      renderArchiveUi();
+      return;
+    }
+
+    const password = els.archiveUnlockPassword.value.trim();
+    const hash = await hashPassphrase(password);
+    if (hash === localStorage.getItem(archivePasswordHashKey)) {
+      archiveUnlocked = true;
+      els.archiveUnlockForm.reset();
+      renderArchiveUi();
+      return;
+    }
+
+    els.archiveState.textContent = "Passwort falsch. Das Archiv bleibt gesperrt.";
+  });
+
+  els.archiveLockBtn.addEventListener("click", () => {
+    archiveUnlocked = false;
+    els.archiveUnlockForm.reset();
+    renderArchiveUi();
+  });
+}
+
+async function startAudioRecording() {
+  if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+    els.audioRecordState.textContent = "Browseraufnahme wird hier nicht unterstützt. Lade stattdessen eine Audiodatei hoch.";
+    return;
+  }
+
+  recordingStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  recordedAudioChunks = [];
+  mediaRecorder = new MediaRecorder(recordingStream);
+
+  mediaRecorder.addEventListener("dataavailable", (event) => {
+    if (event.data.size > 0) {
+      recordedAudioChunks.push(event.data);
+    }
+  });
+
+  mediaRecorder.addEventListener("stop", () => {
+    recordedAudioBlob = new Blob(recordedAudioChunks, { type: mediaRecorder.mimeType || "audio/webm" });
+    els.audioRecordState.textContent =
+      `Aufnahme bereit: ${Math.round(recordedAudioBlob.size / 1024)} KB gespeichert, wird beim Sichern mit übernommen.`;
+    els.audioRecordBtn.disabled = false;
+    els.audioStopBtn.disabled = true;
+    if (recordingStream) {
+      recordingStream.getTracks().forEach((track) => track.stop());
+      recordingStream = null;
+    }
+  });
+
+  mediaRecorder.start();
+  recordedAudioBlob = null;
+  els.audioRecordBtn.disabled = true;
+  els.audioStopBtn.disabled = false;
+  els.audioRecordState.textContent = "Aufnahme läuft ... Sprich jetzt.";
+}
+
+function stopAudioRecording() {
+  if (!mediaRecorder || mediaRecorder.state === "inactive") return;
+  mediaRecorder.stop();
+}
+
+async function initMediaStudio() {
+  if (!els.mediaForm) return;
+
+  renderMediaAssignmentNav();
+  renderMediaAssignmentDetail();
+  populateMediaStops();
+  await loadMediaEntries();
+  await renderMediaEntries();
+
+  els.audioRecordBtn.addEventListener("click", async () => {
+    try {
+      await startAudioRecording();
+    } catch {
+      els.audioRecordState.textContent = "Die Aufnahme konnte nicht gestartet werden. Prüfe Mikrofonfreigabe oder lade eine Audiodatei hoch.";
+    }
+  });
+
+  els.audioStopBtn.addEventListener("click", () => {
+    stopAudioRecording();
+  });
+
+  els.mediaForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const assignment = currentMediaAssignment();
+    const imageFile = els.mediaImage.files?.[0] || null;
+    const audioFile = els.mediaAudio.files?.[0] || null;
+    const imageBlob = imageFile || null;
+    const audioBlob = audioFile || recordedAudioBlob || null;
+
+    if (assignment.requiresImage && !imageBlob) {
+      els.audioRecordState.textContent = "Für diesen Auftrag braucht es ein Bild.";
+      return;
+    }
+
+    if (assignment.requiresAudio && !audioBlob) {
+      els.audioRecordState.textContent = "Für diesen Auftrag braucht es Ton.";
+      return;
+    }
+
+    if (!imageBlob && !audioBlob) {
+      els.audioRecordState.textContent = "Bitte mindestens eine Bild- oder Tondatei auswählen.";
+      return;
+    }
+
+    const entry = normalizeMediaEntry({
+      id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+      assignmentId: assignment.id,
+      assignmentTitle: assignment.title,
+      route: currentRoute().name,
+      stop: els.mediaStop.value.trim(),
+      title: els.mediaTitle.value.trim(),
+      reference: els.mediaReference.value.trim(),
+      observation: els.mediaObservation.value.trim(),
+      insight: els.mediaInsight.value.trim(),
+      imageBlob,
+      audioBlob,
+      imageName: imageFile?.name || "",
+      audioName: audioFile?.name || (recordedAudioBlob ? "browser-aufnahme.webm" : ""),
+      createdAt: toIsoNow(),
+      teacherComments: []
+    });
+
+    try {
+      await saveMediaEntryToDb(entry);
+      mediaEntries.unshift(entry);
+      mediaEntries.sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+      els.mediaForm.reset();
+      recordedAudioBlob = null;
+      els.audioRecordState.textContent = "Medienbeitrag gespeichert.";
+      await renderMediaEntries();
+    } catch {
+      els.audioRecordState.textContent =
+        "Speichern fehlgeschlagen. Dieser Browser blockiert vermutlich lokale Mediendaten.";
+    }
   });
 }
 
@@ -2603,12 +3360,14 @@ function initTeacherMode() {
 
   syncTeacherModeUi();
   renderTeacherPanel();
+  renderMediaTeacherPanel();
 
   els.teacherModeBtn.addEventListener("click", () => {
     isTeacherMode = !isTeacherMode;
     localStorage.setItem(teacherModeStorageKey, String(isTeacherMode));
     syncTeacherModeUi();
     renderTeacherPanel();
+    renderMediaTeacherPanel();
   });
 }
 
@@ -2620,14 +3379,16 @@ function initRoutes() {
   renderRouteDetail();
 }
 
-function init() {
+async function init() {
   initRoutes();
   initParadoxConsole();
   initCloseReadingLab();
   initEncounters();
   initTravelProfile();
   initBlog();
+  await initMediaStudio();
   initTeacherMode();
+  await initArchive();
   initMaterialAccessFallbacks();
 }
 

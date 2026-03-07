@@ -410,6 +410,143 @@
         <section id="teacherPanel" class="teacher-panel" hidden aria-live="polite"></section>
       </section>
 
+      <section class="panel" id="media">
+        <p class="section-kicker">Medienblog</p>
+        <h2>Ton, Bild und Audiokommentar</h2>
+        <p>
+          Nicht jede Erkenntnis muss gleich als Fließtext erscheinen. Hier kannst du Bild, Ton oder beides
+          als Medienbeitrag festhalten und trotzdem textnah arbeiten.
+        </p>
+        <div class="media-shell">
+          <aside class="card media-guide">
+            <h3>Wähle einen Medienauftrag</h3>
+            <p class="mini">
+              Gute Medienbeiträge zeigen nicht nur etwas Schönes. Sie machen sichtbar oder hörbar,
+              wo Traumwelt, Geschäftigkeit, Stress oder Verdrängung aufeinanderprallen.
+            </p>
+            <div id="mediaAssignmentNav" class="textlab-nav" role="tablist" aria-label="Medienaufträge"></div>
+            <div class="route-block encounter-meta">
+              <h4>Was ein starker Beitrag kann</h4>
+              <ol class="todo">
+                <li>Er zeigt oder hört mehr als nur Oberfläche.</li>
+                <li>Er bleibt an einer Textstelle aus Wiedmer, Enzensberger oder Groebner angeschlossen.</li>
+                <li>Er macht einen Widerspruch konkret statt nur hübsch.</li>
+              </ol>
+            </div>
+          </aside>
+
+          <article class="card media-workbench">
+            <p class="label">Aktiver Auftrag</p>
+            <h3 id="mediaAssignmentTitle"></h3>
+            <p id="mediaAssignmentLead"></p>
+            <div class="stop-meta">
+              <span id="mediaAssignmentMode" class="tag"></span>
+              <span id="mediaAssignmentFocus" class="tag"></span>
+            </div>
+
+            <div class="route-block">
+              <h4>Was du machst</h4>
+              <p id="mediaAssignmentPrompt"></p>
+              <p id="mediaAssignmentSourceNote" class="mini"></p>
+              <div id="mediaAssignmentSources" class="link-cluster"></div>
+            </div>
+
+            <form id="mediaForm" class="inline-blog-form">
+              <label>
+                Raststätte
+                <select id="mediaStop"></select>
+              </label>
+              <label>
+                Titel
+                <input type="text" id="mediaTitle" placeholder="z. B. Schön im Bild, eng im Alltag" required />
+              </label>
+              <label>
+                Textbezug (Werk + Seite)
+                <input type="text" id="mediaReference" placeholder="z. B. Abgefahren, Kap. 5, S. 76; Flut, S. 53" required />
+              </label>
+              <label>
+                Was sieht oder hört man genau?
+                <textarea id="mediaObservation" rows="3" placeholder="Beschreibe konkret, was im Bild / im Ton vorkommt: Dinge, Stimmen, Geräusche, Ausschnitt, Stimmung." required></textarea>
+              </label>
+              <label>
+                Was zeigt dein Beitrag über Overtourism?
+                <textarea id="mediaInsight" rows="4" placeholder="Formuliere die Aussage: Was sagt dein Medienbeitrag über Sehnsucht, Stress, Kulissen, Verdrängung, Umweltlast oder Begegnung?" required></textarea>
+              </label>
+              <label>
+                Bilddatei
+                <input type="file" id="mediaImage" accept="image/*" />
+              </label>
+              <label>
+                Audiodatei
+                <input type="file" id="mediaAudio" accept="audio/*" />
+              </label>
+              <div class="inline-blog-actions">
+                <button type="button" id="audioRecordBtn">Ton im Browser aufnehmen</button>
+                <button type="button" id="audioStopBtn" disabled>Aufnahme stoppen</button>
+                <p id="audioRecordState" class="meta-note">Noch keine Aufnahme gestartet.</p>
+              </div>
+              <div class="inline-blog-actions">
+                <button type="submit">Medienbeitrag sichern</button>
+              </div>
+            </form>
+          </article>
+        </div>
+        <div id="mediaEntries" class="blog-entries"></div>
+        <section id="mediaTeacherPanel" class="teacher-panel" hidden aria-live="polite"></section>
+      </section>
+
+      <section class="panel" id="archive">
+        <p class="section-kicker">Archiv</p>
+        <h2>Wo Beiträge gespeichert sind und wie du sie schützen kannst</h2>
+        <div class="split">
+          <article class="card">
+            <h3>So speichert diese Lernumgebung gerade</h3>
+            <ul class="todo">
+              <li>Textblog, Kommentare, Lehrermodus und Reflexionslogbücher liegen lokal in diesem Browser.</li>
+              <li>Bild- und Tondateien werden lokal in einer Browser-Datenbank gespeichert.</li>
+              <li>Ohne Cloud oder Server bleiben die Beiträge auf genau diesem Gerät und in genau diesem Browserprofil.</li>
+            </ul>
+            <p class="mini">
+              Das ist praktisch für Schule und Distance Learning, aber keine echte Online-Plattform.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Lokalen Archivschutz einschalten</h3>
+            <p class="mini">
+              Dieser Schutz sperrt die Archivansicht auf diesem Gerät. Für echten passwortgeschützten Online-Zugriff
+              auf mehreren Geräten braucht es später einen Serverdienst.
+            </p>
+            <form id="archiveSetForm" class="inline-blog-form">
+              <label>
+                Neues Archiv-Passwort
+                <input type="password" id="archivePassword" placeholder="mindestens 6 Zeichen" />
+              </label>
+              <label>
+                Passwort wiederholen
+                <input type="password" id="archivePasswordConfirm" placeholder="noch einmal eingeben" />
+              </label>
+              <button type="submit">Archivschutz setzen oder ändern</button>
+            </form>
+            <form id="archiveUnlockForm" class="inline-blog-form">
+              <label>
+                Archiv öffnen
+                <input type="password" id="archiveUnlockPassword" placeholder="Passwort eingeben" />
+              </label>
+              <div class="inline-blog-actions">
+                <button type="submit">Archiv entsperren</button>
+                <button type="button" id="archiveLockBtn">Archiv wieder sperren</button>
+              </div>
+            </form>
+            <p id="archiveState" class="prompt"></p>
+          </article>
+        </div>
+        <div id="archiveVault" class="card archive-vault" hidden>
+          <h3>Archivübersicht</h3>
+          <p id="archiveSummary"></p>
+          <ul id="archiveList" class="todo"></ul>
+        </div>
+      </section>
+
       <section class="panel resources" id="quellen">
         <p class="section-kicker">Quellen</p>
         <h2>Primärtexte und Videoimpulse</h2>
