@@ -489,15 +489,15 @@ const encounterFormats = [
       }
     ],
     protocol: [
-      "Runde 1: Jede Person nennt zuerst nur ihr Reisemotiv und ihre reale Begrenzung.",
-      "Runde 2: Eine Person verteidigt das Reisen als notwendige Unterbrechung des Alltags, die andere zeigt die blinden Kosten.",
-      "Runde 3: Beide müssen einen Satz formulieren, in dem Sehnsucht und Belastung gleichzeitig vorkommen.",
-      "Abschluss: Haltet fest, welcher Einwand nicht aufgelöst werden konnte."
+      "1. Sagt kurz: Warum würdet ihr reisen wollen und was bremst euch dabei aus?",
+      "2. Person A sagt: 'Reisen brauche ich wirklich.' Person B antwortet: 'Ja, aber es hat blinde Kosten.'",
+      "3. Formuliert zusammen einen Satz mit beiden Seiten: Wunsch und Belastung.",
+      "4. Schreibt am Ende den Streitpunkt auf, bei dem ihr nicht zusammengekommen seid."
     ],
     roles: [
-      "Budgetreisende Person: will ausbrechen, kann sich aber nur billige, belastende Optionen leisten.",
-      "Klimasensible Person: argumentiert strukturell, muss aber die soziale Schieflage der Kritik mitdenken.",
-      "Optionale dritte Rolle: Person aus dem Heimatalltag, für die Reisen Statussymbol, Entlastung oder Fluchtversuch ist."
+      "Budgetreisende Person: will raus, kann sich aber oft nur billige und anstrengende Optionen leisten.",
+      "Klimasensible Person: kritisiert das Reisen, merkt aber auch, dass nicht alle dieselben Möglichkeiten haben.",
+      "Optionale dritte Rolle: Person, für die Reisen Belohnung, Status oder Flucht aus dem Alltag ist."
     ],
     prompts: [
       "Eine Person sagt: 'Wenn ich gar nicht reise, bleibt nur Arbeit und Alltag übrig.'",
@@ -536,16 +536,16 @@ const encounterFormats = [
       }
     ],
     protocol: [
-      "Runde 1: Jede Rolle beschreibt denselben Platz im Dorf mit einer anderen Wortwahl.",
-      "Runde 2: Die Gruppe sammelt, was als 'schön' erscheint und wer diese Schönheit ermöglicht.",
-      "Runde 3: Formuliert einen Streitpunkt über Gewinn, Last und Verdrängung.",
-      "Abschluss: Eine Person fasst den Ort aus Sicht derer zusammen, die ihn nicht einfach wieder verlassen können."
+      "1. Beschreibt denselben Ort im Dorf aus eurer Rolle heraus: Was seht ihr dort?",
+      "2. Sammelt: Was wirkt schön, gemütlich oder cool? Wer macht das möglich?",
+      "3. Streitet über die Frage: Für wen lohnt sich dieser Ort und für wen nicht?",
+      "4. Zum Schluss spricht eine Person nur aus Sicht derer, die dort bleiben müssen."
     ],
     roles: [
-      "Feriengast: erlebt Atmosphäre, Service und Authentizität als gelungene Reise.",
-      "Saisonkraft: hält die Kulisse in Gang, bleibt aber oft austauschbar und prekär.",
-      "Einheimische Person: spürt Preissteigerung, Verhaltensdruck und den Verlust von Selbstverständlichkeit.",
-      "Optionale Investor:innenrolle: argumentiert mit Standort, Arbeitsplätzen und internationaler Sichtbarkeit."
+      "Feriengast: findet alles stimmungsvoll, schön und gelungen.",
+      "Saisonkraft: sorgt dafür, dass alles läuft, lebt aber oft unter Druck.",
+      "Einheimische Person: merkt, dass Preise steigen und der Ort sich verändert.",
+      "Optionale Investor:innenrolle: sagt, Tourismus bringe Geld, Jobs und Aufmerksamkeit."
     ],
     prompts: [
       "Ein Gast sagt: 'Ohne Tourismus wäre hier doch nichts los.'",
@@ -584,14 +584,14 @@ const encounterFormats = [
       }
     ],
     protocol: [
-      "Runde 1: Posting-Person beschreibt, warum Teilen für sie zur Reise dazugehört.",
-      "Runde 2: Schweigende Person beschreibt, was ohne Kamera plötzlich sichtbar wird.",
-      "Runde 3: Beide benennen, welche Form von Stress aus Sichtbarkeit entsteht.",
-      "Abschluss: Haltet fest, ob Bilder Erinnerung verdichten oder Erfahrung standardisieren."
+      "1. Person A erklärt: Warum gehören Fotos, Stories oder Posts für mich zur Reise dazu?",
+      "2. Person B sagt: Was sehe oder erlebe ich gerade, wenn ich nicht sofort poste?",
+      "3. Beide sammeln, was durch das Teilen stressig oder künstlich wird.",
+      "4. Schreibt auf: Helfen Bilder wirklich beim Erinnern oder machen sie alles ähnlicher?"
     ],
     roles: [
-      "Posting-Person: will festhalten, zeigen, bestätigen, vielleicht auch rechtfertigen, dass die Reise sich 'gelohnt' hat.",
-      "Schweigende Mitreisende: verweigert Sichtbarkeitszwang und beobachtet, was dadurch anders wird."
+      "Posting-Person: will zeigen, festhalten und vielleicht auch beweisen, dass sich die Reise gelohnt hat.",
+      "Schweigende Mitreisende: postet kaum und merkt dadurch andere Dinge."
     ],
     prompts: [
       "Eine Person sagt: 'Wenn ich es nicht teile, fühlt es sich fast an, als wäre es nicht passiert.'",
@@ -634,15 +634,15 @@ const encounterFormats = [
       }
     ],
     protocol: [
-      "Runde 1: Jede Person nennt einen Moment, in dem Ferien sich wie Arbeit anfühlten.",
-      "Runde 2: Sammelt Stressquellen vor, während und nach der Reise.",
-      "Runde 3: Prüft, welche davon individuell und welche strukturell erzeugt sind.",
-      "Abschluss: Formuliert eine Reiseentscheidung, die nicht nur guten Willen, sondern veränderte Praxis meint."
+      "1. Erzählt einen Moment, in dem Ferien sich eher nach Arbeit als nach Erholung anfühlten.",
+      "2. Sammelt allen Stress: vor der Reise, unterwegs und nachher.",
+      "3. Entscheidet: Was habt ihr selbst in der Hand und was steckt im System?",
+      "4. Formuliert einen kleinen echten Vorsatz für die nächste Reise."
     ],
     roles: [
-      "Person A: hält Reisemüdigkeit für persönliches Organisationsproblem.",
-      "Person B: liest sie als Symptom einer größeren Tourismuslogik.",
-      "Optionale dritte Rolle: verteidigt Ferien als notwendige psychische Überlebensstrategie."
+      "Person A: sagt, Reisestress sei vor allem schlechtes Planen.",
+      "Person B: sagt, der Stress steckt schon im ganzen Reisemodell drin.",
+      "Optionale dritte Rolle: sagt, Ferien seien trotzdem nötig, sonst hält man Alltag und Schule/Job kaum aus."
     ],
     prompts: [
       "Jemand sagt: 'Ich habe im Urlaub nur noch effizienter funktioniert als sonst.'",
@@ -681,16 +681,16 @@ const encounterFormats = [
       }
     ],
     protocol: [
-      "Runde 1: Jede Person vertritt zunächst einen Text gegen die anderen.",
-      "Runde 2: Alle wechseln die Position und formulieren den stärksten Einwand gegen ihre erste Lesart.",
-      "Runde 3: Jetzt erst wird das eigene Reiseverhalten explizit eingebracht.",
-      "Abschluss: Formuliert keinen Konsens, sondern eine präzise offene Streitfrage."
+      "1. Jede Person sagt zuerst: Welcher Text überzeugt mich gerade am meisten und warum?",
+      "2. Dann wechselt ihr die Seite und sagt den stärksten Einwand gegen eure erste Position.",
+      "3. Erst jetzt kommt ihr selbst ins Spiel: Wo erkennt ihr euch wieder, wo nicht?",
+      "4. Am Ende kein fauler Kompromiss: Formuliert lieber eine gute offene Streitfrage."
     ],
     roles: [
-      "Enzensberger-Stimme: insistiert auf dem Paradox des zerstörerischen Findens.",
-      "Groebner-Stimme: zeigt Infrastruktur, Bildproduktion, Kulissenbau und Stressschleife.",
-      "Wiedmer-Stimme: bindet das Theoretische an konkrete Dorf-, Umbau- und Überforderungsdynamiken.",
-      "Eigenes Reise-Ich: muss sich nicht rechtfertigen, aber darf sich auch nicht ausnehmen."
+      "Enzensberger-Stimme: sagt, der Tourist macht oft kaputt, was er sucht.",
+      "Groebner-Stimme: zeigt, wie Reisen durch Bilder, Infrastruktur und Stress organisiert wird.",
+      "Wiedmer-Stimme: holt die Theorie in einen konkreten Ort und seine Veränderungen zurück.",
+      "Eigenes Reise-Ich: schaut ehrlich auf das eigene Verhalten, ohne sich einfach rauszureden."
     ],
     prompts: [
       "Eine Stimme sagt: 'Vielleicht ist jede Reise schon Mitwirkung an einem beschädigten System.'",
@@ -978,16 +978,32 @@ const els = {
   tripCount: document.querySelector("#tripCount"),
   shortFlights: document.querySelector("#shortFlights"),
   longFlights: document.querySelector("#longFlights"),
+  travelPresets: document.querySelector("#travelPresets"),
+  travelSanityNote: document.querySelector("#travelSanityNote"),
   motSehnsucht: document.querySelector("#motSehnsucht"),
+  motSehnsuchtHint: document.querySelector("#motSehnsuchtHint"),
   motRest: document.querySelector("#motRest"),
+  motRestHint: document.querySelector("#motRestHint"),
   motStress: document.querySelector("#motStress"),
+  motStressHint: document.querySelector("#motStressHint"),
   motDisplay: document.querySelector("#motDisplay"),
+  motDisplayHint: document.querySelector("#motDisplayHint"),
   motEncounter: document.querySelector("#motEncounter"),
+  motEncounterHint: document.querySelector("#motEncounterHint"),
   gainScore: document.querySelector("#gainScore"),
+  gainLevel: document.querySelector("#gainLevel"),
   stressScore: document.querySelector("#stressScore"),
+  stressLevel: document.querySelector("#stressLevel"),
   localCostScore: document.querySelector("#localCostScore"),
+  localLevel: document.querySelector("#localLevel"),
   ecoScore: document.querySelector("#ecoScore"),
+  ecoLevel: document.querySelector("#ecoLevel"),
+  travelTypeTitle: document.querySelector("#travelTypeTitle"),
+  travelTypeLead: document.querySelector("#travelTypeLead"),
+  travelTypeSignals: document.querySelector("#travelTypeSignals"),
+  travelTypeMoves: document.querySelector("#travelTypeMoves"),
   scoreInterpretation: document.querySelector("#scoreInterpretation"),
+  scoreNextSteps: document.querySelector("#scoreNextSteps"),
   blogForm: document.querySelector("#blogForm"),
   blogStop: document.querySelector("#blogStop"),
   blogTitle: document.querySelector("#blogTitle"),
@@ -1214,9 +1230,9 @@ function renderEncounterDetail() {
 
   els.encounterTitle.textContent = format.title;
   els.encounterLead.textContent = format.lead;
-  els.encounterMode.textContent = `Format: ${format.mode}`;
-  els.encounterDuration.textContent = `Takt: ${format.duration}`;
-  els.encounterConstellation.textContent = `Konstellation: ${format.constellation}`;
+  els.encounterMode.textContent = `Form: ${format.mode}`;
+  els.encounterDuration.textContent = `Dauer: ${format.duration}`;
+  els.encounterConstellation.textContent = `Wer ist dabei: ${format.constellation}`;
   els.encounterConflict.textContent = format.conflict;
   els.encounterQuestion.textContent = format.question;
   els.encounterSourceNote.textContent = format.sourceNote;
@@ -1998,6 +2014,229 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+const travelPresets = {
+  selten: {
+    tripCount: 1,
+    shortFlights: 0,
+    longFlights: 0,
+    motSehnsucht: 4,
+    motRest: 5,
+    motStress: 2,
+    motDisplay: 1,
+    motEncounter: 4
+  },
+  citytrip: {
+    tripCount: 4,
+    shortFlights: 1,
+    longFlights: 0,
+    motSehnsucht: 7,
+    motRest: 5,
+    motStress: 6,
+    motDisplay: 5,
+    motEncounter: 5
+  },
+  fernweh: {
+    tripCount: 5,
+    shortFlights: 2,
+    longFlights: 1,
+    motSehnsucht: 9,
+    motRest: 6,
+    motStress: 7,
+    motDisplay: 6,
+    motEncounter: 6
+  },
+  ruhig: {
+    tripCount: 3,
+    shortFlights: 0,
+    longFlights: 0,
+    motSehnsucht: 6,
+    motRest: 8,
+    motStress: 3,
+    motDisplay: 2,
+    motEncounter: 7
+  }
+};
+
+function describeSlider(kind, value) {
+  const low = value <= 3;
+  const high = value >= 7;
+
+  if (kind === "sehnsucht") {
+    if (low) return "Eher niedrig: Ich muss nicht unbedingt weg, um etwas zu erleben.";
+    if (high) return "Hoch: Wegfahren fühlt sich für mich stark nach Aufbruch, Freiheit oder Neustart an.";
+    return "Mittel: Reisen reizt mich schon, aber es ist nicht immer ein Muss.";
+  }
+
+  if (kind === "rest") {
+    if (low) return "Eher niedrig: Ich reise nicht in erster Linie, um herunterzufahren.";
+    if (high) return "Hoch: Erholung ist für mich ein Hauptgrund fürs Reisen.";
+    return "Mittel: Erholung ist wichtig, aber nicht der einzige Punkt.";
+  }
+
+  if (kind === "stress") {
+    if (low) return "Eher niedrig: Planung, Warten und Unterwegssein stressen mich wenig.";
+    if (high) return "Hoch: Reisen heißt für mich oft auch Hektik, Druck oder Müdigkeit.";
+    return "Mittel: Es gibt schöne Momente, aber auch genug Stresspunkte.";
+  }
+
+  if (kind === "display") {
+    if (low) return "Eher niedrig: Fotos und Posts spielen kaum eine Rolle.";
+    if (high) return "Hoch: Sichtbarkeit gehört stark dazu, sonst wirkt die Reise schnell unvollständig.";
+    return "Mittel: Ein bisschen Teilen gehört dazu, aber es bestimmt nicht alles.";
+  }
+
+  if (kind === "encounter") {
+    if (low) return "Eher niedrig: Begegnungen sind okay, aber nicht der Hauptgrund fürs Reisen.";
+    if (high) return "Hoch: Gute Gespräche und echte Kontakte sind für mich zentral.";
+    return "Mittel: Begegnungen sind schön, wenn sie sich ergeben.";
+  }
+
+  return "";
+}
+
+function scoreBand(score) {
+  if (score < 30) return "niedrig";
+  if (score < 60) return "mittel";
+  if (score < 80) return "deutlich";
+  return "sehr hoch";
+}
+
+function buildTravelType(profile) {
+  const {
+    trips,
+    shortFlights,
+    longFlights,
+    gain,
+    stress,
+    local,
+    eco,
+    sehnsucht,
+    rest,
+    display,
+    encounter
+  } = profile;
+
+  if (eco >= 75 || longFlights >= 1) {
+    return {
+      title: "Fernweh mit schwerem Fußabdruck",
+      lead:
+        "Reisen bedeutet für dich starkes Wegwollen und oft auch große Distanz. Der Gewinn kann echt sein, aber die Umweltlast springt sofort nach oben.",
+      signals: [
+        "Schon wenige Fernreisen verändern die Bilanz stark.",
+        "Die Reise fühlt sich besonders an, weil sie weit weg ist.",
+        "Das Problem ist nicht nur Stress, sondern vor allem die Größe des Eingriffs."
+      ],
+      moves: [
+        "Teste als Nächstes: gleiche Reisedauer, aber weniger weit.",
+        "Prüfe ehrlich, ob die Ferne selbst wichtig war oder eher das Gefühl von Ausnahme.",
+        "Vergleiche eine Fernreise mit einer langsameren Nahreise: Was fehlt wirklich, was nur scheinbar?"
+      ]
+    };
+  }
+
+  if (stress >= 65 && display >= 5) {
+    return {
+      title: "Getakteter Erlebnismodus",
+      lead:
+        "Du willst etwas erleben, aber die Reise kippt schnell in Planung, Zeitdruck und Sichtbarkeit. Es ist viel los, oft sogar zu viel.",
+      signals: [
+        "Viele Programmpunkte, wenig echte Leere.",
+        "Fotos, Stories oder 'es muss sich lohnen' schieben die Reise an.",
+        "Am Ende bleibt oft Müdigkeit statt Ruhe."
+      ],
+      moves: [
+        "Plane beim nächsten Mal bewusst eine Lücke ohne Programm.",
+        "Lass einen Ort länger auf dich wirken, statt sofort weiterzuziehen.",
+        "Teste einen halben Tag ohne Posten, Checken und Optimieren."
+      ]
+    };
+  }
+
+  if (rest >= 7 && stress >= 55) {
+    return {
+      title: "Ruhe gesucht, Unruhe bekommen",
+      lead:
+        "Für dich soll Reisen eigentlich Erholung bringen. Gerade dieser Anspruch erzeugt aber oft schon wieder Druck, Enttäuschung oder Überladung.",
+      signals: [
+        "Du reist los, um runterzukommen, bist aber schon vorher im Stress.",
+        "Die Erwartungen an Erholung sind sehr hoch.",
+        "Wenn es nicht perfekt ruhig ist, wirkt die Reise schnell anstrengend."
+      ],
+      moves: [
+        "Wähle beim nächsten Mal weniger Ortswechsel.",
+        "Formuliere vor der Reise nur ein echtes Ziel statt fünf.",
+        "Frage dich nachher nicht nur 'war es schön?', sondern auch 'war es weniger hektisch als mein Alltag?'"
+      ]
+    };
+  }
+
+  if (encounter >= 7 && display <= 4 && eco < 60) {
+    return {
+      title: "Langsam unterwegs",
+      lead:
+        "Bei dir wirkt Reisen eher dann stark, wenn Begegnungen, Zeit und weniger äußere Show im Vordergrund stehen. Das ist kein perfekter Zustand, aber eine gute Ausgangslage.",
+      signals: [
+        "Gespräche und Atmosphäre zählen mehr als Haken auf der Bucket List.",
+        "Sichtbarkeit ist nicht das Zentrum.",
+        "Belastungen sind da, aber eher begrenzbar."
+      ],
+      moves: [
+        "Halte fest, was an dieser Art des Reisens wirklich anders ist.",
+        "Prüfe, ob auch langsames Reisen blinde Flecken hat: Preise, Nutzung von Raum, Alltag anderer.",
+        "Suche bei der nächsten Reise bewusst eine Begegnung, die nicht konsumierbar glatt ist."
+      ]
+    };
+  }
+
+  if (local >= 60 && trips >= 4) {
+    return {
+      title: "Viel unterwegs, wenig unschuldig",
+      lead:
+        "Du reist nicht unbedingt extrem weit, aber oft genug, dass Orte, Infrastruktur und Alltagsräume deutlich mitbeansprucht werden.",
+      signals: [
+        "Viele Trips summieren sich, auch ohne Fernflug.",
+        "Belastung entsteht durch Häufigkeit, Tempo und Nutzung von touristischen Räumen.",
+        "Die Einzelreise wirkt klein, die Summe aber nicht."
+      ],
+      moves: [
+        "Teste: eine Reise weniger, dafür eine bewusster.",
+        "Prüfe, welche Fahrten eher Gewohnheit waren als wirklicher Wunsch.",
+        "Achte beim nächsten Ort darauf, ob du Lebensraum oder bloß Kulisse nutzt."
+      ]
+    };
+  }
+
+  return {
+    title: "Zwischen Lust und Zweifel",
+    lead:
+      "Deine Bilanz ist nicht eindeutig. Genau das ist hilfreich: Du bist weder der einfache Problemfall noch die einfache Lösung.",
+    signals: [
+      "Reisen gibt dir etwas, kostet aber auch etwas.",
+      "Nicht ein Punkt sticht heraus, sondern das Zusammenspiel mehrerer Faktoren.",
+      "Die Widersprüche liegen offen genug, um ehrlich damit zu arbeiten."
+    ],
+    moves: [
+      "Suche zuerst den einen Punkt, der bei dir am stärksten zieht: Ferne, Ruhe, Begegnung, Status oder Tempo.",
+      "Verändere bei der nächsten Reise nur diese eine Sache bewusst.",
+      "Schreibe nach der Reise kurz auf: Was war echter Gewinn, was war nur Gewohnheit oder Erwartung?"
+    ]
+  };
+}
+
+function applyTravelPreset(presetId) {
+  const preset = travelPresets[presetId];
+  if (!preset) return;
+
+  Object.entries(preset).forEach(([key, value]) => {
+    const field = els[key];
+    if (field) {
+      field.value = value;
+    }
+  });
+
+  calcTravelProfile();
+}
+
 function calcTravelProfile() {
   const trips = numberOf(els.tripCount);
   const shortFlights = numberOf(els.shortFlights);
@@ -2017,18 +2256,75 @@ function calcTravelProfile() {
   els.stressScore.textContent = Math.round(stress);
   els.localCostScore.textContent = Math.round(local);
   els.ecoScore.textContent = Math.round(eco);
+  els.gainLevel.textContent = `Wirkt auf dich gerade: ${scoreBand(gain)}`;
+  els.stressLevel.textContent = `Wirkt auf dich gerade: ${scoreBand(stress)}`;
+  els.localLevel.textContent = `Wirkt auf Orte gerade: ${scoreBand(local)}`;
+  els.ecoLevel.textContent = `Wirkt ökologisch gerade: ${scoreBand(eco)}`;
+
+  els.motSehnsuchtHint.textContent = describeSlider("sehnsucht", sehnsucht);
+  els.motRestHint.textContent = describeSlider("rest", rest);
+  els.motStressHint.textContent = describeSlider("stress", stressFeeling);
+  els.motDisplayHint.textContent = describeSlider("display", display);
+  els.motEncounterHint.textContent = describeSlider("encounter", encounter);
+
+  const travelType = buildTravelType({
+    trips,
+    shortFlights,
+    longFlights,
+    gain,
+    stress,
+    local,
+    eco,
+    sehnsucht,
+    rest,
+    display,
+    encounter
+  });
+
+  els.travelTypeTitle.textContent = travelType.title;
+  els.travelTypeLead.textContent = travelType.lead;
+  els.travelTypeSignals.innerHTML = travelType.signals
+    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .join("");
+  els.travelTypeMoves.innerHTML = travelType.moves
+    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .join("");
+
+  if (shortFlights + longFlights > trips && trips > 0) {
+    els.travelSanityNote.hidden = false;
+    els.travelSanityNote.textContent =
+      "Kurzcheck: Deine Flugzahl ist höher als deine Reisezahl. Das kann vorkommen, aber prüfe kurz, ob du Hin- und Rückflug vielleicht doppelt gezählt hast.";
+  } else {
+    els.travelSanityNote.hidden = true;
+    els.travelSanityNote.textContent = "";
+  }
 
   const paradoxIndex = gain - stress * 0.55 - local * 0.75 - eco * 0.8;
 
   if (paradoxIndex > 5) {
     els.scoreInterpretation.textContent =
-      "Dein Gewinn ist hoch. Prüfe mit Enzensberger und Groebner, welche Lasten dafür ausgelagert werden.";
+      "Im Moment wirkt dein Reisegewinn höher als die Belastung. Spannend ist jetzt die Frage: Welche Kosten bleiben trotzdem unsichtbar?";
+    els.scoreNextSteps.innerHTML = `
+      <li>Suche eine Reise, die sich für dich gut anfühlte, und frage dann: Wer arbeitete dafür im Hintergrund?</li>
+      <li>Prüfe, ob dein Gewinn eher aus Ruhe, Begegnung oder Status kam.</li>
+      <li>Vergleiche dein Ergebnis mit Enzensberger: Wo zerstört Finden vielleicht doch einen Teil des Gesuchten?</li>
+    `;
   } else if (paradoxIndex > -14) {
     els.scoreInterpretation.textContent =
-      "Ambivalente Zone: Sehnsucht und Erschöpfung liegen dicht beieinander. Arbeite mit Kap. 6 und Ferienmüde nach.";
+      "Ambivalente Zone: Bei dir liegen Sehnsucht und Erschöpfung ziemlich nahe beieinander. Genau hier wird die Sache interessant.";
+    els.scoreNextSteps.innerHTML = `
+      <li>Schau auf eine konkrete Reise: Was war daran wirklich Erholung und was war eher Organisationsstress?</li>
+      <li>Lies Groebner Kap. 6 oder Ferienmüde mit der Frage: Wo produziert der Wunsch nach Ruhe schon wieder Unruhe?</li>
+      <li>Notiere einen kleinen Test für die nächste Reise, z. B. weniger Taktung, weniger Posts oder weniger Ortswechsel.</li>
+    `;
   } else {
     els.scoreInterpretation.textContent =
-      "Starke Paradox-Spannung: Die Erholung ist teuer erkauft. Formuliere konkrete Entzerrungs- und Reduktionsschritte.";
+      "Starke Paradox-Spannung: Bei dir wirkt Reisen gerade eher teuer erkauft. Das heißt nicht 'nie mehr reisen', aber es ruft nach ehrlichen Änderungen.";
+    els.scoreNextSteps.innerHTML = `
+      <li>Suche zuerst den größten Belastungstreiber: viele Flüge, hoher Stress, viel Sichtbarkeitsdruck oder viele Ortswechsel.</li>
+      <li>Setze nur eine klare Änderung für die nächste Reise: näher, langsamer, weniger Programm oder weniger Teilen.</li>
+      <li>Prüfe mit Wiedmer und Groebner, ob deine Reise eher Ruhe gesucht und dabei neue Geschäftigkeit erzeugt hat.</li>
+    `;
   }
 }
 
@@ -2045,6 +2341,13 @@ function initTravelProfile() {
   ];
 
   fields.forEach((field) => field.addEventListener("input", calcTravelProfile));
+  if (els.travelPresets) {
+    els.travelPresets
+      .querySelectorAll("button[data-travel-preset]")
+      .forEach((button) =>
+        button.addEventListener("click", () => applyTravelPreset(button.getAttribute("data-travel-preset")))
+      );
+  }
   calcTravelProfile();
 }
 

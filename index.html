@@ -197,38 +197,13 @@
         </div>
       </section>
 
-      <section class="panel" id="material-access">
-        <p class="section-kicker">Materialzugang</p>
-        <h2>Wenn ein Primärtext im öffentlichen Repo fehlt</h2>
-        <div class="split">
-          <article class="card">
-            <h3>Wiedmer: <em>Flut</em></h3>
-            <p>
-              Lokal wird zuerst die PDF in <code>material/</code> geöffnet. Falls sie im öffentlichen Repo fehlt,
-              führt die Oberfläche automatisch auf die Dropbox-Version.
-            </p>
-            <p>
-              <a
-                href="https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Flut via Dropbox öffnen
-              </a>
-            </p>
-          </article>
-          <article class="card">
-            <h3>Groebner und Enzensberger</h3>
-            <p>
-              Diese PDFs bleiben aus urheberrechtlichen Gründen lokal im Ordner <code>material/</code>
-              oder in deiner Kursablage. Wenn dich ein Link hierher führt, fehlt die Datei in der öffentlichen Version.
-            </p>
-            <p>
-              Lege die PDFs lokal im Verzeichnis <code>overtourism-reflexionseinheit/material/</code> ab,
-              dann werden die Zugangshinweise automatisch wieder zu Direktlinks.
-            </p>
-          </article>
-        </div>
+      <section class="panel panel-compact" id="material-access">
+        <p class="section-kicker">Falls ein Link nicht öffnet</p>
+        <p class="mini">
+          Wiedmer läuft dann über Dropbox.
+          Groebner und Enzensberger liegen lokal oder in der Kursablage.
+          Mehr musst du hier nicht wissen.
+        </p>
       </section>
 
       <section class="panel" id="encounters">
@@ -240,14 +215,14 @@
         </p>
         <div class="encounter-shell">
           <aside class="card encounter-guide">
-            <h3>Begegnungsformate</h3>
+            <h3>Wähle eine Gesprächssituation</h3>
             <p class="mini">
               Wähle kein beliebiges Gespräch, sondern eine präzise soziale Konstellation:
               Wer spricht? Wer profitiert? Wer trägt die Last? Wer kann den Ort wieder verlassen?
             </p>
             <div id="encounterNav" class="textlab-nav" role="tablist" aria-label="Begegnungsformate"></div>
             <div class="route-block encounter-meta">
-              <h4>Grundregel</h4>
+              <h4>So funktioniert's</h4>
               <ol class="todo">
                 <li>Erst aus der Rolle sprechen, dann analytisch zurücktreten.</li>
                 <li>Mindestens ein echter Dissenssatz bleibt stehen.</li>
@@ -267,7 +242,7 @@
             </div>
 
             <div class="route-block">
-              <h4>Spannung der Begegnung</h4>
+              <h4>Darüber wird gestritten</h4>
               <p id="encounterConflict"></p>
               <p id="encounterQuestion" class="prompt alt"></p>
             </div>
@@ -280,29 +255,29 @@
 
             <div class="deep-grid">
               <section class="route-block">
-                <h4>Gesprächschoreografie</h4>
+                <h4>So läuft das Gespräch</h4>
                 <ol id="encounterProtocol" class="todo"></ol>
               </section>
               <section class="route-block">
-                <h4>Rollen und Blickachsen</h4>
+                <h4>Wer spricht hier?</h4>
                 <ul id="encounterRoles" class="todo"></ul>
               </section>
             </div>
 
             <div class="route-block">
               <div class="inline-blog-actions">
-                <h4>Impulswechsel</h4>
-                <button type="button" id="encounterBtn">Neue Gesprächsvariation</button>
+                <h4>Neue Wendung</h4>
+                <button type="button" id="encounterBtn">Neue Situation</button>
               </div>
               <p id="encounterText" class="prompt"></p>
             </div>
 
             <div class="route-block">
-              <h4>Nachklang für den Reiseblog</h4>
+              <h4>Nach dem Gespräch: Blogskizze</h4>
               <p id="encounterBlogPrompt"></p>
               <form id="encounterForm" class="inline-blog-form">
                 <label>
-                  Titel der Reisebekanntschaft
+                  Überschrift
                   <input type="text" id="encounterEntryTitle" placeholder="z. B. Ein Abend im Hyperdorf, zwei unvereinbare Wahrheiten" required />
                 </label>
                 <label>
@@ -310,12 +285,12 @@
                   <input type="text" id="encounterEntryReference" placeholder="Werk + Seite, z. B. Abgefahren, Kap. 5, S. 76; Flut, S. 53" required />
                 </label>
                 <label>
-                  Festgehaltener Dissens
-                  <textarea id="encounterEntryDissent" rows="3" placeholder="Welcher Konflikt blieb offen und warum war er analytisch produktiv?" required></textarea>
+                  Was blieb umstritten?
+                  <textarea id="encounterEntryDissent" rows="3" placeholder="Schreibe den Satz oder Streitpunkt auf, bei dem ihr euch nicht einig wurdet." required></textarea>
                 </label>
                 <label>
                   Blogskizze
-                  <textarea id="encounterEntryInsight" rows="4" placeholder="Was wurde in der Begegnung sichtbar über Sehnsucht, Stress, Geschäftslogik, Ortslast oder Fremdheit?" required></textarea>
+                  <textarea id="encounterEntryInsight" rows="4" placeholder="Was hat das Gespräch gezeigt? Denke an Sehnsucht, Stress, schöne Kulissen, Belastungen oder echte Begegnung." required></textarea>
                 </label>
                 <div class="inline-blog-actions">
                   <button type="submit">Begegnung sichern</button>
@@ -338,23 +313,71 @@
       <section class="panel" id="reiseprofil">
         <p class="section-kicker">Bilanz</p>
         <h2>Eigene Reiseökonomie: Erholung, Stress, Belastung</h2>
+        <div class="route-block travel-guide">
+          <h3>Schnellhilfe zum Eintragen</h3>
+          <p>
+            Du musst nicht exakt rechnen. Eine ehrliche Schätzung reicht. Starte notfalls mit einer Vorlage
+            und passe sie danach an dich an.
+          </p>
+          <div class="travel-presets" id="travelPresets">
+            <button type="button" data-travel-preset="selten">Selten unterwegs</button>
+            <button type="button" data-travel-preset="citytrip">Citytrip-Modus</button>
+            <button type="button" data-travel-preset="fernweh">Fernweh-Jahr</button>
+            <button type="button" data-travel-preset="ruhig">Ruhig & nah</button>
+          </div>
+          <div class="deep-grid">
+            <div class="route-block">
+              <h4>Wie zähle ich?</h4>
+              <ul class="todo">
+                <li><strong>Reisen/Jahr:</strong> Ferien, Wochenenden, Festivals, Klassenreise, Roadtrip.</li>
+                <li><strong>Kurzstreckenflug:</strong> innerhalb Europas oder ähnlich weit. Hin und zurück zusammen = 1.</li>
+                <li><strong>Langstreckenflug:</strong> interkontinental. Hin und zurück zusammen = 1.</li>
+              </ul>
+            </div>
+            <div class="route-block">
+              <h4>Wie funktionieren die Regler?</h4>
+              <ul class="todo">
+                <li><strong>0-3:</strong> spielt kaum eine Rolle.</li>
+                <li><strong>4-6:</strong> gehört schon dazu, aber ist nicht alles.</li>
+                <li><strong>7-10:</strong> prägt die Reise stark.</li>
+              </ul>
+            </div>
+          </div>
+          <p id="travelSanityNote" class="prompt alt" hidden></p>
+        </div>
         <form id="travelForm" class="travel-form">
-          <label>Reisen/Jahr <input type="number" id="tripCount" min="0" max="40" value="4" /></label>
-          <label>Kurzstreckenflüge/Jahr <input type="number" id="shortFlights" min="0" max="40" value="1" /></label>
-          <label>Langstreckenflüge/Jahr <input type="number" id="longFlights" min="0" max="20" value="0" /></label>
-          <label>Motiv Sehnsucht <input type="range" id="motSehnsucht" min="0" max="10" value="7" /></label>
-          <label>Motiv Erholung <input type="range" id="motRest" min="0" max="10" value="6" /></label>
-          <label>Erlebter Reisestress <input type="range" id="motStress" min="0" max="10" value="5" /></label>
-          <label>Selfie-/Sichtbarkeitsdruck <input type="range" id="motDisplay" min="0" max="10" value="4" /></label>
-          <label>Interesse an echten Begegnungen <input type="range" id="motEncounter" min="0" max="10" value="6" /></label>
+          <label>Reisen/Jahr <input type="number" id="tripCount" min="0" max="40" value="4" /><span class="field-help">Zähle alles, was du selbst klar als Reise wahrnimmst.</span></label>
+          <label>Kurzstreckenflüge/Jahr <input type="number" id="shortFlights" min="0" max="40" value="1" /><span class="field-help">Beispiel: Barcelona, Berlin, London. Hin und zurück zusammen = 1.</span></label>
+          <label>Langstreckenflüge/Jahr <input type="number" id="longFlights" min="0" max="20" value="0" /><span class="field-help">Beispiel: New York, Bangkok, Bali. Hin und zurück zusammen = 1.</span></label>
+          <label>Motiv Sehnsucht <input type="range" id="motSehnsucht" min="0" max="10" value="7" /><span id="motSehnsuchtHint" class="field-help"></span></label>
+          <label>Motiv Erholung <input type="range" id="motRest" min="0" max="10" value="6" /><span id="motRestHint" class="field-help"></span></label>
+          <label>Erlebter Reisestress <input type="range" id="motStress" min="0" max="10" value="5" /><span id="motStressHint" class="field-help"></span></label>
+          <label>Selfie-/Sichtbarkeitsdruck <input type="range" id="motDisplay" min="0" max="10" value="4" /><span id="motDisplayHint" class="field-help"></span></label>
+          <label>Interesse an echten Begegnungen <input type="range" id="motEncounter" min="0" max="10" value="6" /><span id="motEncounterHint" class="field-help"></span></label>
         </form>
         <div class="scoreboard">
-          <article><p class="label">Gewinn</p><p class="score" id="gainScore">0</p></article>
-          <article><p class="label">Stress</p><p class="score" id="stressScore">0</p></article>
-          <article><p class="label">Ortslast</p><p class="score" id="localCostScore">0</p></article>
-          <article><p class="label">Umweltlast</p><p class="score" id="ecoScore">0</p></article>
+          <article><p class="label">Gewinn</p><p class="score" id="gainScore">0</p><p class="meta-note" id="gainLevel"></p></article>
+          <article><p class="label">Stress</p><p class="score" id="stressScore">0</p><p class="meta-note" id="stressLevel"></p></article>
+          <article><p class="label">Ortslast</p><p class="score" id="localCostScore">0</p><p class="meta-note" id="localLevel"></p></article>
+          <article><p class="label">Umweltlast</p><p class="score" id="ecoScore">0</p><p class="meta-note" id="ecoLevel"></p></article>
+        </div>
+        <div class="route-block travel-type-card">
+          <p class="label">Dein Reisetyp im Moment</p>
+          <h3 id="travelTypeTitle"></h3>
+          <p id="travelTypeLead"></p>
+          <div class="deep-grid">
+            <div class="route-block">
+              <h4>Woran man das merkt</h4>
+              <ul id="travelTypeSignals" class="todo"></ul>
+            </div>
+            <div class="route-block">
+              <h4>Dein realistischer nächster Test</h4>
+              <ul id="travelTypeMoves" class="todo"></ul>
+            </div>
+          </div>
         </div>
         <p class="focus-question" id="scoreInterpretation"></p>
+        <ul id="scoreNextSteps" class="todo score-next-steps"></ul>
       </section>
 
       <section class="panel" id="blog">

@@ -68,6 +68,14 @@ a {
   backdrop-filter: blur(8px);
 }
 
+.panel-compact {
+  padding: 0.95rem 1.2rem;
+}
+
+#material-access:not(:target) {
+  display: none;
+}
+
 .hero {
   margin-top: 1.5rem;
   padding: clamp(1.3rem, 3vw, 2.6rem);
@@ -482,6 +490,28 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+
+.travel-guide {
+  margin-top: 0.8rem;
+}
+
+.travel-guide h3 {
+  margin: 0;
+}
+
+.travel-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+
+.travel-presets button {
+  background: rgba(15, 123, 143, 0.1);
+  color: var(--ink);
+  border: 1px solid rgba(15, 123, 143, 0.18);
 }
 
 label {
@@ -490,6 +520,12 @@ label {
   gap: 0.35rem;
   font-size: 0.94rem;
   font-weight: 500;
+}
+
+.field-help {
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 input,
@@ -538,6 +574,23 @@ input[type="range"] {
   border-radius: 12px;
   background: rgba(202, 77, 36, 0.1);
   padding: 0.75rem 0.86rem;
+}
+
+.score-next-steps {
+  margin-top: 0.75rem;
+}
+
+.travel-type-card {
+  margin-top: 0.85rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.travel-type-card h3 {
+  margin-top: 0.25rem;
+}
+
+.travel-type-card .deep-grid {
+  margin-top: 0.8rem;
 }
 
 .blog-form {
